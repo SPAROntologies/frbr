@@ -28,7 +28,15 @@ dc:title a owl:AnnotationProperty .
     dc:description "This vocabulary is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary (http://vocab.org/frbr/core)."@en ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en ;
     dc:title "Essential FRBR in OWL2 DL"@en ;
-    rdfs:comment "FRBR DL is an OWL 2 DL expression of the FRBR model." ;
+    rdfs:comment """The Essential FRBR in OWL2 DL Ontology (FRBR) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary.
+
+**URL:** http://purl.org/spar/frbr
+
+**Creators**: [Paolo Ciccarese](https://orcid.org/0000-0002-5156-2703), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/frbr""" ;
     owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/FRBR-DL/2010-10-20-frbr.owl> ;
     owl:versionIRI <http://purl.org/spar/frbr/2011-06-29> ;
     owl:versionInfo "1.0"^^xsd:string .
@@ -454,14 +462,14 @@ The entity defined as item is a concrete entity. It is in many instances a singl
         core:Work ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
+                        owl:onProperty core:exemplarOf ;
+                        owl:someValuesFrom core:Manifestation ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
                         owl:allValuesFrom core:Item ;
                         owl:onProperty core:part ] [ a owl:Restriction ;
                         owl:allValuesFrom core:Item ;
-                        owl:onProperty core:partOf ] ) ],
-        [ a owl:Class ;
-            owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
-                        owl:onProperty core:exemplarOf ;
-                        owl:someValuesFrom core:Manifestation ] ) ] .
+                        owl:onProperty core:partOf ] ) ] .
 
 core:Endeavour a owl:Class ;
     rdfs:label "endeavour"@en ;
@@ -477,16 +485,16 @@ The entity defined as manifestation encompasses a wide range of materials and fo
     owl:disjointWith core:Work ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
-                        owl:allValuesFrom core:Manifestation ;
-                        owl:onProperty core:part ] [ a owl:Restriction ;
-                        owl:allValuesFrom core:Manifestation ;
-                        owl:onProperty core:partOf ] ) ],
-        [ a owl:Class ;
-            owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
                         owl:onProperty core:embodimentOf ;
                         owl:someValuesFrom core:Expression ] [ a owl:Restriction ;
                         owl:onProperty core:exemplar ;
-                        owl:someValuesFrom core:Item ] ) ] .
+                        owl:someValuesFrom core:Item ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom core:Manifestation ;
+                        owl:onProperty core:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom core:Manifestation ;
+                        owl:onProperty core:partOf ] ) ] .
 
 <urn:swrl#e1> a swrl:Variable .
 
@@ -528,16 +536,16 @@ An expression is the specific intellectual or artistic form that a work takes ea
         core:Work ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
-                        owl:onProperty core:embodiment ;
-                        owl:someValuesFrom core:Manifestation ] [ a owl:Restriction ;
-                        owl:onProperty core:realizationOf ;
-                        owl:someValuesFrom core:Work ] ) ],
-        [ a owl:Class ;
-            owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
                         owl:allValuesFrom core:Expression ;
                         owl:onProperty core:part ] [ a owl:Restriction ;
                         owl:allValuesFrom core:Expression ;
-                        owl:onProperty core:partOf ] ) ] .
+                        owl:onProperty core:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( core:Endeavour [ a owl:Restriction ;
+                        owl:onProperty core:embodiment ;
+                        owl:someValuesFrom core:Manifestation ] [ a owl:Restriction ;
+                        owl:onProperty core:realizationOf ;
+                        owl:someValuesFrom core:Work ] ) ] .
 
 core:relatedEndeavour a owl:ObjectProperty ;
     rdfs:label "has related endeavour"@en ;
@@ -582,7 +590,53 @@ core:relatedEndeavour a owl:ObjectProperty ;
                             rdf:first [ a swrl:IndividualPropertyAtom ;
                                     swrl:argument1 <urn:swrl#e1> ;
                                     swrl:argument2 <urn:swrl#e2> ;
-                                    swrl:propertyPredicate core:successor ] ;
+                                    swrl:propertyPredicate core:summarization ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate core:adaption ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate core:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate core:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate core:imitation ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate core:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate core:realizationOf ] ;
                             rdf:rest () ] ] ] ;
     swrl:head [ a swrl:AtomList ;
             rdf:first [ a swrl:DifferentIndividualsAtom ;
@@ -605,7 +659,79 @@ core:relatedEndeavour a owl:ObjectProperty ;
                             rdf:first [ a swrl:IndividualPropertyAtom ;
                                     swrl:argument1 <urn:swrl#e1> ;
                                     swrl:argument2 <urn:swrl#e2> ;
-                                    swrl:propertyPredicate core:summarization ] ;
+                                    swrl:propertyPredicate core:transformation ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate core:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate core:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate core:translation ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate core:abridgement ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate core:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate core:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( core:Concept core:Event core:Object core:Place ) .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate core:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate core:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate core:successor ] ;
                             rdf:rest () ] ] ] ;
     swrl:head [ a swrl:AtomList ;
             rdf:first [ a swrl:DifferentIndividualsAtom ;
@@ -618,7 +744,7 @@ core:relatedEndeavour a owl:ObjectProperty ;
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl#e1> ;
                     swrl:argument2 <urn:swrl#e2> ;
-                    swrl:propertyPredicate core:adaption ] ;
+                    swrl:propertyPredicate core:complement ] ;
             rdf:rest [ a swrl:AtomList ;
                     rdf:first [ a swrl:IndividualPropertyAtom ;
                             swrl:argument1 <urn:swrl#e1> ;
@@ -675,124 +801,6 @@ core:relatedEndeavour a owl:ObjectProperty ;
                                     swrl:argument1 <urn:swrl#e1> ;
                                     swrl:argument2 <urn:swrl#e2> ;
                                     swrl:propertyPredicate core:supplement ] ;
-                            rdf:rest () ] ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:DifferentIndividualsAtom ;
-                    swrl:argument1 <urn:swrl#w1> ;
-                    swrl:argument2 <urn:swrl#w2> ] ;
-            rdf:rest () ] .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl#e1> ;
-                    swrl:argument2 <urn:swrl#e2> ;
-                    swrl:propertyPredicate core:imitation ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl#e1> ;
-                            swrl:argument2 <urn:swrl#w1> ;
-                            swrl:propertyPredicate core:realizationOf ] ;
-                    rdf:rest [ a swrl:AtomList ;
-                            rdf:first [ a swrl:IndividualPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#e2> ;
-                                    swrl:argument2 <urn:swrl#w2> ;
-                                    swrl:propertyPredicate core:realizationOf ] ;
-                            rdf:rest () ] ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:DifferentIndividualsAtom ;
-                    swrl:argument1 <urn:swrl#w1> ;
-                    swrl:argument2 <urn:swrl#w2> ] ;
-            rdf:rest () ] .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl#e1> ;
-                    swrl:argument2 <urn:swrl#e2> ;
-                    swrl:propertyPredicate core:abridgement ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl#e1> ;
-                            swrl:argument2 <urn:swrl#w1> ;
-                            swrl:propertyPredicate core:realizationOf ] ;
-                    rdf:rest [ a swrl:AtomList ;
-                            rdf:first [ a swrl:IndividualPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#e2> ;
-                                    swrl:argument2 <urn:swrl#w2> ;
-                                    swrl:propertyPredicate core:realizationOf ] ;
-                            rdf:rest () ] ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:SameIndividualAtom ;
-                    swrl:argument1 <urn:swrl#w1> ;
-                    swrl:argument2 <urn:swrl#w2> ] ;
-            rdf:rest () ] .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( core:Concept core:Event core:Object core:Place ) .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl#e1> ;
-                    swrl:argument2 <urn:swrl#w1> ;
-                    swrl:propertyPredicate core:realizationOf ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl#e2> ;
-                            swrl:argument2 <urn:swrl#w2> ;
-                            swrl:propertyPredicate core:realizationOf ] ;
-                    rdf:rest [ a swrl:AtomList ;
-                            rdf:first [ a swrl:IndividualPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#e1> ;
-                                    swrl:argument2 <urn:swrl#e2> ;
-                                    swrl:propertyPredicate core:transformation ] ;
-                            rdf:rest () ] ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:DifferentIndividualsAtom ;
-                    swrl:argument1 <urn:swrl#w1> ;
-                    swrl:argument2 <urn:swrl#w2> ] ;
-            rdf:rest () ] .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl#e1> ;
-                    swrl:argument2 <urn:swrl#w1> ;
-                    swrl:propertyPredicate core:realizationOf ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl#e2> ;
-                            swrl:argument2 <urn:swrl#w2> ;
-                            swrl:propertyPredicate core:realizationOf ] ;
-                    rdf:rest [ a swrl:AtomList ;
-                            rdf:first [ a swrl:IndividualPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#e1> ;
-                                    swrl:argument2 <urn:swrl#e2> ;
-                                    swrl:propertyPredicate core:translation ] ;
-                            rdf:rest () ] ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:SameIndividualAtom ;
-                    swrl:argument1 <urn:swrl#w1> ;
-                    swrl:argument2 <urn:swrl#w2> ] ;
-            rdf:rest () ] .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl#e1> ;
-                    swrl:argument2 <urn:swrl#e2> ;
-                    swrl:propertyPredicate core:complement ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl#e1> ;
-                            swrl:argument2 <urn:swrl#w1> ;
-                            swrl:propertyPredicate core:realizationOf ] ;
-                    rdf:rest [ a swrl:AtomList ;
-                            rdf:first [ a swrl:IndividualPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#e2> ;
-                                    swrl:argument2 <urn:swrl#w2> ;
-                                    swrl:propertyPredicate core:realizationOf ] ;
                             rdf:rest () ] ] ] ;
     swrl:head [ a swrl:AtomList ;
             rdf:first [ a swrl:DifferentIndividualsAtom ;

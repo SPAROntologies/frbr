@@ -1,6 +1,6 @@
 # Essential FRBR in OWL2 DL Ontology (FRBR)
 
-The Essential FRBR in OWL2 DL Ontology is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary.
+The Essential FRBR in OWL2 DL Ontology (FRBR) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary.
 
 **URL:** http://purl.org/spar/frbr
 
