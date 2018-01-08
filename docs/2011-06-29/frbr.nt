@@ -1,0 +1,913 @@
+_:Nb0471fb48ba54307a07278c2b378ed84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N421af10d3c844a4f9d8b2f2e7d07a492 .
+<http://purl.org/vocab/frbr/core#owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N02965d895ed442dd91777fe917fcf27d <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#ownerOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#owner> .
+_:Need80f3189d64f1fada9982d859606f0 <http://www.w3.org/2003/11/swrl#body> _:N20fb789e3c7f42018d1884bde2b83538 .
+_:N8490b5ed21304070a50cadbe19050221 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression revised in another one.\n\nA revision has the intent to alter or update the content of the prior expression, but without changing the content so much that it becomes a new work."@en .
+_:N3f2c7e9fe349420e99683d1966003f2e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N66e0ec759ec64df4bb0c19c2bf25620c .
+_:Ndb30090fea7c4d9a92c82ab088d1dc24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N275502acc65f4874935786845ac38dd9 .
+_:N6c72989fdfb044e189b1ba0c107cbeb9 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Nb5f9e0a50f174d95ae890953910026db <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N427bf1490f8b4529a97fca1cdda065f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:N9135d57d502740879288950601c23f7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N63fe08bbd90a42f398081992849de8bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:N04c33def66e34dbab86af7a6ddb59ad2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nd2a53edf602f45bca4f78972d6ef4bf1 .
+_:Ne27a56cf93924d81a41705c4627c721f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#domain> _:N2d80ca19180342d197f1c359fb359c9f .
+<http://purl.org/vocab/frbr/core#reproductionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N80e030a4415244c498759ab1fa8e53bc <http://www.w3.org/2002/07/owl#unionOf> _:N856d63a356e5452693ddd6d198446d15 .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N923eac267cd1465f98d6c57cef6f4604 <http://www.w3.org/2003/11/swrl#head> _:N5fd3f994125c458492376e2c51aa788c .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/vocab/frbr/core#arrangementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nd390f634b4b9483b8c250940fad37bbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Naff63c33e40140cb99b381c2a142264a <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#exemplarOf> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> .
+<urn:swrl#e2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:Na2c93d258ffe4cbc8d36d55fa2c958fc <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#summarization> .
+_:N85b24d8629c94455a3763579e83b0fc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#equivalentClass> _:N9bd4c6f7dee94fdd939bb24ceae3a603 .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#range> _:N9aae62629f35476d847f1bd5666a34db .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2000/01/rdf-schema#label> "is responsible entity of"@en .
+_:N3c2a73794940446f9ee4f905bd0ffeb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#relatedEndeavour> <http://www.w3.org/2000/01/rdf-schema#label> "has related endeavour"@en .
+_:N41552608ec8142f0a1c4b50d87c827a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N8d51930dd4434ef5a8296178e29e4e99 .
+_:N43b239784f1149e7ae9ab23eda8fb3fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<urn:swrl#w1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#ResponsibleEntity> .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N4d34bf54fabb43cba7d30c1c5a5c454f <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:N5258b34d1fd34baab87443b6a94761de <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+<http://www.w3.org/2008/05/skos#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N275502acc65f4874935786845ac38dd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An endeavour incorporating another endeavour."@en .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
+_:N44d6b379e04e4c41b3b2b4d94101db50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N640f907f2b8146a087da01ddcfd05310 .
+_:N4dcf3a9247884dca82e85d330b21f133 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:N9bd4c6f7dee94fdd939bb24ceae3a603 <http://www.w3.org/2002/07/owl#intersectionOf> _:N68b83597b2744379afcd22a875071a45 .
+_:N421af10d3c844a4f9d8b2f2e7d07a492 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#realizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N4d5f936498e04f24943179533607370b <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/2008/05/skos#note> "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .
+_:N84539f28eb4b49ec8f54e3b72bc744dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N9901197dfe6945ae97ffdec8b36371f3 .
+_:N2d80ca19180342d197f1c359fb359c9f <http://www.w3.org/2002/07/owl#unionOf> _:N3299b6b17c8d4c648246570a3af1a517 .
+_:Nb3ea680b7c104abbbff678994cf2cb3e <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:Nc1921379a68e4164b8c761d4e51d22d9 <http://www.w3.org/2003/11/swrl#head> _:N3bfab55f013640aba8f1f95cf1ab0e63 .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/2000/01/rdf-schema#label> "has arrangement"@en .
+<http://purl.org/vocab/frbr/core#adaptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N97565c5305e94d878a5b8e741e6b731a <http://www.w3.org/2003/11/swrl#head> _:N09b71e0125fd4301a63b678ad3aed1e7 .
+_:N122cfcdfaf7640b9984b8aa646d89c29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#abridgementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the entire expression of an abridged one."@en .
+_:N92fe636d5289400a9885119084459781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2256528ef7924b2a8c65ae99e395affc .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nd63e817ea9094182865edd8d90cc3999 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4892007db08640beb951c68f2ddb479e .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#comment> "An work/expression imitated in another one.\n\nThis property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en .
+_:N26e82af8a87840279eb03fbd54a5319d <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N275502acc65f4874935786845ac38dd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/2000/01/rdf-schema#domain> _:N80e030a4415244c498759ab1fa8e53bc .
+_:Nd89e6e3b130e493896f6dbab4bec34a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N7c98064c3cae4c9a91aa3c30979ed086 .
+_:N9950b45a20734cf6835b9f4bdd6bd512 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nded330ee21554facb7411066f54aab40 .
+_:N923eac267cd1465f98d6c57cef6f4604 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2000/01/rdf-schema#label> "item"@en .
+_:N1737457ba0fd4ae690cbbdae93184c3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N37084f960d374bfe9540a881dceac140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N8490b5ed21304070a50cadbe19050221 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Work> .
+_:Nd973183aa248443f9254c1c6b099893d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4b7d65465ea74f73b626050304ad01ee .
+_:Nb585685040a340b0afad5bff025b7e13 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N843d26a21de843749053711bbff67a50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+_:N2fd249d8794a425e9f96557f9d313e6a <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Nc86d028890be4a50897e0f03ce43e7b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/2000/01/rdf-schema#comment> "A work/expression summarized in another one.\n\nThis property describe the summarization of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+_:N2f665e5c8bc5462a94414a817f845af6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression arranged in another one.\n\nIn the arranged expression some content of the previous expression is changed in some way, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood)."@en .
+_:Nd2a53edf602f45bca4f78972d6ef4bf1 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+<http://purl.org/vocab/frbr/core#complementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N427bf1490f8b4529a97fca1cdda065f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nbab6125388254f918b00d92b8b4da708 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N08a46e0197d94f85b750e2660a0b22e3 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:Nba9571b7e38444ce9602420a5b987e17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:Nbf0cdef3c4cb4ac3b85761f8a17f42c7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+<http://purl.org/vocab/frbr/core#imitationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the work/expression of an imitated one."@en .
+_:N54560fb81e474b17bd060312cbeb8017 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nd0c9344312264c6e894707c83b840464 .
+_:N4d5f936498e04f24943179533607370b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N68b83597b2744379afcd22a875071a45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:Na2c93d258ffe4cbc8d36d55fa2c958fc <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N247d4de63c244ef1989cd87102cac135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N09b71e0125fd4301a63b678ad3aed1e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N65ee1b1a42bf4b72883d0faa1ddb09af <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N83d3d72544cf46769b804319541656c6 .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Work> .
+_:N1c1d0e6d28974b88b69f70d8a469fc1f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#producerOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#producer> .
+_:N67ec5152859a4af9abaad646c87dd63f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N84539f28eb4b49ec8f54e3b72bc744dd .
+_:N122cfcdfaf7640b9984b8aa646d89c29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N63fe08bbd90a42f398081992849de8bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N20425a1b96fc4929a974ba172597207d .
+_:N9aae62629f35476d847f1bd5666a34db <http://www.w3.org/2002/07/owl#unionOf> _:N25061f5058194d4ab2f37a11afc18154 .
+_:Na068cf0753ed4a0fb26ae37ee8ec9921 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Nd390f634b4b9483b8c250940fad37bbc <http://www.w3.org/2002/07/owl#unionOf> _:Nfd648c9c3da44e89b3afcbc143b1fdd0 .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression abridged in another one.\n\nIn the abridged expression some content of the previous expression is removed, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood). "@en .
+<http://purl.org/vocab/frbr/core#reproductionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is reproduction of"@en .
+_:N41552608ec8142f0a1c4b50d87c827a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Na33485925091447a9dfe947906a2875f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne9f3cb51c59641258cdbaf378a496234 .
+_:N62f8210b8c01421aaef26b8e3ca270f6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N1413c9f2798b4b728a09413dd46ad9d6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Naff63c33e40140cb99b381c2a142264a .
+_:N2256528ef7924b2a8c65ae99e395affc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:N96d486836c354d1680995c95db84f3df <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb7cb39b48b884b5abdf6cec8f363d3f5 .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#range> _:Nc7f66155d8b144f88be5ed284f1b768e .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+_:N864e0690e7544704b218b716bf12a93c <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#responsibleEntity> .
+_:N5d5e6672de634a04beb952f3f49d9052 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#label> "has successor"@en .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#label> "has adaption"@en .
+_:Na4d20fcfcf3a45fc9a26451f2db13332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation having another one as alternate.\n\nThe alternate relationship involves manifestations that effectively serve as alternates for each other. The alternate relationship obtains, for example, when a publication, sound recording, video, etc. is issued in more than one format or when it is released simultaneously by different publishers in different countries."@en .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N93c81d6c4ae84cd388baf6c3edcc2687 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+_:N76924668829c49159b6d304e06221bca <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N67ec5152859a4af9abaad646c87dd63f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/vocab/frbr/core#imitationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#summarizationOf> .
+_:N0d817b715e1a41d9a92cc0eba989c77f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N5d5e6672de634a04beb952f3f49d9052 .
+_:N856d63a356e5452693ddd6d198446d15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9315977770124a06b57770cdca5ab4cc .
+_:Nfb92a0764d074666ac9eb80bee868dc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:Nfc7d4cca8bff41fd88a6554dab861c77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N041a44ca8b1a4cdb94f60924a6ae3278 <http://www.w3.org/2002/07/owl#unionOf> _:N3cfba53e9adf4f59952d5777eb12d40f .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#label> "has producer"@en .
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is realization of"@en .
+_:Nfef948c7a34943e281744f243c71e68a <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N1f48aa2fb4fd472ca1ae0237f6b4b338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N61068f4590d74831a4c86ee0c902431f .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+_:N7c98064c3cae4c9a91aa3c30979ed086 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents an additional set of entities that serve as the subjects of works."@en .
+_:Naf23b7335afc4595a6602c4e30325459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne328e39e2a82418698a7655822d44e3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N4d5f936498e04f24943179533607370b .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7c98064c3cae4c9a91aa3c30979ed086 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/2000/01/rdf-schema#label> "has translation"@en .
+_:N26e82af8a87840279eb03fbd54a5319d <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#subjectOf> <http://www.w3.org/2000/01/rdf-schema#label> "is subject of"@en .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+_:N919e5499167245258455f7e13bcc7a8b <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:Nd1003d768659453798c254935254839f <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:N122cfcdfaf7640b9984b8aa646d89c29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N495e807ec52f42af8383bcb1d0ef0a5f <http://www.w3.org/2002/07/owl#unionOf> _:Nedc0d75cdadb400ea11afc1f31b5edd2 .
+_:N1413c9f2798b4b728a09413dd46ad9d6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nd05929a12f404f19a361e36cd0c3e493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Naf23b7335afc4595a6602c4e30325459 .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:Nb2b450a135ce46b8ae32c398172361cd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N9182ff12b9194071a92769a202c97186 <http://www.w3.org/2002/07/owl#intersectionOf> _:Nd63e817ea9094182865edd8d90cc3999 .
+_:N2d80ca19180342d197f1c359fb359c9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N258e2f20a6ba46f9906a97c168ba060b <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+<http://purl.org/spar/frbr> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:N7cf0f5978e1e4b4ea0726a234abdca15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/vocab/frbr/core#alternateOf> <http://www.w3.org/2000/01/rdf-schema#label> "is alternate of"@en .
+_:N71b6710628464acd86a9efa79658221b <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:Nc999f753bd3e4a0da9049abf97340dd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N97565c5305e94d878a5b8e741e6b731a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:Ne9f3cb51c59641258cdbaf378a496234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:N0442503af75e4e86882486635a1a08a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N7d32a9f6e2ad4c68b5bd5202b333a330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en .
+_:N640f907f2b8146a087da01ddcfd05310 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N4d34bf54fabb43cba7d30c1c5a5c454f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N56b3b9c2e18a430fa1baa5e45a1cab57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N4dcf3a9247884dca82e85d330b21f133 .
+_:Nd0b42aab0edb4ff18c83a4e2e67589d0 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:N5258b34d1fd34baab87443b6a94761de <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:N1c1d0e6d28974b88b69f70d8a469fc1f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N93c81d6c4ae84cd388baf6c3edcc2687 .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#range> _:Nf76be12652714b60a96a7786a7993dbb .
+<http://purl.org/vocab/frbr/core#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#label> "corporate body"@en .
+_:N04c33def66e34dbab86af7a6ddb59ad2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0d817b715e1a41d9a92cc0eba989c77f .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "An item reconfigured in another one.\n\nThe reconfiguration relationship is one in which one or more items are changed in such a way that a new item or items result. Most commonly, an item of one manifestation is bound with an item of a different manifestation to make a new item. "@en .
+_:N71b6710628464acd86a9efa79658221b <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+_:N847ce29d25a145a9af9cbc06bee02c9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1651b8d2ec144bdc9177605205cf34bc .
+_:Ne9bdb17f1ee04ef6a3c11a0bf8cf9699 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#ResponsibleEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents those responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour."@en .
+_:Nbab6125388254f918b00d92b8b4da708 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that is resposible for a particular endeavour."@en .
+<http://www.w3.org/2008/05/skos#note> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos#> .
+_:N8ab92f6143284529a8e0436c4f4cac07 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N3603a0c1072a46b5a319eaf020a45466 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N0d817b715e1a41d9a92cc0eba989c77f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N93c81d6c4ae84cd388baf6c3edcc2687 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nb3edf26d58944af897b3b909c6747c77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation/item reproduced in another one.\n\nA reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship."@en .
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:Nc1921379a68e4164b8c761d4e51d22d9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:N1db1c135b6b44f25aa80fe0c8895655e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N30e5ba54a21a4584aca32976c7055bf0 <http://www.w3.org/2002/07/owl#unionOf> _:Na2d7cb641768464ba0cf85f3c599adee .
+_:Nf76be12652714b60a96a7786a7993dbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#owner> <http://www.w3.org/2000/01/rdf-schema#label> "has owner"@en .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+_:N8b155e14fce84e9d9b797d6a3b8ccf91 <http://www.w3.org/2002/07/owl#intersectionOf> _:Nf450e5f596de4c129348535dc6d8e03e .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/2000/01/rdf-schema#label> "has revision"@en .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+_:N598036bb03fe4870aa5eeb2e89b6a2b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N02965d895ed442dd91777fe917fcf27d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Nd1b24cab199d4a0e8bdd4adf95945524 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7d32a9f6e2ad4c68b5bd5202b333a330 <http://www.w3.org/2002/07/owl#unionOf> _:N0442503af75e4e86882486635a1a08a2 .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#transformationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#revisionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N9950b45a20734cf6835b9f4bdd6bd512 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N7ab5329d539b4e278fe368f8b240a958 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1fdc248d430a404ca9d1aa9a775c53da .
+_:N1526034e62b0458c9832dbd0b7135f7f <http://www.w3.org/2002/07/owl#unionOf> _:N92fe636d5289400a9885119084459781 .
+_:N7ab5329d539b4e278fe368f8b240a958 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N2fd249d8794a425e9f96557f9d313e6a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#ownerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of a particular item."@en .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N47e72ee6fc2a43b1949de7795e81cea9 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N20fb789e3c7f42018d1884bde2b83538 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N070b7e1924a842d1a7184a7fcf5ea600 .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N1737457ba0fd4ae690cbbdae93184c3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8a0d3ebcb4094c92a6b655cc1f532127 .
+<http://purl.org/vocab/frbr/core#owner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntity> .
+_:Ndb30090fea7c4d9a92c82ab088d1dc24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/spar/frbr> <http://www.w3.org/2000/01/rdf-schema#comment> "FRBR DL is an OWL 2 DL expression of the FRBR model." .
+_:Nf76be12652714b60a96a7786a7993dbb <http://www.w3.org/2002/07/owl#unionOf> _:Na4d20fcfcf3a45fc9a26451f2db13332 .
+<http://purl.org/vocab/frbr/core#adaptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is adaption of"@en .
+<http://purl.org/vocab/frbr/core#supplementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/2000/01/rdf-schema#domain> _:N1526034e62b0458c9832dbd0b7135f7f .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/spar/frbr> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en .
+_:Ne27a56cf93924d81a41705c4627c721f <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:N119abe9038554a7c85ca3ee2f797df76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N76924668829c49159b6d304e06221bca <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N6bd81fe35a6648f09350ff36015865b7 .
+_:Nd0b42aab0edb4ff18c83a4e2e67589d0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:N7ac1b7a9d180425e9a75a27e3e6053c0 <http://www.w3.org/2002/07/owl#intersectionOf> _:N19e9c2eee0d84aaeb59f97749bcd3d66 .
+_:Nbf606f6078d94991a35ac7f3720f9829 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#reproductionOf> .
+_:N2f4a98f904e24f36993d4acffd45966c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#creatorOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N08a46e0197d94f85b750e2660a0b22e3 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N6bd81fe35a6648f09350ff36015865b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N5258b34d1fd34baab87443b6a94761de <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N8490b5ed21304070a50cadbe19050221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Ne27a56cf93924d81a41705c4627c721f <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#arrangementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the original expression of an arranged one."@en .
+_:N04c33def66e34dbab86af7a6ddb59ad2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N3559f21d694946deb35765f3e916b612 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:Nfd648c9c3da44e89b3afcbc143b1fdd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/2000/01/rdf-schema#range> _:N30e5ba54a21a4584aca32976c7055bf0 .
+_:N8d51930dd4434ef5a8296178e29e4e99 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+<http://purl.org/spar/frbr> <http://www.w3.org/2002/07/owl#priorVersion> <https://svn.code.sf.net/p/sempublishing/code/FRBR-DL/2010-10-20-frbr.owl> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#range> _:N8738a4e95c664f0c995a4d41275c6e79 .
+_:N2f665e5c8bc5462a94414a817f845af6 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual. The entity defined as person encompasses individuals that are deceased as well as those that are living."@en .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical embodiment of an expression of a work.\n\nThe entity defined as manifestation encompasses a wide range of materials and formats. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. "@en .
+_:N9135d57d502740879288950601c23f7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nb585685040a340b0afad5bff025b7e13 .
+_:Nc7f66155d8b144f88be5ed284f1b768e <http://www.w3.org/2002/07/owl#unionOf> _:Ndb30090fea7c4d9a92c82ab088d1dc24 .
+_:N789741b0ec4f49329f2e843e2bd17747 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N3559f21d694946deb35765f3e916b612 .
+_:N6c72989fdfb044e189b1ba0c107cbeb9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#subjectOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://purl.org/vocab/frbr/core#producerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nba75e9f054cb4f648ca6c73bb43a750a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/frbr/core#adaptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the work/expression of an adapted one."@en .
+_:N02b68942bddc4ad785066dbfaa72736c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N070b7e1924a842d1a7184a7fcf5ea600 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#complement> .
+<http://purl.org/vocab/frbr/core#relatedEndeavour> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N34a6f55bc3e140bbbaccdfa3f609c3f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Object> .
+_:N070b7e1924a842d1a7184a7fcf5ea600 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:N2aec3474373046d5a83daffb0ec6642c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N2aec3474373046d5a83daffb0ec6642c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N3559f21d694946deb35765f3e916b612 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N20fb789e3c7f42018d1884bde2b83538 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4c3a1365d7394d0e955cdf144acf6f48 .
+_:N80e030a4415244c498759ab1fa8e53bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N843d26a21de843749053711bbff67a50 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+_:N0442503af75e4e86882486635a1a08a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfb92a0764d074666ac9eb80bee868dc8 .
+<http://purl.org/vocab/frbr/core#subjectOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#subject> .
+_:Nd1003d768659453798c254935254839f <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#translation> .
+_:N3bfab55f013640aba8f1f95cf1ab0e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N743619fd5fdd4fb6a3e70b8387f5ce45 .
+<http://purl.org/vocab/frbr/core#creator> <http://www.w3.org/2000/01/rdf-schema#label> "has creator"@en .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N9182ff12b9194071a92769a202c97186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd1003d768659453798c254935254839f <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N9315977770124a06b57770cdca5ab4cc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:Nd63e817ea9094182865edd8d90cc3999 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N690fcf6fd57846878343ce35599bc98e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N09b71e0125fd4301a63b678ad3aed1e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Na2c93d258ffe4cbc8d36d55fa2c958fc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Nbf0cdef3c4cb4ac3b85761f8a17f42c7 <http://www.w3.org/2003/11/swrl#body> _:N8a55ebc9c04b4bb5bcebf4a1f623d3a5 .
+_:N3f2c7e9fe349420e99683d1966003f2e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/frbr> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/frbr/core#arrangementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is arrangement of"@en .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#label> "has alternate"@en .
+<http://purl.org/vocab/frbr/core#creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntity> .
+_:Nba75e9f054cb4f648ca6c73bb43a750a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N3603a0c1072a46b5a319eaf020a45466 .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "manifestation"@en .
+_:N07e46fdd6dd84b4aad2584000b9794ac <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#realizer> <http://www.w3.org/2000/01/rdf-schema#label> "has realizer"@en .
+_:N07e46fdd6dd84b4aad2584000b9794ac <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nfcdf81d6d47e4b57bb7031ac177191a0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+_:N47e72ee6fc2a43b1949de7795e81cea9 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N2207725167ec47398771400a57e990a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2645abafa3134db99b9b569d9521139d .
+_:N47be5ff2ab0243e4903f603f8c82fc53 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodiment> .
+_:N66e0ec759ec64df4bb0c19c2bf25620c <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N2789d4c39d1e40508ef21790e67d3d3f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:N919e5499167245258455f7e13bcc7a8b <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#successor> .
+_:Naecf2b78295045a785bb2dd81f4c0ecd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N11a3ae973c164771a4f1b2449ab12c90 .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N421af10d3c844a4f9d8b2f2e7d07a492 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N495e807ec52f42af8383bcb1d0ef0a5f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N03a11124a44c4869879dd8663032931e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N56b3b9c2e18a430fa1baa5e45a1cab57 .
+<http://purl.org/vocab/frbr/core#alternateOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the manifestation of an alternative one."@en .
+_:N8ab92f6143284529a8e0436c4f4cac07 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+_:Nc1418316c2af4554a577b6ea6a19e17c <http://www.w3.org/2002/07/owl#members> _:N96d486836c354d1680995c95db84f3df .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+_:N43b239784f1149e7ae9ab23eda8fb3fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N2fd249d8794a425e9f96557f9d313e6a .
+_:Nb585685040a340b0afad5bff025b7e13 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N5fd3f994125c458492376e2c51aa788c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N66e0ec759ec64df4bb0c19c2bf25620c <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+_:N8a55ebc9c04b4bb5bcebf4a1f623d3a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Naded9431264a47b5b563a8850bd55f4b .
+<http://purl.org/spar/frbr> <http://purl.org/dc/elements/1.1/description> "This vocabulary is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary (http://vocab.org/frbr/core)."@en .
+<http://purl.org/vocab/frbr/core#creatorOf> <http://www.w3.org/2000/01/rdf-schema#label> "is creator of"@en .
+_:N30b73900a7c5433db0797bc51d33cc79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Ne27a56cf93924d81a41705c4627c721f .
+<http://purl.org/vocab/frbr/core#translationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the original expression of a translated one."@en .
+_:N5d5e6672de634a04beb952f3f49d9052 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#relatedEndeavour> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N6e8391cb35e4450b89ec0ee2173ce53b <http://www.w3.org/2002/07/owl#intersectionOf> _:N67ec5152859a4af9abaad646c87dd63f .
+_:N3ff90dd84bd54b50b8484619388d4d03 <http://www.w3.org/2003/11/swrl#head> _:N41552608ec8142f0a1c4b50d87c827a8 .
+<http://purl.org/spar/frbr> <http://purl.org/dc/elements/1.1/date> "2011-06-29" .
+_:Nf5daadbdd30a4c3584b97db0f5859bd0 <http://www.w3.org/2002/07/owl#unionOf> _:Nb66773aa865a4fb2adc6110539199203 .
+<http://purl.org/vocab/frbr/core#producerOf> <http://www.w3.org/2000/01/rdf-schema#label> "is producer of"@en .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#label> "has responsible entity"@en .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:Nd7250b80215c456ebce93896b3ce5d5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N4b7d65465ea74f73b626050304ad01ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2008/05/skos#note> "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .
+_:N3559f21d694946deb35765f3e916b612 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/2000/01/rdf-schema#label> "has exemplar"@en .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#reconfigurationOf> .
+_:N743619fd5fdd4fb6a3e70b8387f5ce45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:N85b24d8629c94455a3763579e83b0fc9 <http://www.w3.org/2002/07/owl#unionOf> _:Nd7250b80215c456ebce93896b3ce5d5a .
+_:Nfb92a0764d074666ac9eb80bee868dc8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N1b31a779228840fd9b53ac86afceeeb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd7250b80215c456ebce93896b3ce5d5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2789d4c39d1e40508ef21790e67d3d3f .
+_:N84dbc98c361e4672b4a624c1eb697358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb3edf26d58944af897b3b909c6747c77 .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/2000/01/rdf-schema#comment> "A part of an endeavour."@en .
+_:Naf904cf5796c440a9e6a5e249be6266f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N1bdf9cf3fdbc4396b6cf9c667339b1f2 .
+_:N26e82af8a87840279eb03fbd54a5319d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N3603a0c1072a46b5a319eaf020a45466 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:Need80f3189d64f1fada9982d859606f0 <http://www.w3.org/2003/11/swrl#head> _:N1413c9f2798b4b728a09413dd46ad9d6 .
+<http://purl.org/vocab/frbr/core#reproductionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> .
+_:N258e2f20a6ba46f9906a97c168ba060b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#SameIndividualAtom> .
+_:N3d3d5df2aa4c49728d90ed8072dab430 <http://www.w3.org/2003/11/swrl#head> _:N1c1d0e6d28974b88b69f70d8a469fc1f .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#abridgementOf> .
+_:N1bdf9cf3fdbc4396b6cf9c667339b1f2 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+<http://purl.org/vocab/frbr/core#arrangementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N2f665e5c8bc5462a94414a817f845af6 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+_:Na068cf0753ed4a0fb26ae37ee8ec9921 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:Nb3edf26d58944af897b3b909c6747c77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N68b83597b2744379afcd22a875071a45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne328e39e2a82418698a7655822d44e3b .
+<http://purl.org/vocab/frbr/core#subjectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A subject a work talks abbout."@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A location.\n\nThe entity defined as place encompasses a comprehensive range of locations: terrestrial and extra-terrestrial; historical and contemporary; geographic features and geo-political jurisdictions. "@en .
+_:N37084f960d374bfe9540a881dceac140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#adaptionOf> .
+_:N2207725167ec47398771400a57e990a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:Naa8c422ed4aa4060939a1c8fbd164df4 <http://www.w3.org/2003/11/swrl#body> _:N64c2a89a5f95432c8e64269b21d0daeb .
+_:N80f30c6fdae1476395ee6d5526267480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Na2c93d258ffe4cbc8d36d55fa2c958fc <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:N743619fd5fdd4fb6a3e70b8387f5ce45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+_:N92fe636d5289400a9885119084459781 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#producerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The producer of a particular manifestation."@en .
+_:Nd0c9344312264c6e894707c83b840464 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#owner> <http://www.w3.org/2000/01/rdf-schema#comment> "An item linked to its owner."@en .
+_:N258e2f20a6ba46f9906a97c168ba060b <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2002/07/owl#equivalentClass> _:Na459ed977de44ce7be8ae129d1e947ca .
+_:N16e7d4ed65aa40878a73deb2cc15ac3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#label> "is embodiment of"@en .
+_:Naded9431264a47b5b563a8850bd55f4b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N08a46e0197d94f85b750e2660a0b22e3 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#revision> .
+_:N16b5f7b0452d4ad886663345d85b3f0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N7a841ce1271c4ec4a0cf5dc3a92e6325 .
+_:Nc1921379a68e4164b8c761d4e51d22d9 <http://www.w3.org/2003/11/swrl#body> _:N65ee1b1a42bf4b72883d0faa1ddb09af .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2002/07/owl#equivalentClass> _:Nc999f753bd3e4a0da9049abf97340dd3 .
+_:N690fcf6fd57846878343ce35599bc98e <http://www.w3.org/2002/07/owl#unionOf> _:N119abe9038554a7c85ca3ee2f797df76 .
+_:N2aec3474373046d5a83daffb0ec6642c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nd1003d768659453798c254935254839f .
+_:N54560fb81e474b17bd060312cbeb8017 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nd05929a12f404f19a361e36cd0c3e493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N1fdc248d430a404ca9d1aa9a775c53da <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Subject> .
+_:N9315977770124a06b57770cdca5ab4cc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#reconfigurationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "A single exemplar of a manifestation.\n\nThe entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.). "@en .
+_:N62f8210b8c01421aaef26b8e3ca270f6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#embodimentOf> .
+_:Ne9f3cb51c59641258cdbaf378a496234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#realizerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The realizer of a particular expression."@en .
+<http://purl.org/vocab/frbr/core#ownerOf> <http://www.w3.org/2000/01/rdf-schema#label> "is owner of"@en .
+_:N4833b4741ba44f5391cb8193a5061af2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N8490b5ed21304070a50cadbe19050221 .
+<http://purl.org/vocab/frbr/core#ResponsibleEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N41552608ec8142f0a1c4b50d87c827a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#transformationOf> .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the original work/expression of a summarized one."@en .
+_:N43b239784f1149e7ae9ab23eda8fb3fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N16e7d4ed65aa40878a73deb2cc15ac3c .
+<http://purl.org/vocab/frbr/core#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization or group of individuals and/or organizations acting as a unit.\n\nThe entity defined as corporate body encompasses organizations and groups of individuals and/or organizations that are identified by a particular name, including occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc."@en .
+_:N4c3a1365d7394d0e955cdf144acf6f48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#translationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression embodied in a manifestation."@en .
+<http://purl.org/vocab/frbr/core#abridgementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N0c50d01b23a148da911daed57f25a0d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9950b45a20734cf6835b9f4bdd6bd512 .
+_:Nb5f9e0a50f174d95ae890953910026db <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+_:N3ff90dd84bd54b50b8484619388d4d03 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:N07e46fdd6dd84b4aad2584000b9794ac <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N47e72ee6fc2a43b1949de7795e81cea9 .
+_:N80f30c6fdae1476395ee6d5526267480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N2f665e5c8bc5462a94414a817f845af6 .
+_:N3603a0c1072a46b5a319eaf020a45466 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N4d34bf54fabb43cba7d30c1c5a5c454f <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N4c3a1365d7394d0e955cdf144acf6f48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N44d6b379e04e4c41b3b2b4d94101db50 .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#label> "place"@en .
+_:Nd1003d768659453798c254935254839f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N2645abafa3134db99b9b569d9521139d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nfef948c7a34943e281744f243c71e68a .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#equivalentClass> _:N7ac1b7a9d180425e9a75a27e3e6053c0 .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#comment> "A work realized through an expression."@en .
+_:N83d3d72544cf46769b804319541656c6 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N11a3ae973c164771a4f1b2449ab12c90 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N3d0e8011016045adb3857d20683e96a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/frbr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:N65ee1b1a42bf4b72883d0faa1ddb09af <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N247d4de63c244ef1989cd87102cac135 .
+<http://purl.org/vocab/frbr/core#supplementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the work/expression of a particular supplement of it."@en .
+_:Nfd648c9c3da44e89b3afcbc143b1fdd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb266395894d74ff8ab0b47b99cd26221 .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Item> .
+_:N7a841ce1271c4ec4a0cf5dc3a92e6325 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:Naded9431264a47b5b563a8850bd55f4b <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#reproductionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the manifestation/item of a reproduced one."@en .
+_:Nd2a53edf602f45bca4f78972d6ef4bf1 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:N843d26a21de843749053711bbff67a50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nb66773aa865a4fb2adc6110539199203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N9bd4c6f7dee94fdd939bb24ceae3a603 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc3a1b4254dc84389b8be048ac70735df <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N5a5c1c96f4e54e22b27d9edb5c367d88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/2000/01/rdf-schema#label> "has complement"@en .
+_:N598036bb03fe4870aa5eeb2e89b6a2b5 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N47be5ff2ab0243e4903f603f8c82fc53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#revisionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N813582aba2ee43c5a7ef26b69db76115 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#label> "has reproduction"@en .
+_:N8a0d3ebcb4094c92a6b655cc1f532127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nf450e5f596de4c129348535dc6d8e03e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:Nd0b42aab0edb4ff18c83a4e2e67589d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N34a6f55bc3e140bbbaccdfa3f609c3f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne3ada2bb6e2441d4958c7c4a489ceb39 .
+<http://purl.org/vocab/frbr/core#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#ResponsibleEntity> .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#label> "has abridgement"@en .
+_:N19e9c2eee0d84aaeb59f97749bcd3d66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N30b73900a7c5433db0797bc51d33cc79 .
+_:N8f53784cbea3433dae5a76fef31efd3e <http://www.w3.org/2002/07/owl#unionOf> _:N847ce29d25a145a9af9cbc06bee02c9f .
+_:N743619fd5fdd4fb6a3e70b8387f5ce45 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N1b31a779228840fd9b53ac86afceeeb1 <http://www.w3.org/2002/07/owl#unionOf> _:Na33485925091447a9dfe947906a2875f .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+_:Nfef948c7a34943e281744f243c71e68a <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#creator> <http://www.w3.org/2000/01/rdf-schema#comment> "A work linked to its creator."@en .
+_:N1413c9f2798b4b728a09413dd46ad9d6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N7c98064c3cae4c9a91aa3c30979ed086 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N7a841ce1271c4ec4a0cf5dc3a92e6325 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:Nfc7d4cca8bff41fd88a6554dab861c77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N43b239784f1149e7ae9ab23eda8fb3fe .
+_:N640f907f2b8146a087da01ddcfd05310 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N56b3b9c2e18a430fa1baa5e45a1cab57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#creatorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2002/07/owl#equivalentClass> _:N9182ff12b9194071a92769a202c97186 .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#embodimentOf> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "A material thing.\n\nThe entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist. "@en .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:Nded330ee21554facb7411066f54aab40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+_:N93c81d6c4ae84cd388baf6c3edcc2687 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#SameIndividualAtom> .
+<http://purl.org/vocab/frbr/core#reconfigurationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Na068cf0753ed4a0fb26ae37ee8ec9921 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Nfc7d4cca8bff41fd88a6554dab861c77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Na068cf0753ed4a0fb26ae37ee8ec9921 .
+_:N30e5ba54a21a4584aca32976c7055bf0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<urn:swrl#e1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nd390f634b4b9483b8c250940fad37bbc .
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2000/01/rdf-schema#label> "event"@en .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/2000/01/rdf-schema#label> "has embodiment"@en .
+_:N25061f5058194d4ab2f37a11afc18154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#CorporateBody> .
+_:Ndecdf57ab01a4c77a349e82531e7bb16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N421af10d3c844a4f9d8b2f2e7d07a492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N16b5f7b0452d4ad886663345d85b3f0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd973183aa248443f9254c1c6b099893d .
+_:N54560fb81e474b17bd060312cbeb8017 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N80f30c6fdae1476395ee6d5526267480 .
+_:N61068f4590d74831a4c86ee0c902431f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N61068f4590d74831a4c86ee0c902431f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#label> "is exemplar of"@en .
+_:N919e5499167245258455f7e13bcc7a8b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N2e7f447e7d0c4d01bf58303b710afadb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Na068cf0753ed4a0fb26ae37ee8ec9921 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N61068f4590d74831a4c86ee0c902431f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nb5f9e0a50f174d95ae890953910026db .
+_:N83d3d72544cf46769b804319541656c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Naa8c422ed4aa4060939a1c8fbd164df4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:N73113f4379bb4de3820cf01880c6132f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc86d028890be4a50897e0f03ce43e7b1 .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#imitationOf> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#label> "object"@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N9901197dfe6945ae97ffdec8b36371f3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/vocab/frbr/core#producerOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf> .
+_:Naf904cf5796c440a9e6a5e249be6266f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression translated in another one.\n\nIt allows to refer to a literal translation, in which the intent is to render the intellectual content of the previous expression as accurately as possible."@en .
+<http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2002/07/owl#equivalentClass> _:N8b155e14fce84e9d9b797d6a3b8ccf91 .
+_:N3603a0c1072a46b5a319eaf020a45466 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Na2d7cb641768464ba0cf85f3c599adee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:Nbab6125388254f918b00d92b8b4da708 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#label> "has imitation"@en .
+<http://purl.org/vocab/frbr/core#creatorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The creator of a particular work."@en .
+_:N64c2a89a5f95432c8e64269b21d0daeb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nb585685040a340b0afad5bff025b7e13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/vocab/frbr/core#realizerOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#realizer> .
+_:N0d817b715e1a41d9a92cc0eba989c77f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndecdf57ab01a4c77a349e82531e7bb16 .
+_:Nb5f9e0a50f174d95ae890953910026db <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+_:Nd2a53edf602f45bca4f78972d6ef4bf1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N6bd81fe35a6648f09350ff36015865b7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:Na33485925091447a9dfe947906a2875f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#label> "has transformation"@en .
+_:Nd0c9344312264c6e894707c83b840464 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N4dcf3a9247884dca82e85d330b21f133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2002/07/owl#equivalentClass> _:Nbf606f6078d94991a35ac7f3720f9829 .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#transformationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the original work/expression of a trasformed one."@en .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntity> .
+_:Nedc0d75cdadb400ea11afc1f31b5edd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0ab0d3de08f6467facff0e8024cc973e .
+_:N247d4de63c244ef1989cd87102cac135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N02b68942bddc4ad785066dbfaa72736c .
+_:N864e0690e7544704b218b716bf12a93c <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#domain> _:N041a44ca8b1a4cdb94f60924a6ae3278 .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression work/expression having another one as complement.\n\nThis property describes works that are intended to be combined with or inserted into the related work. In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en .
+<http://purl.org/vocab/frbr/core#supplementOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation exemplified in an item."@en .
+_:Naf23b7335afc4595a6602c4e30325459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:Nc86d028890be4a50897e0f03ce43e7b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N08a46e0197d94f85b750e2660a0b22e3 .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N640f907f2b8146a087da01ddcfd05310 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+_:N856d63a356e5452693ddd6d198446d15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression work/expression having another one as supplement.\n\nThe supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. Some of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression."@en .
+<http://purl.org/vocab/frbr/core#ownerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#adaptionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#ownerOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf> .
+_:N6c72989fdfb044e189b1ba0c107cbeb9 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N3bfab55f013640aba8f1f95cf1ab0e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N1526034e62b0458c9832dbd0b7135f7f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N3559f21d694946deb35765f3e916b612 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N3c2a73794940446f9ee4f905bd0ffeb1 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N0c50d01b23a148da911daed57f25a0d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N62f8210b8c01421aaef26b8e3ca270f6 .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+_:N1651b8d2ec144bdc9177605205cf34bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N63fe08bbd90a42f398081992849de8bb .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#ResponsibleEntity> .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> .
+_:N1db1c135b6b44f25aa80fe0c8895655e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:N08a46e0197d94f85b750e2660a0b22e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N122cfcdfaf7640b9984b8aa646d89c29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N02965d895ed442dd91777fe917fcf27d <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:Nfcdf81d6d47e4b57bb7031ac177191a0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2002/07/owl#equivalentClass> _:N6e8391cb35e4450b89ec0ee2173ce53b .
+_:Nd1b24cab199d4a0e8bdd4adf95945524 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:N03a11124a44c4869879dd8663032931e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nb3ea680b7c104abbbff678994cf2cb3e .
+_:N2645abafa3134db99b9b569d9521139d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nc3a1b4254dc84389b8be048ac70735df <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N813582aba2ee43c5a7ef26b69db76115 .
+_:N1fdc248d430a404ca9d1aa9a775c53da <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#exemplarOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An item that exemplifies a manifestation."@en .
+_:N00656543459c4cce820af418a46aba8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nd0b42aab0edb4ff18c83a4e2e67589d0 .
+_:Ne3ada2bb6e2441d4958c7c4a489ceb39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Place> .
+_:N02b68942bddc4ad785066dbfaa72736c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N813582aba2ee43c5a7ef26b69db76115 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+_:Naded9431264a47b5b563a8850bd55f4b <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N8a0d3ebcb4094c92a6b655cc1f532127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N843d26a21de843749053711bbff67a50 .
+_:N1f48aa2fb4fd472ca1ae0237f6b4b338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N2207725167ec47398771400a57e990a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Ne9bdb17f1ee04ef6a3c11a0bf8cf9699 .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#range> _:N85b24d8629c94455a3763579e83b0fc9 .
+_:N590c82dcfcc14761bd65f62f758169e5 <http://www.w3.org/2003/11/swrl#body> _:N16b5f7b0452d4ad886663345d85b3f0a .
+<http://purl.org/vocab/frbr/core#successorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the previous work/expression of a succeeded one."@en .
+_:N119abe9038554a7c85ca3ee2f797df76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb2b450a135ce46b8ae32c398172361cd .
+_:N4892007db08640beb951c68f2ddb479e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nb0471fb48ba54307a07278c2b378ed84 .
+_:N4833b4741ba44f5391cb8193a5061af2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N789741b0ec4f49329f2e843e2bd17747 .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "concept"@en .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#range> _:N2f4a98f904e24f36993d4acffd45966c .
+_:Nd89e6e3b130e493896f6dbab4bec34a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Naa8c422ed4aa4060939a1c8fbd164df4 <http://www.w3.org/2003/11/swrl#head> _:Nd89e6e3b130e493896f6dbab4bec34a6 .
+_:Nbf0cdef3c4cb4ac3b85761f8a17f42c7 <http://www.w3.org/2003/11/swrl#head> _:Nc3a1b4254dc84389b8be048ac70735df .
+_:Naff63c33e40140cb99b381c2a142264a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:Nfef948c7a34943e281744f243c71e68a <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+_:N308d6788bc194beb9cae3192f5a430be <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#domain> _:N495e807ec52f42af8383bcb1d0ef0a5f .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is summarization of"@en .
+<http://purl.org/vocab/frbr/core#imitationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is imitation of"@en .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#domain> _:Nf5daadbdd30a4c3584b97db0f5859bd0 .
+_:Naff63c33e40140cb99b381c2a142264a <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N247d4de63c244ef1989cd87102cac135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N3c2a73794940446f9ee4f905bd0ffeb1 .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+_:N4dcf3a9247884dca82e85d330b21f133 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#realizerOf> <http://www.w3.org/2000/01/rdf-schema#label> "is realizer of"@en .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Na2d7cb641768464ba0cf85f3c599adee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N01def3e125944b8e9cc46424d830f2d8 .
+_:N16e7d4ed65aa40878a73deb2cc15ac3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nba9571b7e38444ce9602420a5b987e17 .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#arrangementOf> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/2000/01/rdf-schema#label> "has summarization"@en .
+_:Ne0b3e153efbb46828b7dee6d45082318 <http://www.w3.org/2003/11/swrl#body> _:N2207725167ec47398771400a57e990a4 .
+_:N8b155e14fce84e9d9b797d6a3b8ccf91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ndecdf57ab01a4c77a349e82531e7bb16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N84dbc98c361e4672b4a624c1eb697358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#CorporateBody> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Person> .
+_:Nb585685040a340b0afad5bff025b7e13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "has reconfiguration"@en .
+_:N8ab92f6143284529a8e0436c4f4cac07 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N4833b4741ba44f5391cb8193a5061af2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N66e0ec759ec64df4bb0c19c2bf25620c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#SameIndividualAtom> .
+_:Naecf2b78295045a785bb2dd81f4c0ecd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4833b4741ba44f5391cb8193a5061af2 .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n\nAn expression is the specific intellectual or artistic form that a work takes each time it is \"realized.\" Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work."@en .
+<http://purl.org/vocab/frbr/core#complementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N11a3ae973c164771a4f1b2449ab12c90 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#adaption> .
+<http://purl.org/spar/frbr> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/frbr/2011-06-29> .
+_:N8490b5ed21304070a50cadbe19050221 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N8d51930dd4434ef5a8296178e29e4e99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:N11a3ae973c164771a4f1b2449ab12c90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Nf450e5f596de4c129348535dc6d8e03e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N00656543459c4cce820af418a46aba8c .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
+_:N070b7e1924a842d1a7184a7fcf5ea600 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N44d6b379e04e4c41b3b2b4d94101db50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N3bfab55f013640aba8f1f95cf1ab0e63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nd2eacf0b3c084e8b8955a657325ed576 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N5d5e6672de634a04beb952f3f49d9052 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:Nfef948c7a34943e281744f243c71e68a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Naded9431264a47b5b563a8850bd55f4b <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#abridgement> .
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An action or occurrence.\n\nThe entity defined as event encompasses a comprehensive range of actions and occurrences that may be the subject of a work: historical events, epochs, periods of time, etc. "@en .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Ndecdf57ab01a4c77a349e82531e7bb16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N919e5499167245258455f7e13bcc7a8b .
+<http://purl.org/vocab/frbr/core#successorOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#abridgementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is abridgement of"@en .
+<http://purl.org/vocab/frbr/core#transformationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is transformation of"@en .
+_:N9aae62629f35476d847f1bd5666a34db <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N65ee1b1a42bf4b72883d0faa1ddb09af <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N47e72ee6fc2a43b1949de7795e81cea9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes different aspects of user interests in the products of intellectual or artistic artifact."@en .
+_:N070b7e1924a842d1a7184a7fcf5ea600 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:N598036bb03fe4870aa5eeb2e89b6a2b5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en .
+<http://purl.org/vocab/frbr/core#translationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is translation of"@en .
+_:Nba75e9f054cb4f648ca6c73bb43a750a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N73113f4379bb4de3820cf01880c6132f .
+_:N308d6788bc194beb9cae3192f5a430be <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N598036bb03fe4870aa5eeb2e89b6a2b5 .
+<http://purl.org/vocab/frbr/core#supplementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is supplement of"@en .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N47be5ff2ab0243e4903f603f8c82fc53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N1651b8d2ec144bdc9177605205cf34bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#exemplar> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Item> .
+_:N6bd81fe35a6648f09350ff36015865b7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+_:Ne9bdb17f1ee04ef6a3c11a0bf8cf9699 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Nba9571b7e38444ce9602420a5b987e17 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#supplement> .
+_:N789741b0ec4f49329f2e843e2bd17747 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N598036bb03fe4870aa5eeb2e89b6a2b5 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N4c3a1365d7394d0e955cdf144acf6f48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N6c72989fdfb044e189b1ba0c107cbeb9 .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#embodimentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2008/05/skos#note> <http://www.w3.org/2000/01/rdf-schema#label> "skos:note"@en .
+_:Na459ed977de44ce7be8ae129d1e947ca <http://www.w3.org/2002/07/owl#intersectionOf> _:Nd2eacf0b3c084e8b8955a657325ed576 .
+_:Nded330ee21554facb7411066f54aab40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N4b7d65465ea74f73b626050304ad01ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N80f30c6fdae1476395ee6d5526267480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N07e46fdd6dd84b4aad2584000b9794ac .
+_:N00656543459c4cce820af418a46aba8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2e7f447e7d0c4d01bf58303b710afadb .
+<http://purl.org/vocab/frbr/core#realizer> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression linked to its realizer."@en .
+<http://purl.org/vocab/frbr/core#CorporateBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N96d486836c354d1680995c95db84f3df <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Concept> .
+<http://purl.org/vocab/frbr/core#arrangement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#alternateOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N5a5c1c96f4e54e22b27d9edb5c367d88 <http://www.w3.org/2003/11/swrl#head> _:N37084f960d374bfe9540a881dceac140 .
+_:Nedc0d75cdadb400ea11afc1f31b5edd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N5fd3f994125c458492376e2c51aa788c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N258e2f20a6ba46f9906a97c168ba060b .
+_:N4d34bf54fabb43cba7d30c1c5a5c454f <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#transformation> .
+_:Na4d20fcfcf3a45fc9a26451f2db13332 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nfcdf81d6d47e4b57bb7031ac177191a0 .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "subject"@en .
+<http://purl.org/vocab/frbr/core#relatedEndeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#complementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the work/expression of that is a complement of another one."@en .
+<http://purl.org/vocab/frbr/core#owner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
+_:N11a3ae973c164771a4f1b2449ab12c90 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:Naecf2b78295045a785bb2dd81f4c0ecd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N5fd3f994125c458492376e2c51aa788c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract notion or idea.\n\nThe entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc.  A concept may be broad in nature or narrowly defined and precise. "@en .
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+_:Nc999f753bd3e4a0da9049abf97340dd3 <http://www.w3.org/2002/07/owl#intersectionOf> _:N7cf0f5978e1e4b4ea0726a234abdca15 .
+_:Nb66773aa865a4fb2adc6110539199203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1db1c135b6b44f25aa80fe0c8895655e .
+_:N47e72ee6fc2a43b1949de7795e81cea9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#range> _:N690fcf6fd57846878343ce35599bc98e .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#alternateOf> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:N73113f4379bb4de3820cf01880c6132f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N9901197dfe6945ae97ffdec8b36371f3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+_:Nb3ea680b7c104abbbff678994cf2cb3e <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:N919e5499167245258455f7e13bcc7a8b <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd0c9344312264c6e894707c83b840464 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#arrangement> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N8738a4e95c664f0c995a4d41275c6e79 <http://www.w3.org/2002/07/owl#unionOf> _:Nd05929a12f404f19a361e36cd0c3e493 .
+_:Nb3ea680b7c104abbbff678994cf2cb3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N3c2a73794940446f9ee4f905bd0ffeb1 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+_:N20425a1b96fc4929a974ba172597207d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nc1418316c2af4554a577b6ea6a19e17c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:Nb7cb39b48b884b5abdf6cec8f363d3f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Event> .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8a55ebc9c04b4bb5bcebf4a1f623d3a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N6c72989fdfb044e189b1ba0c107cbeb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N2f4a98f904e24f36993d4acffd45966c <http://www.w3.org/2002/07/owl#unionOf> _:N84dbc98c361e4672b4a624c1eb697358 .
+_:Nb2b450a135ce46b8ae32c398172361cd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:Nc7f66155d8b144f88be5ed284f1b768e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#comment> "An work/expression transformed in another one.\n\nThis property describes works that are intended to be a trasformation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en .
+_:N1f48aa2fb4fd472ca1ae0237f6b4b338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N02965d895ed442dd91777fe917fcf27d .
+_:Nba9571b7e38444ce9602420a5b987e17 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#e2> .
+_:N3cfba53e9adf4f59952d5777eb12d40f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N427bf1490f8b4529a97fca1cdda065f2 .
+_:N16b5f7b0452d4ad886663345d85b3f0a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<urn:swrl#w2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:N9901197dfe6945ae97ffdec8b36371f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#transformationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#successorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N6e8391cb35e4450b89ec0ee2173ce53b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne3ada2bb6e2441d4958c7c4a489ceb39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N4d5f936498e04f24943179533607370b <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression that realizes a work."@en .
+_:N1bdf9cf3fdbc4396b6cf9c667339b1f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N83d3d72544cf46769b804319541656c6 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N7a841ce1271c4ec4a0cf5dc3a92e6325 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N4b7d65465ea74f73b626050304ad01ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Na2c93d258ffe4cbc8d36d55fa2c958fc .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#revisionOf> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N02b68942bddc4ad785066dbfaa72736c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N4d34bf54fabb43cba7d30c1c5a5c454f .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N25061f5058194d4ab2f37a11afc18154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7ab5329d539b4e278fe368f8b240a958 .
+_:N2fd249d8794a425e9f96557f9d313e6a <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N01def3e125944b8e9cc46424d830f2d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N01def3e125944b8e9cc46424d830f2d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N19e9c2eee0d84aaeb59f97749bcd3d66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:N9135d57d502740879288950601c23f7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N308d6788bc194beb9cae3192f5a430be .
+<http://purl.org/vocab/frbr/core#complement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#complementOf> .
+_:N3f2c7e9fe349420e99683d1966003f2e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nc3a1b4254dc84389b8be048ac70735df <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/frbr> <http://purl.org/dc/elements/1.1/creator> "Paolo Ciccarese"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/vocab/frbr/core#reconfigurationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the manifestation of a reconfigured one."@en .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Nbf606f6078d94991a35ac7f3720f9829 <http://www.w3.org/2002/07/owl#intersectionOf> _:N1737457ba0fd4ae690cbbdae93184c3e .
+_:N62f8210b8c01421aaef26b8e3ca270f6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:Nc86d028890be4a50897e0f03ce43e7b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N1bdf9cf3fdbc4396b6cf9c667339b1f2 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#w1> .
+_:N8d51930dd4434ef5a8296178e29e4e99 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:Need80f3189d64f1fada9982d859606f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:N2f665e5c8bc5462a94414a817f845af6 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N308d6788bc194beb9cae3192f5a430be <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:Nb5f9e0a50f174d95ae890953910026db <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#alternateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Na459ed977de44ce7be8ae129d1e947ca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> .
+<http://purl.org/vocab/frbr/core#translation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#translationOf> .
+_:N20425a1b96fc4929a974ba172597207d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:Nba9571b7e38444ce9602420a5b987e17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N864e0690e7544704b218b716bf12a93c <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+_:Ne9bdb17f1ee04ef6a3c11a0bf8cf9699 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N83d3d72544cf46769b804319541656c6 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w1> .
+_:N041a44ca8b1a4cdb94f60924a6ae3278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#reconfigurationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is reconfiguration of"@en .
+_:N7cf0f5978e1e4b4ea0726a234abdca15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N0c50d01b23a148da911daed57f25a0d7 .
+_:N1c1d0e6d28974b88b69f70d8a469fc1f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:Nd973183aa248443f9254c1c6b099893d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N122cfcdfaf7640b9984b8aa646d89c29 .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#supplementOf> .
+_:N3ff90dd84bd54b50b8484619388d4d03 <http://www.w3.org/2003/11/swrl#body> _:N04c33def66e34dbab86af7a6ddb59ad2 .
+_:N2789d4c39d1e40508ef21790e67d3d3f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/2000/01/rdf-schema#range> _:N1b31a779228840fd9b53ac86afceeeb1 .
+_:N09b71e0125fd4301a63b678ad3aed1e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N5258b34d1fd34baab87443b6a94761de .
+_:N8738a4e95c664f0c995a4d41275c6e79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nb0471fb48ba54307a07278c2b378ed84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#abridgementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N64c2a89a5f95432c8e64269b21d0daeb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N1f48aa2fb4fd472ca1ae0237f6b4b338 .
+<http://purl.org/vocab/frbr/core#creatorOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#creator> .
+<http://purl.org/vocab/frbr/core#successorOf> <http://www.w3.org/2000/01/rdf-schema#label> "is successor of"@en .
+_:N73113f4379bb4de3820cf01880c6132f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N864e0690e7544704b218b716bf12a93c .
+_:N3d0e8011016045adb3857d20683e96a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N71b6710628464acd86a9efa79658221b .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#domain> _:N7d32a9f6e2ad4c68b5bd5202b333a330 .
+_:N847ce29d25a145a9af9cbc06bee02c9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#imitationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nf5daadbdd30a4c3584b97db0f5859bd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N8f53784cbea3433dae5a76fef31efd3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd2eacf0b3c084e8b8955a657325ed576 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N03a11124a44c4869879dd8663032931e .
+_:N8a55ebc9c04b4bb5bcebf4a1f623d3a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N9135d57d502740879288950601c23f7d .
+_:N640f907f2b8146a087da01ddcfd05310 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:Nd973183aa248443f9254c1c6b099893d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:N3d3d5df2aa4c49728d90ed8072dab430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "A distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. "@en .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression work/expression having another one as successor.\n\nThe successor type of relationship involves a kind of linear progression of content from one work/expression to the other. In some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. In others, such as with loosely connected parts of a trilogy, the successor will be autonomous. Serial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en .
+<http://purl.org/vocab/frbr/core#realizer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#responsibleEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any endeavour having a particular entity that is responsible of it."@en .
+_:N37084f960d374bfe9540a881dceac140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N8ab92f6143284529a8e0436c4f4cac07 .
+_:N4892007db08640beb951c68f2ddb479e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N47be5ff2ab0243e4903f603f8c82fc53 .
+_:N26e82af8a87840279eb03fbd54a5319d <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#imitation> .
+_:Nb7cb39b48b884b5abdf6cec8f363d3f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N34a6f55bc3e140bbbaccdfa3f609c3f4 .
+_:N20fb789e3c7f42018d1884bde2b83538 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#realizer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntity> .
+_:N813582aba2ee43c5a7ef26b69db76115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#SameIndividualAtom> .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N84539f28eb4b49ec8f54e3b72bc744dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N76924668829c49159b6d304e06221bca .
+_:N3299b6b17c8d4c648246570a3af1a517 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:N44d6b379e04e4c41b3b2b4d94101db50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#comment> "A work/expression adapted in another one.\n\nThis property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."@en .
+<http://purl.org/vocab/frbr/core#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation that embodies an expression."@en .
+_:Ne0b3e153efbb46828b7dee6d45082318 <http://www.w3.org/2003/11/swrl#head> _:N3f2c7e9fe349420e99683d1966003f2e .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#successorOf> .
+_:Nb266395894d74ff8ab0b47b99cd26221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#revision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nd0c9344312264c6e894707c83b840464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:Naf904cf5796c440a9e6a5e249be6266f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#label> "has supplement"@en .
+<http://purl.org/vocab/frbr/core#realizerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N3c2a73794940446f9ee4f905bd0ffeb1 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#w2> .
+_:N7a841ce1271c4ec4a0cf5dc3a92e6325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+<http://purl.org/vocab/frbr/core#subjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N0ab0d3de08f6467facff0e8024cc973e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N789741b0ec4f49329f2e843e2bd17747 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nded330ee21554facb7411066f54aab40 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplar> .
+_:N02965d895ed442dd91777fe917fcf27d <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#comment> "A work linked to a particular subject it is talking about."@en .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#realizerOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf> .
+_:Nb266395894d74ff8ab0b47b99cd26221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#translationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N2fd249d8794a425e9f96557f9d313e6a <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e2> .
+<http://purl.org/vocab/frbr/core#revisionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is revision of"@en .
+_:N2645abafa3134db99b9b569d9521139d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2aec3474373046d5a83daffb0ec6642c .
+_:Ne328e39e2a82418698a7655822d44e3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#ResponsibleEntity> <http://www.w3.org/2000/01/rdf-schema#label> "responsible entity"@en .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#summarization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N97565c5305e94d878a5b8e741e6b731a <http://www.w3.org/2003/11/swrl#body> _:Nfc7d4cca8bff41fd88a6554dab861c77 .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N7ac1b7a9d180425e9a75a27e3e6053c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5a5c1c96f4e54e22b27d9edb5c367d88 <http://www.w3.org/2003/11/swrl#body> _:Naecf2b78295045a785bb2dd81f4c0ecd .
+_:N864e0690e7544704b218b716bf12a93c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:N0ab0d3de08f6467facff0e8024cc973e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/spar/frbr> <http://purl.org/dc/elements/1.1/title> "Essential FRBR in OWL2 DL"@en .
+_:Nd2a53edf602f45bca4f78972d6ef4bf1 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+<http://purl.org/vocab/frbr/core#complementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is complement of"@en .
+_:N16e7d4ed65aa40878a73deb2cc15ac3c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:N30b73900a7c5433db0797bc51d33cc79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N3d0e8011016045adb3857d20683e96a8 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2002/07/owl#equivalentClass> _:N8f53784cbea3433dae5a76fef31efd3e .
+_:N590c82dcfcc14761bd65f62f758169e5 <http://www.w3.org/2003/11/swrl#head> _:Naf904cf5796c440a9e6a5e249be6266f .
+_:N2256528ef7924b2a8c65ae99e395affc <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne0b3e153efbb46828b7dee6d45082318 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:N3cfba53e9adf4f59952d5777eb12d40f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation linked to its prodecer."@en .
+_:Ne9bdb17f1ee04ef6a3c11a0bf8cf9699 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#e1> .
+_:N590c82dcfcc14761bd65f62f758169e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:N64c2a89a5f95432c8e64269b21d0daeb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N26e82af8a87840279eb03fbd54a5319d .
+_:N71b6710628464acd86a9efa79658221b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N5d5e6672de634a04beb952f3f49d9052 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:N3299b6b17c8d4c648246570a3af1a517 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nd1b24cab199d4a0e8bdd4adf95945524 .
+<http://purl.org/vocab/frbr/core#revisionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It identifies the previous expression of a revised one."@en .
+_:N2e7f447e7d0c4d01bf58303b710afadb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nbab6125388254f918b00d92b8b4da708 .
+_:N3d3d5df2aa4c49728d90ed8072dab430 <http://www.w3.org/2003/11/swrl#body> _:N54560fb81e474b17bd060312cbeb8017 .
+_:N923eac267cd1465f98d6c57cef6f4604 <http://www.w3.org/2003/11/swrl#body> _:Nba75e9f054cb4f648ca6c73bb43a750a .
+_:Nd89e6e3b130e493896f6dbab4bec34a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+
