@@ -1,0 +1,97 @@
+[
+  {
+    "@id": "http://purl.org/vocab/frbr/core#transformation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-expression a frbr:Expression ;\n        frbr:transformation :my-other-expression .\n\n    :my-other-expression a frbr:Expression . \n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A relation in which a work or expression is transformed in another one.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b47"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has transformation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b50"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#transformationOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2008/05/skos#note": [
+      {
+        "@language": "en",
+        "@value": "\nThis property describes the transformation of an original work or expression into another work or expression that is sufficiently different in degree to warrant the product of the transformation being considered as a new work or expression, rather than simply a different expression of the original work. \nIf there exists a frbr:transformation relation between two different expressions, then they always relate to different works.\n    "
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b50",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Work"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b47",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Work"
+          }
+        ]
+      }
+    ]
+  }
+]

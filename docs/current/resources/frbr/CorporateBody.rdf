@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos1="http://www.w3.org/2008/05/skos#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#CorporateBody">
+    <rdfs:comment xml:lang="en">An organization or group of individuals and/or organizations acting as a unit.
+</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Person"/>
+    <vann:example>
+    :my-manifestation a frbr:Manifestation ;
+        frbr:producer :my-corporate-body .
+
+    :my-corporate-body a frbr:CorporateBody .
+    </vann:example>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
+    <skos1:note xml:lang="en">
+The entity defined as corporate body encompasses organizations and groups of individuals and/or organizations that are identified by a particular name, including occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc.
+    </skos1:note>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">corporate body</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos1="http://www.w3.org/2008/05/skos#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b95">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b92"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
+    <rdfs:comment xml:lang="en">The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:equivalentClass rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b96"/>
+    <owl:equivalentClass rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b90"/>
+    <skos1:note xml:lang="en">
+An expression is the specific intellectual or artistic form that a work takes each time it is "realized." 
+Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
+    </skos1:note>
+    <rdfs:label xml:lang="en">expression</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <vann:example>
+    :my-expression a frbr:Expression ;
+        frbr:realizationOf :my-work ;
+        frbr:embodiment :my-manifestation ;
+        frbr:part :my-other-expression .
+    
+    :my-work a frbr:Work .
+
+    :my-manifestation a frbr:Manifestation .
+
+    :my-other-expression a frbr:Expression .
+    </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b96">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b99"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b101">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b98"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b93">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b94"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b92">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b99">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b100"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b94">
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b91"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b95"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b90">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b93"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b91">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b97">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b98">
+    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b100">
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b97"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b101"/>
+  </rdf:Description>
+</rdf:RDF>

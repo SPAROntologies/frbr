@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realizer">
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#realizerOf"/>
+    <rdfs:label xml:lang="en">has realizer</rdfs:label>
+    <rdfs:comment xml:lang="en">The relation between an expression and its realizer.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <vann:example>
+    :my-expression a frbr:Expression ;
+        frbr:realizer :my-person .
+    </vann:example>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#reconfigurationOf> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which an item is reconfigured in another one.\n"@en .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "has reconfiguration"@en .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://purl.org/vocab/vann/example> "\n    :my-item a frbr:Item ;\n        frbr:reconfiguration :my-other-item .\n\n    :my-other-item a frbr:Item .\n    " .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2008/05/skos#note> "\nThe reconfiguration relationship is one in which one or more items are changed in such a way that a new item or items result. \nMost commonly, an item of one manifestation is bound with an item of a different manifestation to make a new item.\n    "@en .
+<http://purl.org/vocab/frbr/core#reconfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Item> .

@@ -1,0 +1,25 @@
+[
+  {
+    "@id": "https://ns.dublincore.org/openwemi/Endeavor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://ns.dublincore.org/openwemi/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "endeavor"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://purl.org/vocab/vann/example> "\n    :my-responsible-entity a frbr:ResponsibleEntity ;\n        frbr:responsibleEntityOf :my-work .\n\n    :my-work a frbr:Work .\n    " .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2000/01/rdf-schema#label> "is responsible entity of"@en .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation that identifies an entity that is resposible for a particular endeavour."@en .
+<http://purl.org/vocab/frbr/core#responsibleEntityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

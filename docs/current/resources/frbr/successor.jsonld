@@ -1,0 +1,97 @@
+[
+  {
+    "@id": "http://purl.org/vocab/frbr/core#successor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-expression a frbr:Expression ;\n        frbr:successor :my-other-expression .\n\n    :my-other-expression a frbr:Expression . \n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A relation in which a work or expression has another one as successor.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b29"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has successor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b32"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#successorOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2008/05/skos#note": [
+      {
+        "@language": "en",
+        "@value": "\nThe successor type of relationship involves a kind of linear progression of content from one work/expression to the other. \nIn some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. \nIn others, such as with loosely connected parts of a trilogy, the successor will be autonomous. \nSerial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. \nIf there exists a relation of this kind among two different expressions, then they always refer to different works.\n    "
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b29",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Work"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b32",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Work"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+_:n4a594ec2b6714efca9755f3c1a5a1a61b14 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b15 .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2008/05/skos#note> "\nThis property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. \nIf there exists a relation of this kind among two different expressions, they always refer to different works.\n    "@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b16 .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#domain> _:n4a594ec2b6714efca9755f3c1a5a1a61b11 .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b11 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b12 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b13 .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#adaptionOf> .
+<http://purl.org/vocab/frbr/core#adaption> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:adaption :my-other-expression .\n\n    :my-other-expression a frbr:Expression .    \n    " .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#label> "has adaption"@en .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression is adapted in another one.\n"@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#adaption> <http://www.w3.org/2000/01/rdf-schema#range> _:n4a594ec2b6714efca9755f3c1a5a1a61b14 .

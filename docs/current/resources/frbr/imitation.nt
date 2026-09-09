@@ -1,0 +1,23 @@
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#range> _:n4a594ec2b6714efca9755f3c1a5a1a61b26 .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#label> "has imitation"@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#imitation> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:imitation :my-other-expression .\n\n    :my-other-expression a frbr:Expression .  \n    " .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b28 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b25 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b23 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b24 .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#imitationOf> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression is imitated in another one.\n"@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2000/01/rdf-schema#domain> _:n4a594ec2b6714efca9755f3c1a5a1a61b23 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b26 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b27 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#imitation> <http://www.w3.org/2008/05/skos#note> "\nThis property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. \nIf there exists a relation of this kind among two different expressions, then they always refer to different works.\n    "@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .

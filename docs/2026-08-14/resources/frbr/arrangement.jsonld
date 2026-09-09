@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "http://purl.org/vocab/frbr/core#arrangement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-expression a frbr:Expression ;\n        frbr:arrangement :my-other-expression .\n\n    :my-other-expression a frbr:Expression .     \n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A relation in which an expression is arranged in another one.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has arrangement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#arrangementOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2008/05/skos#note": [
+      {
+        "@language": "en",
+        "@value": "\nIn the arranged expression some content of the previous expression is changed in some way, but the result does not alter the content to the extent that it becomes a new work. \nThe expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood).\n    "
+      }
+    ]
+  }
+]

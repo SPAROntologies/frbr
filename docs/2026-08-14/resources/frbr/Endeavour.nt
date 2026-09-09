@@ -1,0 +1,18 @@
+_:n4a594ec2b6714efca9755f3c1a5a1a61b65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b66 .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2002/07/owl#equivalentClass> _:n4a594ec2b6714efca9755f3c1a5a1a61b63 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b63 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b64 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://purl.org/vocab/vann/example> "\n    :my-endeavour a frbr:Endeavour .\n    " .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of different aspects of user interests in a product of intellectual or artistic artifact."@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b65 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#Endeavour> <http://www.w3.org/2002/07/owl#equivalentClass> <https://ns.dublincore.org/openwemi/Endeavor> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b67 .

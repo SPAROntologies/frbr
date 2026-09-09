@@ -1,0 +1,97 @@
+[
+  {
+    "@id": "http://purl.org/vocab/frbr/core#complement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-expression a frbr:Expression ;\n        frbr:complement :my-other-expression .\n\n    :my-other-expression a frbr:Expression .  \n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A relation in which a work or expression has another one as complement.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b17"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has complement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b20"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#relatedEndeavour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#complementOf"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2008/05/skos#note": [
+      {
+        "@language": "en",
+        "@value": "\nThis property describes works that are intended to be combined with or inserted into the related work. \nIn other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. \nIf there exists a relation of this kind among two different expressions, then they always refer to different works.\n    "
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Work"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b17",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Expression"
+          },
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Work"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+_:n4a594ec2b6714efca9755f3c1a5a1a61b122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Event> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Object> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Concept> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b123 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b120 <http://www.w3.org/2002/07/owl#members> _:n4a594ec2b6714efca9755f3c1a5a1a61b121 .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "A material thing.\n"@en .
+<http://purl.org/vocab/frbr/core#Object> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject :my-object .\n\n    :my-object a frbr:Object .\n    " .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#label> "object"@en .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2008/05/skos#note> "\nThe entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist.\n    "@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b124 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Place> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b122 .

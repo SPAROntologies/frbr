@@ -1,0 +1,166 @@
+[
+  {
+    "@id": "http://purl.org/vocab/frbr/core#Expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-expression a frbr:Expression ;\n        frbr:realizationOf :my-work ;\n        frbr:embodiment :my-manifestation ;\n        frbr:part :my-other-expression .\n    \n    :my-work a frbr:Work .\n\n    :my-manifestation a frbr:Manifestation .\n\n    :my-other-expression a frbr:Expression .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Item"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Work"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b96"
+      },
+      {
+        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b90"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2008/05/skos#note": [
+      {
+        "@language": "en",
+        "@value": "\nAn expression is the specific intellectual or artistic form that a work takes each time it is \"realized.\" \nExpression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.\n    "
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b96",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+          },
+          {
+            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b97"
+          },
+          {
+            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b98"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b97",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#embodiment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b98",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Work"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b90",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+          },
+          {
+            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b91"
+          },
+          {
+            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b92"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b91",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b92",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
+      }
+    ]
+  }
+]

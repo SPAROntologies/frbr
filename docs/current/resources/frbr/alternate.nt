@@ -1,0 +1,11 @@
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation in which a manifestation has another one as alternate.\n"@en .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#label> "has alternate"@en .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#alternateOf> .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2008/05/skos#note> "\nThe alternate relationship involves manifestations that effectively serve as alternates for each other. \nThe alternate relationship obtains, for example, when a publication, sound recording, video, etc. is issued in more than one format or when it is released simultaneously by different publishers in different countries.\n    "@en .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#alternate> <http://purl.org/vocab/vann/example> "\n    :my-manifestation a frbr:Manifestation ;\n        frbr:alternate :my-other-manifestation .\n\n    ;my-other-manifestation a frbr:Manifestation .\n    " .
+<http://purl.org/vocab/frbr/core#alternate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .

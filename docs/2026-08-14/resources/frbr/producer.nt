@@ -1,0 +1,9 @@
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#responsibleEntity> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a manifestation and its producer."@en .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2000/01/rdf-schema#label> "has producer"@en .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#producerOf> .
+<http://purl.org/vocab/frbr/core#producer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#producer> <http://purl.org/vocab/vann/example> "\n    :my-manifestation a frbr:Manifestation ;\n        frbr:producer :my-person .\n    " .

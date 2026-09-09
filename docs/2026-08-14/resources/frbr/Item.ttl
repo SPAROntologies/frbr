@@ -1,0 +1,44 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix openwemi: <https://ns.dublincore.org/openwemi/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:Item a owl:Class ;
+    rdfs:label "item"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:exemplarOf :my-manifestation ;
+        frbr:part :my-other-item .
+
+    :my-manifestation a frbr:Manifestation .
+
+    :my-other-item a frbr:Item .
+    """ ;
+    rdfs:comment """A single exemplar of a manifestation.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:disjointWith frbr:Manifestation,
+        frbr:Work ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Item ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Item ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:exemplarOf ;
+                        owl:someValuesFrom frbr:Manifestation ] ) ],
+        openwemi:Item ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+The entity defined as item is a concrete entity. 
+It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). 
+There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).
+    """@en .
+

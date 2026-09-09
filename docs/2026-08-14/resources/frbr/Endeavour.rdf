@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b65">
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b66"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <owl:equivalentClass rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b63"/>
+    <owl:equivalentClass rdf:resource="https://ns.dublincore.org/openwemi/Endeavor"/>
+    <vann:example>
+    :my-endeavour a frbr:Endeavour .
+    </vann:example>
+    <rdfs:label xml:lang="en">endeavour</rdfs:label>
+    <rdfs:comment xml:lang="en">The set of different aspects of user interests in a product of intellectual or artistic artifact.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b63">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b64"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b64">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b65"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b67">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b66">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b67"/>
+  </rdf:Description>
+</rdf:RDF>

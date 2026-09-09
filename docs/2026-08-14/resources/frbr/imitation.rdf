@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos1="http://www.w3.org/2008/05/skos#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#imitation">
+    <rdfs:range rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b26"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:label xml:lang="en">has imitation</rdfs:label>
+    <vann:example>
+    :my-expression a frbr:Expression ;
+        frbr:imitation :my-other-expression .
+
+    :my-other-expression a frbr:Expression .  
+    </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#imitationOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:comment xml:lang="en">A relation in which a work or expression is imitated in another one.
+</rdfs:comment>
+    <rdfs:domain rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b23"/>
+    <skos1:note xml:lang="en">
+This property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    </skos1:note>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b23">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b24"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b25">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b27">
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b28"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b24">
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b25"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b26">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b27"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  </rdf:Description>
+</rdf:RDF>

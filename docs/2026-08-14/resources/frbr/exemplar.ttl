@@ -1,0 +1,23 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:exemplar a owl:ObjectProperty ;
+    rdfs:label "has exemplar"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:exemplar :my-item .
+
+    :my-item a frbr:Item .
+    """ ;
+    rdfs:comment "A relation in which a manifestation is exemplified in an item."@en ;
+    rdfs:domain frbr:Manifestation ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Item ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:exemplarOf ;
+    vs:term_status reg:statusStable .
+

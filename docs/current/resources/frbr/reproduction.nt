@@ -1,0 +1,23 @@
+_:n4a594ec2b6714efca9755f3c1a5a1a61b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#range> _:n4a594ec2b6714efca9755f3c1a5a1a61b4 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b4 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b5 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b6 .
+<http://purl.org/vocab/frbr/core#reproduction> <http://purl.org/vocab/vann/example> "\n    :my-item a frbr:Item ;\n        frbr:reproduction :my-other-item .\n\n    :my-other-item a frbr:Item .\n    " .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#reproductionOf> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#domain> _:n4a594ec2b6714efca9755f3c1a5a1a61b1 .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a manifestation or item is reproduced in another one.\n"@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2008/05/skos#note> "\nA reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship.\n    "@en .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Item> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b3 .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2000/01/rdf-schema#label> "has reproduction"@en .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#reproduction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b1 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b2 .

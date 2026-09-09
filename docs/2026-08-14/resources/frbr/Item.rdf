@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos1="http://www.w3.org/2008/05/skos#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Item">
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A single exemplar of a manifestation.
+</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <owl:equivalentClass rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b59"/>
+    <owl:equivalentClass rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b53"/>
+    <owl:equivalentClass rdf:resource="https://ns.dublincore.org/openwemi/Item"/>
+    <vann:example>
+    :my-item a frbr:Item ;
+        frbr:exemplarOf :my-manifestation ;
+        frbr:part :my-other-item .
+
+    :my-manifestation a frbr:Manifestation .
+
+    :my-other-item a frbr:Item .
+    </vann:example>
+    <rdfs:label xml:lang="en">item</rdfs:label>
+    <skos1:note xml:lang="en">
+The entity defined as item is a concrete entity. 
+It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). 
+There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).
+    </skos1:note>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b56">
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b57"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b57">
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b54"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b58"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b56"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b61">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b62"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b59">
+    <owl:intersectionOf rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b61"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b55">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b62">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b60"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b54">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b60">
+    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b58">
+    <rdf:first rdf:nodeID="n4a594ec2b6714efca9755f3c1a5a1a61b55"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>

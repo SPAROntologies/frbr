@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos1="http://www.w3.org/2008/05/skos#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#part">
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <skos1:note xml:lang="en">Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive.</skos1:note>
+    <vann:example>
+    :my-work a frbr:Work ;
+        frbr:part :my-other-work .
+
+    :my-other-work a frbr:Work .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has part</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:comment xml:lang="en">A relation that identifies a part of an endeavour.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+  </rdf:Description>
+</rdf:RDF>
