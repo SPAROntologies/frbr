@@ -1,0 +1,17 @@
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#subject> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject\n            :my-organization ,\n            :my-subject ,\n            :my-other-work .\n    " .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a work and a particular subject it is talking about."@en .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#range> _:n4a594ec2b6714efca9755f3c1a5a1a61b7 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b10 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Subject> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#CorporateBody> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#subjectOf> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b7 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b8 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b9 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

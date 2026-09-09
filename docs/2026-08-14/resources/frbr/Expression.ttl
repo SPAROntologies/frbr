@@ -1,0 +1,47 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:Expression a owl:Class ;
+    rdfs:label "expression"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:realizationOf :my-work ;
+        frbr:embodiment :my-manifestation ;
+        frbr:part :my-other-expression .
+    
+    :my-work a frbr:Work .
+
+    :my-manifestation a frbr:Manifestation .
+
+    :my-other-expression a frbr:Expression .
+    """ ;
+    rdfs:comment """The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:disjointWith frbr:Item,
+        frbr:Manifestation,
+        frbr:Work ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:embodiment ;
+                        owl:someValuesFrom frbr:Manifestation ] [ a owl:Restriction ;
+                        owl:onProperty frbr:realizationOf ;
+                        owl:someValuesFrom frbr:Work ] ) ] ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+An expression is the specific intellectual or artistic form that a work takes each time it is "realized." 
+Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
+    """@en .
+

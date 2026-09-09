@@ -1,0 +1,9 @@
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of"@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2008/05/skos#note> "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation that identifies an endeavour incorporating another endeavour."@en .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/vann/example> "\n    :my-other-work a frbr:Work ;\n        frbr:partOf :my-work .\n\n    :my-work a frbr:Work .\n    " .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

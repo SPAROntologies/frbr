@@ -1,0 +1,47 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix openwemi: <https://ns.dublincore.org/openwemi/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:Manifestation a owl:Class ;
+    rdfs:label "manifestation"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:embodimentOf :my-expression ;
+        frbr:exemplar :my-item ;
+        frbr:part :my-other-manifestation .
+
+    :my-expression a frbr:Expression .
+
+    :my-item a frbr:Item .
+
+    :my-other-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment """The physical embodiment of an expression of a work.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:disjointWith frbr:Work ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Manifestation ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Manifestation ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:embodimentOf ;
+                        owl:someValuesFrom frbr:Expression ] [ a owl:Restriction ;
+                        owl:onProperty frbr:exemplar ;
+                        owl:someValuesFrom frbr:Item ] ) ],
+        openwemi:Manifestation ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+The entity defined as manifestation encompasses a wide range of materials and formats. 
+As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. 
+    """@en .
+

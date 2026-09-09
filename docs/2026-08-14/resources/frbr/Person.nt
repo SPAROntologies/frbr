@@ -1,0 +1,8 @@
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2008/05/skos#note> "\n The entity defined as person encompasses individuals that are deceased as well as those that are living.\n    "@en .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual."@en .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#Person> <http://purl.org/vocab/vann/example> "\n    :my-person a frbr:Person ;\n        frbr:creatorOf :my-work .\n    " .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#ResponsibleEntity> .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

@@ -1,0 +1,20 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:owner a owl:ObjectProperty ;
+    rdfs:label "has owner"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:owner :my-person .
+    """ ;
+    rdfs:comment "The relation between an item and its owner."@en ;
+    rdfs:domain frbr:Item ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntity ;
+    owl:inverseOf frbr:ownerOf ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,5 @@
+<https://ns.dublincore.org/openwemi/Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ns.dublincore.org/openwemi/Endeavor> .
+<https://ns.dublincore.org/openwemi/Manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "manifestation"@en .
+<https://ns.dublincore.org/openwemi/Manifestation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://ns.dublincore.org/openwemi/> .
+<https://ns.dublincore.org/openwemi/Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ns.dublincore.org/openwemi/Manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical embodiment of a creation."@en .

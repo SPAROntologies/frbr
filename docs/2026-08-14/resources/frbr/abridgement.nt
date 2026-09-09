@@ -1,0 +1,11 @@
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2008/05/skos#note> "\nIn the abridged expression some content of the previous expression is removed, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood).\n    "@en .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#abridgementOf> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:abridgement :my-other-expression .\n\n    :my-other-expression a frbr:Expression .\n    " .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#label> "has abridgement"@en .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#abridgement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which an expression is abridged in another one.\n"@en .

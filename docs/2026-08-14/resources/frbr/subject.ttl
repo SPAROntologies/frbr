@@ -1,0 +1,25 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:subject a owl:ObjectProperty ;
+    rdfs:label "has subject"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:subject
+            :my-organization ,
+            :my-subject ,
+            :my-other-work .
+    """ ;
+    rdfs:comment "The relation between a work and a particular subject it is talking about."@en ;
+    rdfs:domain frbr:Work ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:CorporateBody frbr:Endeavour frbr:Subject ) ] ;
+    owl:inverseOf frbr:subjectOf ;
+    vs:term_status reg:statusStable .
+

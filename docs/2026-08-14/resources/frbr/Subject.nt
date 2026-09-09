@@ -1,0 +1,6 @@
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "An additional set of entities that serve as the subjects of works."@en .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Subject> <http://www.w3.org/2000/01/rdf-schema#label> "subject"@en .
+<http://purl.org/vocab/frbr/core#Subject> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject :my-subject .\n    \n    :my-subject a frbr:Subject .\n    " .

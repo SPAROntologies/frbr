@@ -1,0 +1,28 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:translation a owl:ObjectProperty ;
+    rdfs:label "has translation"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:translation :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which an expression is translated in another one.
+"""@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:translationOf ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+It allows to refer to a literal translation, in which the intent is to render the intellectual content of the previous expression as accurately as possible.
+    """@en .
+

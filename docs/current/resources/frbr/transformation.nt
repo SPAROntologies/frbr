@@ -1,0 +1,23 @@
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2008/05/skos#note> "\nThis property describes the transformation of an original work or expression into another work or expression that is sufficiently different in degree to warrant the product of the transformation being considered as a new work or expression, rather than simply a different expression of the original work. \nIf there exists a frbr:transformation relation between two different expressions, then they always relate to different works.\n    "@en .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b50 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b51 .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#range> _:n4a594ec2b6714efca9755f3c1a5a1a61b50 .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression is transformed in another one.\n"@en .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b52 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b49 .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#domain> _:n4a594ec2b6714efca9755f3c1a5a1a61b47 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2000/01/rdf-schema#label> "has transformation"@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b47 <http://www.w3.org/2002/07/owl#unionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b48 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#transformation> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:transformation :my-other-expression .\n\n    :my-other-expression a frbr:Expression . \n    " .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#transformation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#transformationOf> .

@@ -1,0 +1,7 @@
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://purl.org/vocab/vann/example> "\n    :my-other-expression a frbr:Expression ;\n        frbr:summarizationOf :my-expression .\n\n    :my-expression a frbr:Expression .\n    " .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation that identifies the original work/expression of a summarized one."@en .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is summarization of"@en .
+<http://purl.org/vocab/frbr/core#summarizationOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

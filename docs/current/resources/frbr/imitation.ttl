@@ -1,0 +1,32 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:imitation a owl:ObjectProperty ;
+    rdfs:label "has imitation"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:imitation :my-other-expression .
+
+    :my-other-expression a frbr:Expression .  
+    """ ;
+    rdfs:comment """A relation in which a work or expression is imitated in another one.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:imitationOf ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+This property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    """@en .
+

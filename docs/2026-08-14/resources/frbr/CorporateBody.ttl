@@ -1,0 +1,26 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:CorporateBody a owl:Class ;
+    rdfs:label "corporate body"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:producer :my-corporate-body .
+
+    :my-corporate-body a frbr:CorporateBody .
+    """ ;
+    rdfs:comment """An organization or group of individuals and/or organizations acting as a unit.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:ResponsibleEntity ;
+    owl:disjointWith frbr:Person ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+The entity defined as corporate body encompasses organizations and groups of individuals and/or organizations that are identified by a particular name, including occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc.
+    """@en .
+

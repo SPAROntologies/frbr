@@ -1,0 +1,35 @@
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Manifestation> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b57 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a594ec2b6714efca9755f3c1a5a1a61b54 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "A single exemplar of a manifestation.\n"@en .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#equivalentClass> _:n4a594ec2b6714efca9755f3c1a5a1a61b59 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+<http://purl.org/vocab/frbr/core#Item> <http://purl.org/vocab/vann/example> "\n    :my-item a frbr:Item ;\n        frbr:exemplarOf :my-manifestation ;\n        frbr:part :my-other-item .\n\n    :my-manifestation a frbr:Manifestation .\n\n    :my-other-item a frbr:Item .\n    " .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b59 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b61 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b55 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#equivalentClass> _:n4a594ec2b6714efca9755f3c1a5a1a61b53 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#equivalentClass> <https://ns.dublincore.org/openwemi/Item> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Work> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b60 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#exemplarOf> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b62 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b53 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4a594ec2b6714efca9755f3c1a5a1a61b56 .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2000/01/rdf-schema#label> "item"@en .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a594ec2b6714efca9755f3c1a5a1a61b58 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b54 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b54 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a594ec2b6714efca9755f3c1a5a1a61b60 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a594ec2b6714efca9755f3c1a5a1a61b55 .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Item> .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2008/05/skos#note> "\nThe entity defined as item is a concrete entity. \nIt is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). \nThere are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).\n    "@en .
+<http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a594ec2b6714efca9755f3c1a5a1a61b60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Manifestation> .
