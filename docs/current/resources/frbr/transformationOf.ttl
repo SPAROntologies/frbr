@@ -13,7 +13,7 @@ frbr:transformationOf a owl:ObjectProperty ;
 
     :my-expression a frbr:Expression .
     """ ;
-    rdfs:comment "A relation that identifies the original work or expression of a trasformed one."@en ;
+    rdfs:comment "A relation that identifies the original work or expression of a transformed one."@en ;
     rdfs:isDefinedBy frbr: ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .

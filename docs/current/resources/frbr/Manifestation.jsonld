@@ -36,10 +36,10 @@
         "@id": "https://ns.dublincore.org/openwemi/Manifestation"
       },
       {
-        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b68"
+        "@id": "_:n00c56939a66445a694e15fb6f982f27fb68"
       },
       {
-        "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b74"
+        "@id": "_:n00c56939a66445a694e15fb6f982f27fb74"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b68",
+    "@id": "_:n00c56939a66445a694e15fb6f982f27fb68",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -66,17 +66,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b69"
+            "@id": "_:n00c56939a66445a694e15fb6f982f27fb69"
           },
           {
-            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b70"
+            "@id": "_:n00c56939a66445a694e15fb6f982f27fb70"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b69",
+    "@id": "_:n00c56939a66445a694e15fb6f982f27fb69",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b70",
+    "@id": "_:n00c56939a66445a694e15fb6f982f27fb70",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b74",
+    "@id": "_:n00c56939a66445a694e15fb6f982f27fb74",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -119,17 +119,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b75"
+            "@id": "_:n00c56939a66445a694e15fb6f982f27fb75"
           },
           {
-            "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b76"
+            "@id": "_:n00c56939a66445a694e15fb6f982f27fb76"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b75",
+    "@id": "_:n00c56939a66445a694e15fb6f982f27fb75",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "@id": "_:n4a594ec2b6714efca9755f3c1a5a1a61b76",
+    "@id": "_:n00c56939a66445a694e15fb6f982f27fb76",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

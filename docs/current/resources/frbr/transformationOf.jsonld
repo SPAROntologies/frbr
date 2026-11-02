@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A relation that identifies the original work or expression of a trasformed one."
+        "@value": "A relation that identifies the original work or expression of a transformed one."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
