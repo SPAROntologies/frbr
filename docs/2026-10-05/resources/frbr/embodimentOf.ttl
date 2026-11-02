@@ -1,0 +1,20 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:embodimentOf a owl:ObjectProperty ;
+    rdfs:label "is embodiment of"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:embodimentOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies a manifestation that embodies an expression."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+

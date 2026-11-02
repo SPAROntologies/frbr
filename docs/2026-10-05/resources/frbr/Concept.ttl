@@ -1,0 +1,28 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:Concept a owl:Class ;
+    rdfs:label "concept"@en ;
+    vann:example """
+    :my-concept a frbr:Concept ;
+        frbr:subjectOf :my-work .
+    """ ;
+    rdfs:comment """An abstract notion or idea.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:Subject ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+The entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc. 
+A concept may be broad in nature or narrowly defined and precise. 
+    """@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( frbr:Concept frbr:Event frbr:Object frbr:Place ) .
+

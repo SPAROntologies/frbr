@@ -1,0 +1,23 @@
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#domain> _:n00c56939a66445a694e15fb6f982f27fb29 .
+_:n00c56939a66445a694e15fb6f982f27fb29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n00c56939a66445a694e15fb6f982f27fb33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n00c56939a66445a694e15fb6f982f27fb29 <http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb30 .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#range> _:n00c56939a66445a694e15fb6f982f27fb32 .
+_:n00c56939a66445a694e15fb6f982f27fb33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb34 .
+_:n00c56939a66445a694e15fb6f982f27fb32 <http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb33 .
+_:n00c56939a66445a694e15fb6f982f27fb30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb31 .
+<http://purl.org/vocab/frbr/core#successor> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:successor :my-other-expression .\n\n    :my-other-expression a frbr:Expression . \n    " .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
+_:n00c56939a66445a694e15fb6f982f27fb34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+_:n00c56939a66445a694e15fb6f982f27fb31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#successorOf> .
+_:n00c56939a66445a694e15fb6f982f27fb30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression has another one as successor.\n"@en .
+_:n00c56939a66445a694e15fb6f982f27fb32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n00c56939a66445a694e15fb6f982f27fb34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:n00c56939a66445a694e15fb6f982f27fb31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2008/05/skos#note> "\nThe successor type of relationship involves a kind of linear progression of content from one work/expression to the other. \nIn some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. \nIn others, such as with loosely connected parts of a trilogy, the successor will be autonomous. \nSerial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. \nIf there exists a relation of this kind among two different expressions, then they always refer to different works.\n    "@en .
+<http://purl.org/vocab/frbr/core#successor> <http://www.w3.org/2000/01/rdf-schema#label> "has successor"@en .
