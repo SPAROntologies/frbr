@@ -2,7 +2,7 @@ name: Docs and release
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
     paths: [ docs/current/frbr.ttl ]
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   docs:
-    uses: ./.github/workflows/lode.yml
+    uses: SPAROntologies/sparontologies.github.io/.github/workflows/lode.yml@master
     with:
       ontology: docs/current/frbr.ttl
 
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:

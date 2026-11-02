@@ -38,7 +38,7 @@ dc:title a owl:AnnotationProperty .
     dc:description """
 The **_Essential FRBR in OWL2 DL Ontology (FRBR DL)_** is an expression in OWL 2 DL of the basic concepts and relations described in the _IFLA report on the Functional Requirements for Bibliographic Records (FRBR)_, also described in [Ian Davis's RDF vocabulary](http://vocab.org/frbr/core).
 
-FRBR is a general model, proposed by the _International Federation of Library Association (IFLA)_, for describing documents and their evolution. 
+FRBR is a general conceptual model, proposed by the _International Federation of Library Association (IFLA)_, for describing documents and their evolution over time. 
 It works for both physical and digital resources and it has proved to be very flexible and powerful. 
 One of the most important aspects of FRBR is the fact that it is not associated with a particular metadata schema or implementation.
 
