@@ -1,17 +1,17 @@
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#range> _:n00c56939a66445a694e15fb6f982f27fb7 .
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:n00c56939a66445a694e15fb6f982f27fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#subjectOf> .
-_:n00c56939a66445a694e15fb6f982f27fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#CorporateBody> .
-_:n00c56939a66445a694e15fb6f982f27fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb10 .
-_:n00c56939a66445a694e15fb6f982f27fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n00c56939a66445a694e15fb6f982f27fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n00c56939a66445a694e15fb6f982f27fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Subject> .
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a work and a particular subject it is talking about."@en .
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
-_:n00c56939a66445a694e15fb6f982f27fb7 <http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb8 .
-<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
-_:n00c56939a66445a694e15fb6f982f27fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb9 .
-<http://purl.org/vocab/frbr/core#subject> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject\n            :my-organization ,\n            :my-subject ,\n            :my-other-work .\n    " .
 <http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+_:n5d7b8193682e4c0ab614864b941f5146b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Subject> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#subjectOf> .
+_:n5d7b8193682e4c0ab614864b941f5146b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n5d7b8193682e4c0ab614864b941f5146b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a work and a particular subject it is talking about."@en .
+<http://purl.org/vocab/frbr/core#subject> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject\n            :my-organization ,\n            :my-subject ,\n            :my-other-work .\n    " .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#range> _:n5d7b8193682e4c0ab614864b941f5146b7 .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n5d7b8193682e4c0ab614864b941f5146b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b9 .
+_:n5d7b8193682e4c0ab614864b941f5146b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b10 .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
+_:n5d7b8193682e4c0ab614864b941f5146b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n5d7b8193682e4c0ab614864b941f5146b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#CorporateBody> .
+_:n5d7b8193682e4c0ab614864b941f5146b7 <http://www.w3.org/2002/07/owl#unionOf> _:n5d7b8193682e4c0ab614864b941f5146b8 .

@@ -7,41 +7,41 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b121">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b122"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An abstract notion or idea.
+</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:label xml:lang="en">concept</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
     <vann:example>
     :my-concept a frbr:Concept ;
         frbr:subjectOf :my-work .
     </vann:example>
-    <rdfs:comment xml:lang="en">An abstract notion or idea.
-</rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <skos1:note xml:lang="en">
 The entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc. 
 A concept may be broad in nature or narrowly defined and precise. 
     </skos1:note>
-    <rdfs:label xml:lang="en">concept</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb122">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb123"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b122">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Event"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b123"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb121">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb122"/>
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb124">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b124">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Place"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb123">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b123">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Object"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb124"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b124"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb120">
-    <owl:members rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb121"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b120">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b121"/>
   </rdf:Description>
 </rdf:RDF>

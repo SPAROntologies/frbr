@@ -256,8 +256,8 @@ As an entity, manifestation represents all the physical objects that bear the sa
 """@en ;
         rdfs:isDefinedBy frbr: ;
         owl:disjointWith frbr:Work ;
-        owl:equivalentClass _:n00c56939a66445a694e15fb6f982f27fb68,
-            _:n00c56939a66445a694e15fb6f982f27fb74,
+        owl:equivalentClass _:n5d7b8193682e4c0ab614864b941f5146b68,
+            _:n5d7b8193682e4c0ab614864b941f5146b74,
             openwemi:Manifestation ;
         vs:term_status reg:statusStable ;
         skos1:note """
@@ -265,44 +265,44 @@ The entity defined as manifestation encompasses a wide range of materials and fo
 As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. 
     """@en .
 
-    _:n00c56939a66445a694e15fb6f982f27fb68 a owl:Class ;
-        owl:intersectionOf _:n00c56939a66445a694e15fb6f982f27fb71 .
+    _:n5d7b8193682e4c0ab614864b941f5146b68 a owl:Class ;
+        owl:intersectionOf _:n5d7b8193682e4c0ab614864b941f5146b71 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb69 a owl:Restriction ;
+    _:n5d7b8193682e4c0ab614864b941f5146b69 a owl:Restriction ;
         owl:allValuesFrom frbr:Manifestation ;
         owl:onProperty frbr:part .
 
-    _:n00c56939a66445a694e15fb6f982f27fb70 a owl:Restriction ;
+    _:n5d7b8193682e4c0ab614864b941f5146b70 a owl:Restriction ;
         owl:allValuesFrom frbr:Manifestation ;
         owl:onProperty frbr:partOf .
 
-    _:n00c56939a66445a694e15fb6f982f27fb71 rdf:first frbr:Endeavour ;
-        rdf:rest _:n00c56939a66445a694e15fb6f982f27fb72 .
+    _:n5d7b8193682e4c0ab614864b941f5146b71 rdf:first frbr:Endeavour ;
+        rdf:rest _:n5d7b8193682e4c0ab614864b941f5146b72 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb72 rdf:first _:n00c56939a66445a694e15fb6f982f27fb69 ;
-        rdf:rest _:n00c56939a66445a694e15fb6f982f27fb73 .
+    _:n5d7b8193682e4c0ab614864b941f5146b72 rdf:first _:n5d7b8193682e4c0ab614864b941f5146b69 ;
+        rdf:rest _:n5d7b8193682e4c0ab614864b941f5146b73 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb73 rdf:first _:n00c56939a66445a694e15fb6f982f27fb70 ;
+    _:n5d7b8193682e4c0ab614864b941f5146b73 rdf:first _:n5d7b8193682e4c0ab614864b941f5146b70 ;
         rdf:rest () .
 
-    _:n00c56939a66445a694e15fb6f982f27fb74 a owl:Class ;
-        owl:intersectionOf _:n00c56939a66445a694e15fb6f982f27fb77 .
+    _:n5d7b8193682e4c0ab614864b941f5146b74 a owl:Class ;
+        owl:intersectionOf _:n5d7b8193682e4c0ab614864b941f5146b77 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb75 a owl:Restriction ;
+    _:n5d7b8193682e4c0ab614864b941f5146b75 a owl:Restriction ;
         owl:onProperty frbr:embodimentOf ;
         owl:someValuesFrom frbr:Expression .
 
-    _:n00c56939a66445a694e15fb6f982f27fb76 a owl:Restriction ;
+    _:n5d7b8193682e4c0ab614864b941f5146b76 a owl:Restriction ;
         owl:onProperty frbr:exemplar ;
         owl:someValuesFrom frbr:Item .
 
-    _:n00c56939a66445a694e15fb6f982f27fb77 rdf:first frbr:Endeavour ;
-        rdf:rest _:n00c56939a66445a694e15fb6f982f27fb78 .
+    _:n5d7b8193682e4c0ab614864b941f5146b77 rdf:first frbr:Endeavour ;
+        rdf:rest _:n5d7b8193682e4c0ab614864b941f5146b78 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb78 rdf:first _:n00c56939a66445a694e15fb6f982f27fb75 ;
-        rdf:rest _:n00c56939a66445a694e15fb6f982f27fb79 .
+    _:n5d7b8193682e4c0ab614864b941f5146b78 rdf:first _:n5d7b8193682e4c0ab614864b941f5146b75 ;
+        rdf:rest _:n5d7b8193682e4c0ab614864b941f5146b79 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb79 rdf:first _:n00c56939a66445a694e15fb6f982f27fb76 ;
+    _:n5d7b8193682e4c0ab614864b941f5146b79 rdf:first _:n5d7b8193682e4c0ab614864b941f5146b76 ;
         rdf:rest () .
 }
 
@@ -343,13 +343,13 @@ As an entity, manifestation represents all the physical objects that bear the sa
         ],
         "http://www.w3.org/2002/07/owl#equivalentClass": [
           {
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b74"
+          },
+          {
             "@id": "https://ns.dublincore.org/openwemi/Manifestation"
           },
           {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb68"
-          },
-          {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb74"
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b68"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -365,7 +365,7 @@ As an entity, manifestation represents all the physical objects that bear the sa
         ]
       },
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb68",
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b74",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -376,70 +376,17 @@ As an entity, manifestation represents all the physical objects that bear the sa
                 "@id": "http://purl.org/vocab/frbr/core#Endeavour"
               },
               {
-                "@id": "_:n00c56939a66445a694e15fb6f982f27fb69"
+                "@id": "_:n5d7b8193682e4c0ab614864b941f5146b75"
               },
               {
-                "@id": "_:n00c56939a66445a694e15fb6f982f27fb70"
+                "@id": "_:n5d7b8193682e4c0ab614864b941f5146b76"
               }
             ]
           }
         ]
       },
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb69",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#Manifestation"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#part"
-          }
-        ]
-      },
-      {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb70",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#Manifestation"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#partOf"
-          }
-        ]
-      },
-      {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb74",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#intersectionOf": [
-          {
-            "@list": [
-              {
-                "@id": "http://purl.org/vocab/frbr/core#Endeavour"
-              },
-              {
-                "@id": "_:n00c56939a66445a694e15fb6f982f27fb75"
-              },
-              {
-                "@id": "_:n00c56939a66445a694e15fb6f982f27fb76"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb75",
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b75",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -455,7 +402,7 @@ As an entity, manifestation represents all the physical objects that bear the sa
         ]
       },
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb76",
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b76",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -469,49 +416,102 @@ As an entity, manifestation represents all the physical objects that bear the sa
             "@id": "http://purl.org/vocab/frbr/core#Item"
           }
         ]
+      },
+      {
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b68",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#intersectionOf": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+              },
+              {
+                "@id": "_:n5d7b8193682e4c0ab614864b941f5146b69"
+              },
+              {
+                "@id": "_:n5d7b8193682e4c0ab614864b941f5146b70"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b69",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#part"
+          }
+        ]
+      },
+      {
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b70",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#partOf"
+          }
+        ]
       }
     ],
     "@id": "http://purl.org/spar/frbr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_c782fdc31ff2bdb5b3e189035f157403_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n00c56939a66445a694e15fb6f982f27fb78 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n00c56939a66445a694e15fb6f982f27fb75 &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#equivalentClass> &lt;https://ns.dublincore.org/openwemi/Manifestation> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb73 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#equivalentClass> _:n00c56939a66445a694e15fb6f982f27fb68 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb69 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#equivalentClass> _:n00c56939a66445a694e15fb6f982f27fb74 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb74 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n00c56939a66445a694e15fb6f982f27fb77 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb76 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/vocab/frbr/core#Item> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb76 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "manifestation"@en &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb68 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb76 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#exemplar> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#disjointWith> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb77 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb78 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb75 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb71 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb72 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb70 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://purl.org/spar/frbr> .
+]</code></pre></div><div class="tab-pane fade" id=id_c782fdc31ff2bdb5b3e189035f157403_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n5d7b8193682e4c0ab614864b941f5146b73 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5d7b8193682e4c0ab614864b941f5146b70 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b68 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n5d7b8193682e4c0ab614864b941f5146b71 &lt;http://purl.org/spar/frbr> .
 &lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The physical embodiment of an expression of a work.\n"@en &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb73 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n00c56939a66445a694e15fb6f982f27fb70 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb75 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://purl.org/vocab/vann/example> "\n    :my-manifestation a frbr:Manifestation ;\n        frbr:embodimentOf :my-expression ;\n        frbr:exemplar :my-item ;\n        frbr:part :my-other-manifestation .\n\n    :my-expression a frbr:Expression .\n\n    :my-item a frbr:Item .\n\n    :my-other-manifestation a frbr:Manifestation .\n    " &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb72 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n00c56939a66445a694e15fb6f982f27fb69 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb72 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb73 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb68 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n00c56939a66445a694e15fb6f982f27fb71 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb69 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#part> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb69 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb79 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb79 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n00c56939a66445a694e15fb6f982f27fb76 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb71 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2008/05/skos#note> "\nThe entity defined as manifestation encompasses a wide range of materials and formats. \nAs an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. \n    "@en &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb78 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb79 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb77 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb74 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb75 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#embodimentOf> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb70 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#partOf> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#equivalentClass> _:n5d7b8193682e4c0ab614864b941f5146b74 &lt;http://purl.org/spar/frbr> .
 &lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb70 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#equivalentClass> &lt;https://ns.dublincore.org/openwemi/Manifestation> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b71 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b72 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b73 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b70 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b75 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#equivalentClass> _:n5d7b8193682e4c0ab614864b941f5146b68 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b72 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b73 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b70 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b76 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2002/07/owl#disjointWith> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b74 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n5d7b8193682e4c0ab614864b941f5146b77 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "manifestation"@en &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b77 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b69 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b76 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/vocab/frbr/core#Item> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b69 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#part> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b70 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#partOf> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b71 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b78 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5d7b8193682e4c0ab614864b941f5146b75 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b69 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b79 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b79 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5d7b8193682e4c0ab614864b941f5146b76 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b78 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b79 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b72 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5d7b8193682e4c0ab614864b941f5146b69 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b75 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#embodimentOf> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b76 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#exemplar> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://www.w3.org/2008/05/skos#note> "\nThe entity defined as manifestation encompasses a wide range of materials and formats. \nAs an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. \n    "@en &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b68 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b74 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b75 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b77 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b78 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#Manifestation> &lt;http://purl.org/vocab/vann/example> "\n    :my-manifestation a frbr:Manifestation ;\n        frbr:embodimentOf :my-expression ;\n        frbr:exemplar :my-item ;\n        frbr:part :my-other-manifestation .\n\n    :my-expression a frbr:Expression .\n\n    :my-item a frbr:Item .\n\n    :my-other-manifestation a frbr:Manifestation .\n    " &lt;http://purl.org/spar/frbr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../frbr.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 
