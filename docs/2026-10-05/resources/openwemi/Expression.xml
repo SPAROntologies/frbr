@@ -6,8 +6,8 @@
   <rdf:Description rdf:about="https://ns.dublincore.org/openwemi/Expression">
     <rdfs:label xml:lang="en">expression</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://ns.dublincore.org/openwemi/Endeavor"/>
-    <rdfs:comment xml:lang="en">A perceivable form of the creation.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A perceivable form of the creation.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="https://ns.dublincore.org/openwemi/"/>
   </rdf:Description>
 </rdf:RDF>

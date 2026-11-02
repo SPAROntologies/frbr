@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb17"
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -33,7 +33,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb20"
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -59,7 +59,7 @@
     ]
   },
   {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb17",
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b17",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -77,7 +77,7 @@
     ]
   },
   {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb20",
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b20",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
