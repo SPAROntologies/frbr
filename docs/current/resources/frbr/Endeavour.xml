@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb64">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb65"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb66">
+    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb67"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb65">
+    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb66"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb63">
+    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb64"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
+    <rdfs:comment xml:lang="en">The set of different aspects of user interests in a product of intellectual or artistic artifact.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <vann:example>
+    :my-endeavour a frbr:Endeavour .
+    </vann:example>
+    <owl:equivalentClass rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb63"/>
+    <owl:equivalentClass rdf:resource="https://ns.dublincore.org/openwemi/Endeavor"/>
+    <rdfs:label xml:lang="en">endeavour</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb67">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>

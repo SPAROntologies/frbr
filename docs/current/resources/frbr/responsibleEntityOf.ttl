@@ -13,7 +13,7 @@ frbr:responsibleEntityOf a owl:ObjectProperty ;
 
     :my-work a frbr:Work .
     """ ;
-    rdfs:comment "A relation that identifies an entity that is resposible for a particular endeavour."@en ;
+    rdfs:comment "A relation that identifies an entity that is responsible for a particular endeavour."@en ;
     rdfs:isDefinedBy frbr: ;
     vs:term_status reg:statusStable .
 

@@ -1,0 +1,42 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix openwemi: <https://ns.dublincore.org/openwemi/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:Work a owl:Class ;
+    rdfs:label "work"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:realization :my-expression ;
+        frbr:part :my-other-work .
+
+    :my-expression a frbr:Expression .
+
+    :my-other-work a frbr:Work .
+    """ ;
+    rdfs:comment """A distinct intellectual or artistic creation.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:realization ;
+                        owl:someValuesFrom frbr:Expression ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Work ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Work ;
+                        owl:onProperty frbr:partOf ] ) ],
+        openwemi:Work ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+A work is an abstract entity; there is no single material object one can point to as the work. 
+We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. 
+When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.
+    """@en .
+

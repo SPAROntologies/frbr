@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: The Essential FRBR in OWL2 DL Ontology (FRBR)
+message: >-
+If you use this software, please cite it using the
+metadata from this file.
+type: software
+authors:
+- given-names: Silvio
+  family-names: Peroni
+  orcid: 'https://orcid.org/0000-0003-0530-4305'
+- given-names: Paolo
+  family-names: Ciccarese
+  orcid: 'https://orcid.org/0000-0002-5156-2703'
+identifiers:
+- type: doi
+  value: 10.25504/FAIRsharing.b34b43
+repository-code: 'https://github.com/SPAROntologies/frbr'
+url: 'http://www.sparontologies.net/ontologies/frbr'
+abstract: The Essential FRBR in OWL2 DL Ontology (FRBR) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary. 
+keywords:
+- FRBR
+- Functional Requirements for Bibliographic Records
+- bibliometrics
+- scholarly publishing
+- scientometrics
+- semantic publishing
+license: CC-BY-4.0
+version: 1.1.1
+date-released: '2026-10-05'
