@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#subject">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:range rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb7"/>
+    <rdfs:comment xml:lang="en">The relation between a work and a particular subject it is talking about.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-work a frbr:Work ;
+        frbr:subject
+            :my-organization ,
+            :my-subject ,
+            :my-other-work .
+    </vann:example>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#subjectOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has subject</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb10">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb8">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
+    <rdf:rest rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb9">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb7">
+    <owl:unionOf rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
