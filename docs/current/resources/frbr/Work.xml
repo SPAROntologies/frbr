@@ -7,25 +7,34 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb81">
-    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b88">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b89"/>
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b85"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b84">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b87"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b81">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb85">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b85">
     <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb82">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb83"/>
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Work">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <owl:equivalentClass rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb80"/>
     <owl:equivalentClass rdf:resource="https://ns.dublincore.org/openwemi/Work"/>
-    <owl:equivalentClass rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb84"/>
+    <owl:equivalentClass rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b84"/>
+    <owl:equivalentClass rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b80"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos1:note xml:lang="en">
+A work is an abstract entity; there is no single material object one can point to as the work. 
+We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. 
+When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.
+    </skos1:note>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
     :my-work a frbr:Work ;
@@ -36,43 +45,34 @@
 
     :my-other-work a frbr:Work .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
     <rdfs:comment xml:lang="en">A distinct intellectual or artistic creation.
 </rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos1:note xml:lang="en">
-A work is an abstract entity; there is no single material object one can point to as the work. 
-We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. 
-When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.
-    </skos1:note>
     <rdfs:label xml:lang="en">work</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb86">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b80">
+    <owl:intersectionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b82"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b82">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b83"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b86">
     <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb80">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb82"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b89">
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b86"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb84">
-    <owl:intersectionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb87"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb87">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb88"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b87">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b88"/>
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb88">
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb85"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb89"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb83">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b83">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb81"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb89">
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb86"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b81"/>
   </rdf:Description>
 </rdf:RDF>

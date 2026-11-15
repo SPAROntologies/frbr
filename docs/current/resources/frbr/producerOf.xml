@@ -6,17 +6,17 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#producerOf">
+    <rdfs:label xml:lang="en">is producer of</rdfs:label>
+    <rdfs:comment xml:lang="en">The relation between the producer of a particular manifestation and that manifestation.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
     <vann:example>
     :my-person
         frbr:producerOf :my-manifestation .
         
     :my-manifestation a frbr:Manifestation .
     </vann:example>
-    <rdfs:comment xml:lang="en">The relation between the producer of a particular manifestation and that manifestation.</rdfs:comment>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntityOf"/>
-    <rdfs:label xml:lang="en">is producer of</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

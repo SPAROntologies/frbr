@@ -7,49 +7,49 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb6">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b3">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#reproduction">
-    <rdfs:comment xml:lang="en">A relation in which a manifestation or item is reproduced in another one.
-</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb1"/>
+    <rdfs:range rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b4"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#reproductionOf"/>
     <vann:example>
     :my-item a frbr:Item ;
         frbr:reproduction :my-other-item .
 
     :my-other-item a frbr:Item .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#reproductionOf"/>
+    <rdfs:domain rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">has reproduction</rdfs:label>
-    <rdfs:range rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb4"/>
     <skos1:note xml:lang="en">
 A reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship.
     </skos1:note>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:comment xml:lang="en">A relation in which a manifestation or item is reproduced in another one.
+</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb2">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb3">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb4">
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb5"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b4">
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b5"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb5">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b5">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb6"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b6"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb1">
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb2"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b2">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b3"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b1">
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b2"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

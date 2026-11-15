@@ -7,50 +7,50 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb16">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#adaption">
+    <rdfs:range rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b14"/>
+    <rdfs:domain rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b11"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#adaptionOf"/>
     <rdfs:comment xml:lang="en">A relation in which a work or expression is adapted in another one.
 </rdfs:comment>
-    <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#adaptionOf"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
     :my-expression a frbr:Expression ;
         frbr:adaption :my-other-expression .
 
     :my-other-expression a frbr:Expression .    
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:label xml:lang="en">has adaption</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
     <skos1:note xml:lang="en">
 This property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
 If there exists a relation of this kind among two different expressions, they always refer to different works.
     </skos1:note>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:domain rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb11"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
-    <rdfs:range rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb14"/>
-    <rdfs:label xml:lang="en">has adaption</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb14">
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb15"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb13">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b13">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb11">
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb12"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b16">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b15">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b16"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b12">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b14">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b15"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb12">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb13"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb15">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb16"/>
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b11">
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

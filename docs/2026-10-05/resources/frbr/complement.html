@@ -237,9 +237,9 @@ If there exists a relation of this kind among two different expressions, then th
     """ ;
         rdfs:comment """A relation in which a work or expression has another one as complement.
 """@en ;
-        rdfs:domain _:n00c56939a66445a694e15fb6f982f27fb17 ;
+        rdfs:domain _:n5d7b8193682e4c0ab614864b941f5146b17 ;
         rdfs:isDefinedBy frbr: ;
-        rdfs:range _:n00c56939a66445a694e15fb6f982f27fb20 ;
+        rdfs:range _:n5d7b8193682e4c0ab614864b941f5146b20 ;
         rdfs:subPropertyOf frbr:relatedEndeavour ;
         owl:inverseOf frbr:complementOf ;
         vs:term_status reg:statusStable ;
@@ -249,22 +249,22 @@ In other words, they are intended to be integrated in some way with the other wo
 If there exists a relation of this kind among two different expressions, then they always refer to different works.
     """@en .
 
-    _:n00c56939a66445a694e15fb6f982f27fb17 a owl:Class ;
-        owl:unionOf _:n00c56939a66445a694e15fb6f982f27fb18 .
+    _:n5d7b8193682e4c0ab614864b941f5146b17 a owl:Class ;
+        owl:unionOf _:n5d7b8193682e4c0ab614864b941f5146b18 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb18 rdf:first frbr:Expression ;
-        rdf:rest _:n00c56939a66445a694e15fb6f982f27fb19 .
+    _:n5d7b8193682e4c0ab614864b941f5146b18 rdf:first frbr:Expression ;
+        rdf:rest _:n5d7b8193682e4c0ab614864b941f5146b19 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb19 rdf:first frbr:Work ;
+    _:n5d7b8193682e4c0ab614864b941f5146b19 rdf:first frbr:Work ;
         rdf:rest () .
 
-    _:n00c56939a66445a694e15fb6f982f27fb20 a owl:Class ;
-        owl:unionOf _:n00c56939a66445a694e15fb6f982f27fb21 .
+    _:n5d7b8193682e4c0ab614864b941f5146b20 a owl:Class ;
+        owl:unionOf _:n5d7b8193682e4c0ab614864b941f5146b21 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb21 rdf:first frbr:Expression ;
-        rdf:rest _:n00c56939a66445a694e15fb6f982f27fb22 .
+    _:n5d7b8193682e4c0ab614864b941f5146b21 rdf:first frbr:Expression ;
+        rdf:rest _:n5d7b8193682e4c0ab614864b941f5146b22 .
 
-    _:n00c56939a66445a694e15fb6f982f27fb22 rdf:first frbr:Work ;
+    _:n5d7b8193682e4c0ab614864b941f5146b22 rdf:first frbr:Work ;
         rdf:rest () .
 }
 
@@ -289,7 +289,7 @@ If there exists a relation of this kind among two different expressions, then th
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
           {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb17"
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b17"
           }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -305,7 +305,7 @@ If there exists a relation of this kind among two different expressions, then th
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
           {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb20"
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b20"
           }
         ],
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -331,7 +331,7 @@ If there exists a relation of this kind among two different expressions, then th
         ]
       },
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb17",
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b17",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -349,7 +349,7 @@ If there exists a relation of this kind among two different expressions, then th
         ]
       },
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb20",
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b20",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -369,29 +369,29 @@ If there exists a relation of this kind among two different expressions, then th
     ],
     "@id": "http://purl.org/spar/frbr"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_f60349c32d741dfd442b424179d53597_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n00c56939a66445a694e15fb6f982f27fb22 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb18 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#domain> _:n00c56939a66445a694e15fb6f982f27fb17 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb17 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb18 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb19 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/frbr> .
+]</code></pre></div><div class="tab-pane fade" id=id_f60349c32d741dfd442b424179d53597_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n5d7b8193682e4c0ab614864b941f5146b19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
 &lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:n00c56939a66445a694e15fb6f982f27fb20 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb22 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has complement"@en &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression has another one as complement.\n"@en &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb17 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb18 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb22 &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://purl.org/vocab/frbr/core#relatedEndeavour> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b22 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#domain> _:n5d7b8193682e4c0ab614864b941f5146b17 &lt;http://purl.org/spar/frbr> .
 &lt;http://purl.org/vocab/frbr/core#complement> &lt;http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:complement :my-other-expression .\n\n    :my-other-expression a frbr:Expression .  \n    " &lt;http://purl.org/spar/frbr> .
-&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/vocab/frbr/core#complementOf> &lt;http://purl.org/spar/frbr> .
-_:n00c56939a66445a694e15fb6f982f27fb20 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb21 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b18 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
 &lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2008/05/skos#note> "\nThis property describes works that are intended to be combined with or inserted into the related work. \nIn other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. \nIf there exists a relation of this kind among two different expressions, then they always refer to different works.\n    "@en &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b22 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:n5d7b8193682e4c0ab614864b941f5146b20 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression has another one as complement.\n"@en &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b22 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/vocab/frbr/core#complementOf> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b17 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b17 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n5d7b8193682e4c0ab614864b941f5146b18 &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b20 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n5d7b8193682e4c0ab614864b941f5146b21 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has complement"@en &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf> &lt;http://purl.org/vocab/frbr/core#relatedEndeavour> &lt;http://purl.org/spar/frbr> .
+_:n5d7b8193682e4c0ab614864b941f5146b18 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b19 &lt;http://purl.org/spar/frbr> .
+&lt;http://purl.org/vocab/frbr/core#complement> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/frbr> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../frbr.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

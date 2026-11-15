@@ -1,23 +1,23 @@
-_:n00c56939a66445a694e15fb6f982f27fb42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
-_:n00c56939a66445a694e15fb6f982f27fb42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb43 .
-_:n00c56939a66445a694e15fb6f982f27fb41 <http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb42 .
-_:n00c56939a66445a694e15fb6f982f27fb43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
-_:n00c56939a66445a694e15fb6f982f27fb44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression has another one as supplement.\n"@en .
-_:n00c56939a66445a694e15fb6f982f27fb44 <http://www.w3.org/2002/07/owl#unionOf> _:n00c56939a66445a694e15fb6f982f27fb45 .
-<http://purl.org/vocab/frbr/core#supplement> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:supplement :my-other-expression .\n\n    :my-other-expression a frbr:Expression . \n    " .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#supplementOf> .
-_:n00c56939a66445a694e15fb6f982f27fb43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n00c56939a66445a694e15fb6f982f27fb41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n00c56939a66445a694e15fb6f982f27fb46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:n5d7b8193682e4c0ab614864b941f5146b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
 <http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/frbr/core#relatedEndeavour> .
-_:n00c56939a66445a694e15fb6f982f27fb46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2008/05/skos#note> "\nThe supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. \nSome of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression.\n    "@en .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#label> "has supplement"@en .
-_:n00c56939a66445a694e15fb6f982f27fb45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb46 .
+_:n5d7b8193682e4c0ab614864b941f5146b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b43 .
+_:n5d7b8193682e4c0ab614864b941f5146b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#supplement> <http://purl.org/vocab/vann/example> "\n    :my-expression a frbr:Expression ;\n        frbr:supplement :my-other-expression .\n\n    :my-other-expression a frbr:Expression . \n    " .
 <http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#domain> _:n5d7b8193682e4c0ab614864b941f5146b41 .
+_:n5d7b8193682e4c0ab614864b941f5146b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Work> .
 <http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n00c56939a66445a694e15fb6f982f27fb45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#domain> _:n00c56939a66445a694e15fb6f982f27fb41 .
-<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#range> _:n00c56939a66445a694e15fb6f982f27fb44 .
+_:n5d7b8193682e4c0ab614864b941f5146b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation in which a work or expression has another one as supplement.\n"@en .
+_:n5d7b8193682e4c0ab614864b941f5146b41 <http://www.w3.org/2002/07/owl#unionOf> _:n5d7b8193682e4c0ab614864b941f5146b42 .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#label> "has supplement"@en .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#range> _:n5d7b8193682e4c0ab614864b941f5146b44 .
+_:n5d7b8193682e4c0ab614864b941f5146b44 <http://www.w3.org/2002/07/owl#unionOf> _:n5d7b8193682e4c0ab614864b941f5146b45 .
+_:n5d7b8193682e4c0ab614864b941f5146b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b46 .
+_:n5d7b8193682e4c0ab614864b941f5146b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .
+_:n5d7b8193682e4c0ab614864b941f5146b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n5d7b8193682e4c0ab614864b941f5146b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#supplementOf> .
+_:n5d7b8193682e4c0ab614864b941f5146b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/vocab/frbr/core#supplement> <http://www.w3.org/2008/05/skos#note> "\nThe supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. \nSome of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression.\n    "@en .

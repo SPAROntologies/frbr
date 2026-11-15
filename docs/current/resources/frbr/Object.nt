@@ -1,18 +1,18 @@
-_:n00c56939a66445a694e15fb6f982f27fb124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Place> .
-_:n00c56939a66445a694e15fb6f982f27fb122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb123 .
-<http://purl.org/vocab/frbr/core#Object> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject :my-object .\n\n    :my-object a frbr:Object .\n    " .
-_:n00c56939a66445a694e15fb6f982f27fb124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n00c56939a66445a694e15fb6f982f27fb121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb122 .
-_:n00c56939a66445a694e15fb6f982f27fb121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Concept> .
 <http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2008/05/skos#note> "\nThe entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist.\n    "@en .
-_:n00c56939a66445a694e15fb6f982f27fb123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Object> .
-<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#label> "object"@en .
-_:n00c56939a66445a694e15fb6f982f27fb123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00c56939a66445a694e15fb6f982f27fb124 .
-<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n00c56939a66445a694e15fb6f982f27fb120 <http://www.w3.org/2002/07/owl#members> _:n00c56939a66445a694e15fb6f982f27fb121 .
-<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "A material thing.\n"@en .
-_:n00c56939a66445a694e15fb6f982f27fb120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n5d7b8193682e4c0ab614864b941f5146b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b122 .
 <http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> .
-_:n00c56939a66445a694e15fb6f982f27fb122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Event> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "A material thing.\n"@en .
+<http://purl.org/vocab/frbr/core#Object> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject :my-object .\n\n    :my-object a frbr:Object .\n    " .
+_:n5d7b8193682e4c0ab614864b941f5146b122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Event> .
+_:n5d7b8193682e4c0ab614864b941f5146b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Place> .
+<http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#label> "object"@en .
+_:n5d7b8193682e4c0ab614864b941f5146b121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Concept> .
+_:n5d7b8193682e4c0ab614864b941f5146b124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n5d7b8193682e4c0ab614864b941f5146b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Object> .
+_:n5d7b8193682e4c0ab614864b941f5146b120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n5d7b8193682e4c0ab614864b941f5146b123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b124 .
+_:n5d7b8193682e4c0ab614864b941f5146b122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5d7b8193682e4c0ab614864b941f5146b123 .
+_:n5d7b8193682e4c0ab614864b941f5146b120 <http://www.w3.org/2002/07/owl#members> _:n5d7b8193682e4c0ab614864b941f5146b121 .
 <http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core#> .

@@ -8,16 +8,16 @@
 >
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#creator">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <rdfs:label xml:lang="en">has creator</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
     <vann:example>
     :my-work a frbr:Work ;
         frbr:creator :my-person .
     </vann:example>
-    <rdfs:comment xml:lang="en">The relation between a work and its creator.</rdfs:comment>
     <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#creatorOf"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#responsibleEntity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:comment xml:lang="en">The relation between a work and its creator.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
   </rdf:Description>
 </rdf:RDF>

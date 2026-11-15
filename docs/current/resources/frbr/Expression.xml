@@ -7,35 +7,24 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb93">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb94"/>
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb92">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb95">
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb92"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb98">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b98">
     <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
     <rdfs:label xml:lang="en">expression</rdfs:label>
-    <rdfs:comment xml:lang="en">The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
-</rdfs:comment>
     <skos1:note xml:lang="en">
 An expression is the specific intellectual or artistic form that a work takes each time it is "realized." 
 Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
     </skos1:note>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
     :my-expression a frbr:Expression ;
         frbr:realizationOf :my-work ;
@@ -48,44 +37,55 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
 
     :my-other-expression a frbr:Expression .
     </vann:example>
-    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-    <owl:equivalentClass rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb90"/>
-    <owl:equivalentClass rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb96"/>
+    <owl:equivalentClass rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b96"/>
+    <owl:equivalentClass rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b90"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb91">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b101">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b98"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b95">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b92"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b94">
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b91"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b95"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b97">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b96">
+    <owl:intersectionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b99"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b91">
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
     <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb99">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb100"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b93">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b94"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb96">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb99"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b99">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b100"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb101">
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb98"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b100">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b101"/>
+    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b97"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb100">
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb97"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb101"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb90">
-    <owl:intersectionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb93"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb97">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b92">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb94">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb95"/>
-    <rdf:first rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb91"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b90">
+    <owl:intersectionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b93"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

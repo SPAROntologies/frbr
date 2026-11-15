@@ -8,49 +8,49 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#imitation">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <vann:example>
     :my-expression a frbr:Expression ;
         frbr:imitation :my-other-expression .
 
     :my-other-expression a frbr:Expression .  
     </vann:example>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:domain rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb23"/>
     <skos1:note xml:lang="en">
 This property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
 If there exists a relation of this kind among two different expressions, then they always refer to different works.
     </skos1:note>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
     <rdfs:comment xml:lang="en">A relation in which a work or expression is imitated in another one.
 </rdfs:comment>
-    <rdfs:range rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb26"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b23"/>
     <rdfs:label xml:lang="en">has imitation</rdfs:label>
     <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#imitationOf"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:range rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b26"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb26">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b26">
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b27"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb27"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb24">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb25"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b23">
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b24"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb28">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb27">
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb28"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b24">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b25"/>
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb25">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b27">
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b28"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b25">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb23">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb24"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
   </rdf:Description>
 </rdf:RDF>

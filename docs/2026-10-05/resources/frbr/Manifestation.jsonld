@@ -33,13 +33,13 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b74"
+      },
+      {
         "@id": "https://ns.dublincore.org/openwemi/Manifestation"
       },
       {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb68"
-      },
-      {
-        "@id": "_:n00c56939a66445a694e15fb6f982f27fb74"
+        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b68"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb68",
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b74",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -66,70 +66,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb69"
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b75"
           },
           {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb70"
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b76"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb69",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#part"
-      }
-    ]
-  },
-  {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb70",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#partOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb74",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
-          },
-          {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb75"
-          },
-          {
-            "@id": "_:n00c56939a66445a694e15fb6f982f27fb76"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb75",
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b75",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -145,7 +92,7 @@
     ]
   },
   {
-    "@id": "_:n00c56939a66445a694e15fb6f982f27fb76",
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b76",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -157,6 +104,59 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://purl.org/vocab/frbr/core#Item"
+      }
+    ]
+  },
+  {
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b68",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+          },
+          {
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b69"
+          },
+          {
+            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b69",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#part"
+      }
+    ]
+  },
+  {
+    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b70",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#partOf"
       }
     ]
   }

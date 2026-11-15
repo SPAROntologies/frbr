@@ -7,51 +7,51 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb22">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b19">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb18">
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb19"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#complement">
-    <skos1:note xml:lang="en">
-This property describes works that are intended to be combined with or inserted into the related work. 
-In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. 
-If there exists a relation of this kind among two different expressions, then they always refer to different works.
-    </skos1:note>
-    <rdfs:domain rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb17"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb20"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:label xml:lang="en">has complement</rdfs:label>
-    <rdfs:comment xml:lang="en">A relation in which a work or expression has another one as complement.
-</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <rdfs:domain rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b17"/>
     <vann:example>
     :my-expression a frbr:Expression ;
         frbr:complement :my-other-expression .
 
     :my-other-expression a frbr:Expression .  
     </vann:example>
+    <skos1:note xml:lang="en">
+This property describes works that are intended to be combined with or inserted into the related work. 
+In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    </skos1:note>
+    <rdfs:range rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b20"/>
+    <rdfs:comment xml:lang="en">A relation in which a work or expression has another one as complement.
+</rdfs:comment>
     <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#complementOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:label xml:lang="en">has complement</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#relatedEndeavour"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb17">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb18"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb19">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b22">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb21">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b18">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdf:rest rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb22"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b19"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb20">
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b20">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n00c56939a66445a694e15fb6f982f27fb21"/>
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b21">
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b22"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b18"/>
   </rdf:Description>
 </rdf:RDF>
