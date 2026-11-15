@@ -14,10 +14,10 @@
     :my-work a frbr:Work ;
         frbr:creator :my-person .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <rdfs:comment xml:lang="en">The relation between a work and its creator.</rdfs:comment>
     <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#creatorOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:comment xml:lang="en">The relation between a work and its creator.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
   </rdf:Description>
 </rdf:RDF>

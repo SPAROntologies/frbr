@@ -14,6 +14,6 @@ frbr:subjectOf a owl:ObjectProperty ;
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "The relation between a subject a work talks about and that work."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 

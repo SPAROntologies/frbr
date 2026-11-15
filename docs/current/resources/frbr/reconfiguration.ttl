@@ -17,7 +17,7 @@ frbr:reconfiguration a owl:ObjectProperty ;
     rdfs:comment """A relation in which an item is reconfigured in another one.
 """@en ;
     rdfs:domain frbr:Item ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Item ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:reconfigurationOf ;

@@ -15,7 +15,7 @@ frbr:responsibleEntity a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between any endeavour and a particular entity that is responsible of it."@en ;
     rdfs:domain frbr:Endeavour ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:ResponsibleEntity ;
     owl:inverseOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .

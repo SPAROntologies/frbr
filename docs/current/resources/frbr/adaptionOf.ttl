@@ -14,7 +14,7 @@ frbr:adaptionOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the work/expression of an adapted one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 

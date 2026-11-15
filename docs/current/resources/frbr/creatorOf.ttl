@@ -14,7 +14,7 @@ frbr:creatorOf a owl:ObjectProperty ;
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "The relation between the creator of a particular work and that work."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 

@@ -23,7 +23,7 @@ frbr:Expression a owl:Class ;
     """ ;
     rdfs:comment """The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:disjointWith frbr:Item,
         frbr:Manifestation,
         frbr:Work ;

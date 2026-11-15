@@ -13,7 +13,7 @@ frbr:producer a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a manifestation and its producer."@en ;
     rdfs:domain frbr:Manifestation ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:producerOf ;
     vs:term_status reg:statusStable .

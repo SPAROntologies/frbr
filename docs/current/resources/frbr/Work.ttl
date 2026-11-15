@@ -21,7 +21,7 @@ frbr:Work a owl:Class ;
     """ ;
     rdfs:comment """A distinct intellectual or artistic creation.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
                         owl:onProperty frbr:realization ;

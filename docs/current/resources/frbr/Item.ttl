@@ -21,7 +21,7 @@ frbr:Item a owl:Class ;
     """ ;
     rdfs:comment """A single exemplar of a manifestation.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:disjointWith frbr:Manifestation,
         frbr:Work ;
     owl:equivalentClass [ a owl:Class ;

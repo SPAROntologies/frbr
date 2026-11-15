@@ -13,7 +13,7 @@ frbr:realizer a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between an expression and its realizer."@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:realizerOf ;
     vs:term_status reg:statusStable .

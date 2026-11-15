@@ -17,7 +17,7 @@ frbr:Event a owl:Class ;
     """ ;
     rdfs:comment """An action or occurrence.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:Subject ;
     vs:term_status reg:statusStable ;
     skos1:note """

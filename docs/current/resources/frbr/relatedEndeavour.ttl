@@ -15,7 +15,7 @@ frbr:relatedEndeavour a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A generic relation between two endeavours."@en ;
     rdfs:domain frbr:Endeavour ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Endeavour ;
     vs:term_status reg:statusStable .
 

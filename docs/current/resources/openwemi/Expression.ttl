@@ -5,6 +5,6 @@
 openwemi:Expression a owl:Class ;
     rdfs:label "expression"@en ;
     rdfs:comment "A perceivable form of the creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 

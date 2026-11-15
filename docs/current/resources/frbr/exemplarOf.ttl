@@ -15,7 +15,7 @@ frbr:exemplarOf a owl:FunctionalProperty,
     :my-manifestation a frbr:Manifestation .
     """ ;
     rdfs:comment "A relation that identifies an item that exemplifies a manifestation."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 

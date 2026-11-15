@@ -14,7 +14,7 @@ frbr:producerOf a owl:ObjectProperty ;
     :my-manifestation a frbr:Manifestation .
     """ ;
     rdfs:comment "The relation between the producer of a particular manifestation and that manifestation."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 

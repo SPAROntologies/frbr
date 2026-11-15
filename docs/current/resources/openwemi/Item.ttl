@@ -5,6 +5,6 @@
 openwemi:Item a owl:Class ;
     rdfs:label "item"@en ;
     rdfs:comment "An exemplar of a creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 

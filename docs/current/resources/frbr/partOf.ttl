@@ -16,7 +16,7 @@ frbr:partOf a owl:ObjectProperty,
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies an endeavour incorporating another endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable ;
     skos1:note "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .

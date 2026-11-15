@@ -13,7 +13,7 @@ frbr:creator a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a work and its creator."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:creatorOf ;
     vs:term_status reg:statusStable .

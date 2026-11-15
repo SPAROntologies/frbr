@@ -17,7 +17,7 @@ frbr:subject a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a work and a particular subject it is talking about."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:CorporateBody frbr:Endeavour frbr:Subject ) ] ;
     owl:inverseOf frbr:subjectOf ;

@@ -17,12 +17,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b41"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb41"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#"
+        "@id": "http://purl.org/vocab/frbr/core"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -33,7 +33,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b44"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb44"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -59,7 +59,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b41",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb41",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -77,7 +77,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b44",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb44",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

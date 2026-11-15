@@ -17,7 +17,7 @@ frbr:abridgement a owl:ObjectProperty ;
     rdfs:comment """A relation in which an expression is abridged in another one.
 """@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:abridgementOf ;

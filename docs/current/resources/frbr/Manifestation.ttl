@@ -24,7 +24,7 @@ frbr:Manifestation a owl:Class ;
     """ ;
     rdfs:comment """The physical embodiment of an expression of a work.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:disjointWith frbr:Work ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;

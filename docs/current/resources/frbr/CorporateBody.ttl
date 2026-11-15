@@ -16,7 +16,7 @@ frbr:CorporateBody a owl:Class ;
     """ ;
     rdfs:comment """An organization or group of individuals and/or organizations acting as a unit.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:ResponsibleEntity ;
     owl:disjointWith frbr:Person ;
     vs:term_status reg:statusStable ;

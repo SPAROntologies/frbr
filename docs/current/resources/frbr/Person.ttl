@@ -13,7 +13,7 @@ frbr:Person a owl:Class ;
         frbr:creatorOf :my-work .
     """ ;
     rdfs:comment "An individual."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:ResponsibleEntity ;
     vs:term_status reg:statusStable ;
     skos1:note """

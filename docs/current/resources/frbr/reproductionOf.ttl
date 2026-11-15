@@ -14,7 +14,7 @@ frbr:reproductionOf a owl:ObjectProperty ;
     :my-item a frbr:Item .
     """ ;
     rdfs:comment "A relation that identifies the manifestation or item of a reproduced one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 

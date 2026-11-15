@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#"
+        "@id": "http://purl.org/vocab/frbr/core"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -33,13 +33,13 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b74"
-      },
-      {
         "@id": "https://ns.dublincore.org/openwemi/Manifestation"
       },
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b68"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb74"
+      },
+      {
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb68"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b74",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb74",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -66,17 +66,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b75"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb75"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b76"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb76"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b75",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb75",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b76",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb76",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b68",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb68",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -119,17 +119,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b69"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb69"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b70"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb70"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b69",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb69",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b70",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb70",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

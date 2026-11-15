@@ -14,7 +14,7 @@ frbr:realizerOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "The relation between the realizer of a particular expression and that expression."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 

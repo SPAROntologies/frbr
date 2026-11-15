@@ -5,6 +5,6 @@
 openwemi:Work a owl:Class ;
     rdfs:label "work"@en ;
     rdfs:comment "An abstract notion of an artistic or intellectual creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 

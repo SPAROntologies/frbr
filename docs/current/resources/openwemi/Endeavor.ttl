@@ -5,5 +5,5 @@
 openwemi:Endeavor a owl:Class ;
     rdfs:label "endeavor"@en ;
     rdfs:comment "A creation."@en ;
-    rdfs:isDefinedBy openwemi: .
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> .
 

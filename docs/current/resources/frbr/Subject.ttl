@@ -14,6 +14,6 @@ frbr:Subject a owl:Class ;
     :my-subject a frbr:Subject .
     """ ;
     rdfs:comment "An additional set of entities that serve as the subjects of works."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 

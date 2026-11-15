@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#"
+        "@id": "http://purl.org/vocab/frbr/core"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -28,21 +28,21 @@
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#Work"
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
       },
       {
-        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+        "@id": "http://purl.org/vocab/frbr/core#Work"
       }
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb59"
+      },
+      {
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb53"
+      },
+      {
         "@id": "https://ns.dublincore.org/openwemi/Item"
-      },
-      {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b53"
-      },
-      {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b59"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b53",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb59",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -69,17 +69,51 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b54"
-          },
-          {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b55"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb60"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b54",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb60",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+      }
+    ]
+  },
+  {
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
+          },
+          {
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb54"
+          },
+          {
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb54",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -95,7 +129,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b55",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb55",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -107,40 +141,6 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/vocab/frbr/core#partOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b59",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/vocab/frbr/core#Endeavour"
-          },
-          {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b60"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b60",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
       }
     ]
   }
