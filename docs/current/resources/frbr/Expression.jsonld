@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#"
+        "@id": "http://purl.org/vocab/frbr/core"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -39,10 +39,10 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b96"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb96"
       },
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b90"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb90"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b96",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb96",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -69,17 +69,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b97"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb97"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b98"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb98"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b97",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb97",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b98",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb98",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -111,7 +111,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b90",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb90",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -122,17 +122,17 @@
             "@id": "http://purl.org/vocab/frbr/core#Endeavour"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b91"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb91"
           },
           {
-            "@id": "_:n5d7b8193682e4c0ab614864b941f5146b92"
+            "@id": "_:n5375e51c2b68479b979f712ba0e831deb92"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b91",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb91",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -148,7 +148,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b92",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb92",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

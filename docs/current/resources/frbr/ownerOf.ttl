@@ -14,7 +14,7 @@ frbr:ownerOf a owl:ObjectProperty ;
     :my-item a frbr:Item .
     """ ;
     rdfs:comment "The relation between the owner of a particular item and that item."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 

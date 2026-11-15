@@ -16,7 +16,7 @@ frbr:part a owl:ObjectProperty,
     :my-other-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies a part of an endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:partOf ;
     vs:term_status reg:statusStable ;

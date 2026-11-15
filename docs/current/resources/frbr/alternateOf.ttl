@@ -14,7 +14,7 @@ frbr:alternateOf a owl:ObjectProperty ;
     :my-manifestation a frbr:Manifestation .
     """ ;
     rdfs:comment "A relation that identifies the manifestation of an alternative one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 

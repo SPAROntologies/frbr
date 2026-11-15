@@ -14,7 +14,7 @@ frbr:abridgementOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the entire expression of an abridged one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 

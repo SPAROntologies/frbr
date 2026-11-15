@@ -15,7 +15,7 @@ frbr:realization a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation in which a work is realized through an expression."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:realizationOf ;

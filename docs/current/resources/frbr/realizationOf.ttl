@@ -15,7 +15,7 @@ frbr:realizationOf a owl:FunctionalProperty,
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies an expression that realizes a work."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 

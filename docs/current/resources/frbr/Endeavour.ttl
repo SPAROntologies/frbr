@@ -13,7 +13,7 @@ frbr:Endeavour a owl:Class ;
     :my-endeavour a frbr:Endeavour .
     """ ;
     rdfs:comment "The set of different aspects of user interests in a product of intellectual or artistic artifact."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Item frbr:Manifestation frbr:Work ) ],
         openwemi:Endeavor ;

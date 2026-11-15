@@ -1,0 +1,33 @@
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2002/07/owl#equivalentClass> _:n5375e51c2b68479b979f712ba0e831deb84 .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n5375e51c2b68479b979f712ba0e831deb87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5375e51c2b68479b979f712ba0e831deb88 .
+_:n5375e51c2b68479b979f712ba0e831deb86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n5375e51c2b68479b979f712ba0e831deb80 <http://www.w3.org/2002/07/owl#intersectionOf> _:n5375e51c2b68479b979f712ba0e831deb82 .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2002/07/owl#equivalentClass> <https://ns.dublincore.org/openwemi/Work> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n5375e51c2b68479b979f712ba0e831deb82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n5375e51c2b68479b979f712ba0e831deb84 <http://www.w3.org/2002/07/owl#intersectionOf> _:n5375e51c2b68479b979f712ba0e831deb87 .
+_:n5375e51c2b68479b979f712ba0e831deb89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n5375e51c2b68479b979f712ba0e831deb86 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+_:n5375e51c2b68479b979f712ba0e831deb81 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2002/07/owl#equivalentClass> _:n5375e51c2b68479b979f712ba0e831deb80 .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2008/05/skos#note> "\nA work is an abstract entity; there is no single material object one can point to as the work. \nWe recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. \nWhen we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n    "@en .
+_:n5375e51c2b68479b979f712ba0e831deb89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5375e51c2b68479b979f712ba0e831deb86 .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "A distinct intellectual or artistic creation.\n"@en .
+_:n5375e51c2b68479b979f712ba0e831deb85 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+_:n5375e51c2b68479b979f712ba0e831deb82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5375e51c2b68479b979f712ba0e831deb83 .
+_:n5375e51c2b68479b979f712ba0e831deb80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n5375e51c2b68479b979f712ba0e831deb83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n5375e51c2b68479b979f712ba0e831deb88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5375e51c2b68479b979f712ba0e831deb85 .
+_:n5375e51c2b68479b979f712ba0e831deb86 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#partOf> .
+<http://purl.org/vocab/frbr/core#Work> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:realization :my-expression ;\n        frbr:part :my-other-work .\n\n    :my-expression a frbr:Expression .\n\n    :my-other-work a frbr:Work .\n    " .
+_:n5375e51c2b68479b979f712ba0e831deb85 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/vocab/frbr/core#Work> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#label> "work"@en .
+_:n5375e51c2b68479b979f712ba0e831deb85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n5375e51c2b68479b979f712ba0e831deb87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n5375e51c2b68479b979f712ba0e831deb84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n5375e51c2b68479b979f712ba0e831deb81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n5375e51c2b68479b979f712ba0e831deb81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/vocab/frbr/core#Expression> .
+_:n5375e51c2b68479b979f712ba0e831deb88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5375e51c2b68479b979f712ba0e831deb89 .
+_:n5375e51c2b68479b979f712ba0e831deb83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5375e51c2b68479b979f712ba0e831deb81 .

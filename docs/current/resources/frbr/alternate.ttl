@@ -17,7 +17,7 @@ frbr:alternate a owl:ObjectProperty ;
     rdfs:comment """The relation in which a manifestation has another one as alternate.
 """@en ;
     rdfs:domain frbr:Manifestation ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Manifestation ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:alternateOf ;

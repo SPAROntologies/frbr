@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#"
+        "@id": "http://purl.org/vocab/frbr/core"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -31,7 +31,7 @@
         "@id": "https://ns.dublincore.org/openwemi/Endeavor"
       },
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b63"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb63"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b63",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb63",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

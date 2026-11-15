@@ -14,6 +14,6 @@ frbr:ResponsibleEntity a owl:Class ;
     :my-responsible-entity a frbr:ResponsibleEntity .
     """ ;
     rdfs:comment "An agent responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 

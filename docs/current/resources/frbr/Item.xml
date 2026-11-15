@@ -7,27 +7,24 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b59">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b61"/>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb62">
+    <rdf:first rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb60"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb57">
+    <rdf:first rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb54"/>
+    <rdf:rest rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb58"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Item">
-    <skos1:note xml:lang="en">
-The entity defined as item is a concrete entity. 
-It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). 
-There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).
-    </skos1:note>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <owl:equivalentClass rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb59"/>
+    <owl:equivalentClass rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb53"/>
     <owl:equivalentClass rdf:resource="https://ns.dublincore.org/openwemi/Item"/>
-    <owl:equivalentClass rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b53"/>
-    <owl:equivalentClass rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b59"/>
-    <rdfs:label xml:lang="en">item</rdfs:label>
-    <rdfs:comment xml:lang="en">A single exemplar of a manifestation.
-</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">item</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <vann:example>
     :my-item a frbr:Item ;
         frbr:exemplarOf :my-manifestation ;
@@ -37,44 +34,47 @@ There are instances, however, where the entity defined as item comprises more th
 
     :my-other-item a frbr:Item .
     </vann:example>
+    <rdfs:comment xml:lang="en">A single exemplar of a manifestation.
+</rdfs:comment>
+    <skos1:note xml:lang="en">
+The entity defined as item is a concrete entity. 
+It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). 
+There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).
+    </skos1:note>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b54">
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb61">
+    <rdf:rest rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb62"/>
+    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb54">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#part"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b61">
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb56"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb59">
+    <owl:intersectionOf rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb61"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb58">
+    <rdf:first rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb55"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb56">
     <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b62"/>
+    <rdf:rest rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb57"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b60">
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb55">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5375e51c2b68479b979f712ba0e831deb60">
     <owl:someValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
     <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b55">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#partOf"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b53">
-    <owl:intersectionOf rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b56"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b62">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b60"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b58">
-    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b55"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b56">
-    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b57"/>
-    <rdf:first rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b57">
-    <rdf:rest rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b58"/>
-    <rdf:first rdf:nodeID="n5d7b8193682e4c0ab614864b941f5146b54"/>
   </rdf:Description>
 </rdf:RDF>

@@ -15,7 +15,7 @@ frbr:exemplar a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation in which a manifestation is exemplified in an item."@en ;
     rdfs:domain frbr:Manifestation ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Item ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:exemplarOf ;

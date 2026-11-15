@@ -22,7 +22,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/vocab/frbr/core#"
+        "@id": "http://purl.org/vocab/frbr/core"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -33,7 +33,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n5d7b8193682e4c0ab614864b941f5146b7"
+        "@id": "_:n5375e51c2b68479b979f712ba0e831deb7"
       }
     ],
     "http://www.w3.org/2002/07/owl#inverseOf": [
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "@id": "_:n5d7b8193682e4c0ab614864b941f5146b7",
+    "@id": "_:n5375e51c2b68479b979f712ba0e831deb7",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

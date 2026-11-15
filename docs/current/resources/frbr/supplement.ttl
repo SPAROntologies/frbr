@@ -19,7 +19,7 @@ frbr:supplement a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;

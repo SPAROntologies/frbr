@@ -1,0 +1,17 @@
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/frbr/core> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#range> _:n5375e51c2b68479b979f712ba0e831deb7 .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a work and a particular subject it is talking about."@en .
+_:n5375e51c2b68479b979f712ba0e831deb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n5375e51c2b68479b979f712ba0e831deb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#CorporateBody> .
+_:n5375e51c2b68479b979f712ba0e831deb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n5375e51c2b68479b979f712ba0e831deb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5375e51c2b68479b979f712ba0e831deb10 .
+<http://purl.org/vocab/frbr/core#subject> <http://purl.org/vocab/vann/example> "\n    :my-work a frbr:Work ;\n        frbr:subject\n            :my-organization ,\n            :my-subject ,\n            :my-other-work .\n    " .
+_:n5375e51c2b68479b979f712ba0e831deb7 <http://www.w3.org/2002/07/owl#unionOf> _:n5375e51c2b68479b979f712ba0e831deb8 .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/vocab/frbr/core#subjectOf> .
+_:n5375e51c2b68479b979f712ba0e831deb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/frbr/core#Subject> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
+<http://purl.org/vocab/frbr/core#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Work> .
+_:n5375e51c2b68479b979f712ba0e831deb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n5375e51c2b68479b979f712ba0e831deb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5375e51c2b68479b979f712ba0e831deb9 .

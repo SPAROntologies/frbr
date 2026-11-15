@@ -13,7 +13,7 @@ frbr:owner a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between an item and its owner."@en ;
     rdfs:domain frbr:Item ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:ownerOf ;
     vs:term_status reg:statusStable .
