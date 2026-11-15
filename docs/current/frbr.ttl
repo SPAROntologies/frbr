@@ -28,13 +28,55 @@ dc:rights a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
+dc:language a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:image a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
 <http://purl.org/spar/frbr> a owl:Ontology ;
     rdfs:label "Essential FRBR in OWL2 DL Ontology (FRBR DL)"@en ;
     dc:contributor "David Shotton (http://orcid.org/0000-0001-5506-523X)"^^xsd:string,
         "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
     dc:creator "Paolo Ciccarese (http://orcid.org/0000-0002-5156-2703)"^^xsd:string,
         "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-10-05" ;
+    dc:date "2026-11-15" ;
     dc:description """
 The **_Essential FRBR in OWL2 DL Ontology (FRBR DL)_** is an expression in OWL 2 DL of the basic concepts and relations described in the _IFLA report on the Functional Requirements for Bibliographic Records (FRBR)_, also described in [Ian Davis's RDF vocabulary](http://vocab.org/frbr/core).
 
@@ -229,7 +271,7 @@ What are the Work, Expression and Manifestation of a publication and its produce
     dcterms:created "2011-06-29" ;
     dcterms:issued "2011-06-29" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-15" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/frbr/blob/master/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.b34b43" ;
@@ -238,10 +280,10 @@ What are the Work, Expression and Manifestation of a publication and its produce
     vann:preferredNamespacePrefix "frbr"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/frbr"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/frbr> ;
-    owl:backwardCompatibleWith :2026-08-14 ;
-    owl:priorVersion :2026-08-14 ;
-    owl:versionIRI :2026-10-05 ;
-    owl:versionInfo "1.1.1"^^xsd:string ;
+    owl:backwardCompatibleWith :2026-10-05 ;
+    owl:priorVersion :2026-10-05 ;
+    owl:versionIRI :2026-11-15 ;
+    owl:versionInfo "1.1.2"^^xsd:string ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/frbr> ;
     schema:image <https://github.com/SPAROntologies/frbr/blob/master/docs/current/frbr.png> ;
@@ -249,11 +291,10 @@ What are the Work, Expression and Manifestation of a publication and its produce
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
+        "OWL ontology"@en ,
         "FRBR"@en,
-        "Functional Requirements for Bibliographic Records"@en,
         "bibliometrics"@en,
-        "scholarly publishing"@en,
+        "scholarly communication"@en,
         "scientometrics"@en,
         "semantic publishing"@en .
 
@@ -268,7 +309,7 @@ frbr:alternate a owl:ObjectProperty ;
     rdfs:comment """The relation in which a manifestation has another one as alternate.
 """@en ;
     rdfs:domain frbr:Manifestation ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Manifestation ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:alternateOf ;
@@ -286,7 +327,7 @@ frbr:creator a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a work and its creator."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:creatorOf ;
     vs:term_status reg:statusStable .
@@ -299,7 +340,7 @@ frbr:owner a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between an item and its owner."@en ;
     rdfs:domain frbr:Item ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:ownerOf ;
     vs:term_status reg:statusStable .
@@ -312,7 +353,7 @@ frbr:producer a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a manifestation and its producer."@en ;
     rdfs:domain frbr:Manifestation ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:producerOf ;
     vs:term_status reg:statusStable .
@@ -325,7 +366,7 @@ frbr:realizer a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between an expression and its realizer."@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntity ;
     owl:inverseOf frbr:realizerOf ;
     vs:term_status reg:statusStable .
@@ -341,7 +382,7 @@ frbr:reconfiguration a owl:ObjectProperty ;
     rdfs:comment """A relation in which an item is reconfigured in another one.
 """@en ;
     rdfs:domain frbr:Item ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Item ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:reconfigurationOf ;
@@ -363,7 +404,7 @@ frbr:reproduction a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Item frbr:Manifestation ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Item frbr:Manifestation ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -384,7 +425,7 @@ frbr:subject a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a work and a particular subject it is talking about."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:CorporateBody frbr:Endeavour frbr:Subject ) ] ;
     owl:inverseOf frbr:subjectOf ;
@@ -396,10 +437,12 @@ rdfs:isDefinedBy a owl:AnnotationProperty .
 
 rdfs:label a owl:AnnotationProperty .
 
+rdfs:seeAlso a owl:AnnotationProperty .
+
 openwemi:Expression a owl:Class ;
     rdfs:label "expression"@en ;
     rdfs:comment "A perceivable form of the creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 
 frbr:Concept a owl:Class ;
@@ -410,7 +453,7 @@ frbr:Concept a owl:Class ;
     """ ;
     rdfs:comment """An abstract notion or idea.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:Subject ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -428,7 +471,7 @@ frbr:CorporateBody a owl:Class ;
     """ ;
     rdfs:comment """An organization or group of individuals and/or organizations acting as a unit.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:ResponsibleEntity ;
     owl:disjointWith frbr:Person ;
     vs:term_status reg:statusStable ;
@@ -446,7 +489,7 @@ frbr:Event a owl:Class ;
     """ ;
     rdfs:comment """An action or occurrence.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:Subject ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -463,7 +506,7 @@ frbr:Object a owl:Class ;
     """ ;
     rdfs:comment """A material thing.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:Subject ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -477,7 +520,7 @@ frbr:Person a owl:Class ;
         frbr:creatorOf :my-work .
     """ ;
     rdfs:comment "An individual."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:ResponsibleEntity ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -494,7 +537,7 @@ frbr:Place a owl:Class ;
     """ ;
     rdfs:comment """A location.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subClassOf frbr:Subject ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -512,7 +555,7 @@ frbr:abridgement a owl:ObjectProperty ;
     rdfs:comment """A relation in which an expression is abridged in another one.
 """@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:abridgementOf ;
@@ -530,7 +573,7 @@ frbr:abridgementOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the entire expression of an abridged one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -546,7 +589,7 @@ frbr:adaption a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -566,7 +609,7 @@ frbr:adaptionOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the work/expression of an adapted one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -579,7 +622,7 @@ frbr:alternateOf a owl:ObjectProperty ;
     :my-manifestation a frbr:Manifestation .
     """ ;
     rdfs:comment "A relation that identifies the manifestation of an alternative one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -594,7 +637,7 @@ frbr:arrangement a owl:ObjectProperty ;
     rdfs:comment """A relation in which an expression is arranged in another one.
 """@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:arrangementOf ;
@@ -613,7 +656,7 @@ frbr:arrangementOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the original expression of an arranged one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -629,7 +672,7 @@ frbr:complement a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -650,7 +693,7 @@ frbr:complementOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the work or expression that is a complement of another one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -663,7 +706,7 @@ frbr:creatorOf a owl:ObjectProperty ;
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "The relation between the creator of a particular work and that work."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 
@@ -677,7 +720,7 @@ frbr:embodiment a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation in which an expression is embodied in a manifestation."@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Manifestation ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:embodimentOf ;
@@ -693,7 +736,7 @@ frbr:exemplar a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation in which a manifestation is exemplified in an item."@en ;
     rdfs:domain frbr:Manifestation ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Item ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:exemplarOf ;
@@ -711,7 +754,7 @@ frbr:imitation a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -731,7 +774,7 @@ frbr:imitationOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the work or expression of an imitated one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -744,7 +787,7 @@ frbr:ownerOf a owl:ObjectProperty ;
     :my-item a frbr:Item .
     """ ;
     rdfs:comment "The relation between the owner of a particular item and that item."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 
@@ -757,7 +800,7 @@ frbr:producerOf a owl:ObjectProperty ;
     :my-manifestation a frbr:Manifestation .
     """ ;
     rdfs:comment "The relation between the producer of a particular manifestation and that manifestation."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 
@@ -771,7 +814,7 @@ frbr:realization a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation in which a work is realized through an expression."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:realizationOf ;
@@ -786,7 +829,7 @@ frbr:realizerOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "The relation between the realizer of a particular expression and that expression."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
 
@@ -799,7 +842,7 @@ frbr:reconfigurationOf a owl:ObjectProperty ;
     :my-item a frbr:Item .
     """ ;
     rdfs:comment "A relation that identifies the item of a reconfigured one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -812,7 +855,7 @@ frbr:reproductionOf a owl:ObjectProperty ;
     :my-item a frbr:Item .
     """ ;
     rdfs:comment "A relation that identifies the manifestation or item of a reproduced one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -827,7 +870,7 @@ frbr:revision a owl:ObjectProperty ;
     rdfs:comment """A relation in which an expression is revised in another one.
 """@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:revisionOf ;
@@ -845,7 +888,7 @@ frbr:revisionOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the previous expression of a revised one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -858,7 +901,7 @@ frbr:subjectOf a owl:ObjectProperty ;
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "The relation between a subject a work talks about and that work."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 
 frbr:successor a owl:ObjectProperty ;
@@ -873,7 +916,7 @@ frbr:successor a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -896,7 +939,7 @@ frbr:successorOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the previous work/expression of a succeeded one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -912,7 +955,7 @@ frbr:summarization a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -932,7 +975,7 @@ frbr:summarizationOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the original work/expression of a summarized one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -948,7 +991,7 @@ frbr:supplement a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -968,7 +1011,7 @@ frbr:supplementOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the work/expression of a particular supplement of it."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -984,7 +1027,7 @@ frbr:transformation a owl:ObjectProperty ;
 """@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Work ) ] ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
@@ -1004,7 +1047,7 @@ frbr:transformationOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the original work or expression of a transformed one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -1019,7 +1062,7 @@ frbr:translation a owl:ObjectProperty ;
     rdfs:comment """A relation in which an expression is translated in another one.
 """@en ;
     rdfs:domain frbr:Expression ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:translationOf ;
@@ -1037,26 +1080,26 @@ frbr:translationOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies the original expression of a translated one."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
 openwemi:Item a owl:Class ;
     rdfs:label "item"@en ;
     rdfs:comment "An exemplar of a creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 
 openwemi:Manifestation a owl:Class ;
     rdfs:label "manifestation"@en ;
     rdfs:comment "The physical embodiment of a creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 
 openwemi:Work a owl:Class ;
     rdfs:label "work"@en ;
     rdfs:comment "An abstract notion of an artistic or intellectual creation."@en ;
-    rdfs:isDefinedBy openwemi: ;
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> ;
     rdfs:subClassOf openwemi:Endeavor .
 
 frbr:embodimentOf a owl:ObjectProperty ;
@@ -1068,7 +1111,7 @@ frbr:embodimentOf a owl:ObjectProperty ;
     :my-expression a frbr:Expression .
     """ ;
     rdfs:comment "A relation that identifies a manifestation that embodies an expression."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -1082,7 +1125,7 @@ frbr:exemplarOf a owl:FunctionalProperty,
     :my-manifestation a frbr:Manifestation .
     """ ;
     rdfs:comment "A relation that identifies an item that exemplifies a manifestation."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -1095,7 +1138,7 @@ frbr:ResponsibleEntity a owl:Class ;
     :my-responsible-entity a frbr:ResponsibleEntity .
     """ ;
     rdfs:comment "An agent responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 
 frbr:part a owl:ObjectProperty,
@@ -1108,7 +1151,7 @@ frbr:part a owl:ObjectProperty,
     :my-other-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies a part of an endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     owl:inverseOf frbr:partOf ;
     vs:term_status reg:statusStable ;
@@ -1124,7 +1167,7 @@ frbr:responsibleEntity a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between any endeavour and a particular entity that is responsible of it."@en ;
     rdfs:domain frbr:Endeavour ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:ResponsibleEntity ;
     owl:inverseOf frbr:responsibleEntityOf ;
     vs:term_status reg:statusStable .
@@ -1138,7 +1181,7 @@ frbr:Subject a owl:Class ;
     :my-subject a frbr:Subject .
     """ ;
     rdfs:comment "An additional set of entities that serve as the subjects of works."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 
 frbr:partOf a owl:ObjectProperty,
@@ -1151,7 +1194,7 @@ frbr:partOf a owl:ObjectProperty,
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies an endeavour incorporating another endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable ;
     skos:note "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .
@@ -1165,13 +1208,13 @@ frbr:responsibleEntityOf a owl:ObjectProperty ;
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies an entity that is responsible for a particular endeavour."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     vs:term_status reg:statusStable .
 
 openwemi:Endeavor a owl:Class ;
     rdfs:label "endeavor"@en ;
     rdfs:comment "A creation."@en ;
-    rdfs:isDefinedBy openwemi: .
+    rdfs:isDefinedBy <https://ns.dublincore.org/openwemi> .
 
 frbr:Item a owl:Class ;
     rdfs:label "item"@en ;
@@ -1186,7 +1229,7 @@ frbr:Item a owl:Class ;
     """ ;
     rdfs:comment """A single exemplar of a manifestation.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:disjointWith frbr:Manifestation,
         frbr:Work ;
     owl:equivalentClass [ a owl:Class ;
@@ -1213,7 +1256,7 @@ frbr:Endeavour a owl:Class ;
     :my-endeavour a frbr:Endeavour .
     """ ;
     rdfs:comment "The set of different aspects of user interests in a product of intellectual or artistic artifact."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( frbr:Expression frbr:Item frbr:Manifestation frbr:Work ) ],
         openwemi:Endeavor ;
@@ -1235,7 +1278,7 @@ frbr:Manifestation a owl:Class ;
     """ ;
     rdfs:comment """The physical embodiment of an expression of a work.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:disjointWith frbr:Work ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
@@ -1277,7 +1320,7 @@ frbr:Work a owl:Class ;
     """ ;
     rdfs:comment """A distinct intellectual or artistic creation.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
                         owl:onProperty frbr:realization ;
@@ -1306,7 +1349,7 @@ frbr:realizationOf a owl:FunctionalProperty,
     :my-work a frbr:Work .
     """ ;
     rdfs:comment "A relation that identifies an expression that realizes a work."@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:subPropertyOf frbr:relatedEndeavour ;
     vs:term_status reg:statusStable .
 
@@ -1326,7 +1369,7 @@ frbr:Expression a owl:Class ;
     """ ;
     rdfs:comment """The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 """@en ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     owl:disjointWith frbr:Item,
         frbr:Manifestation,
         frbr:Work ;
@@ -1358,7 +1401,7 @@ frbr:relatedEndeavour a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A generic relation between two endeavours."@en ;
     rdfs:domain frbr:Endeavour ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Endeavour ;
     vs:term_status reg:statusStable .
 
