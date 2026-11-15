@@ -1,0 +1,1620 @@
+@prefix : <http://purl.org/spar/frbr/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix openwemi: <https://ns.dublincore.org/openwemi/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+<http://purl.org/spar/frbr> a owl:Ontology ;
+    rdfs:label "Essential FRBR in OWL2 DL Ontology (FRBR DL)"@en ;
+    dc:contributor "David Shotton (http://orcid.org/0000-0001-5506-523X)"^^xsd:string,
+        "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
+    dc:creator "Paolo Ciccarese (http://orcid.org/0000-0002-5156-2703)"^^xsd:string,
+        "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
+    dc:date "2026-10-05" ;
+    dc:description """
+The **_Essential FRBR in OWL2 DL Ontology (FRBR DL)_** is an expression in OWL 2 DL of the basic concepts and relations described in the _IFLA report on the Functional Requirements for Bibliographic Records (FRBR)_, also described in [Ian Davis's RDF vocabulary](http://vocab.org/frbr/core).
+
+FRBR is a general conceptual model, proposed by the _International Federation of Library Association (IFLA)_, for describing documents and their evolution over time. 
+It works for both physical and digital resources and it has proved to be very flexible and powerful. 
+One of the most important aspects of FRBR is the fact that it is not associated with a particular metadata schema or implementation.
+
+![The main classes of FRBR.](frbr.png)
+
+FRBR describes all documents from four different and correlated points of view: _Work_, _Expression_, _Manifestation_ and _Item_; each of which is a FRBR _Endeavour_. 
+These can be illustrated by considering of the book _Alice's Adventures in Wonderland_ by Lewis Carroll as an example:
+* _Work._ A FRBR Work is a high-level abstract Platonic concept of the essence of a distinct intellectual or artistic creation, for example the ideas in Lewis Carroll's head concerning _Alice's Adventures in Wonderland_, independent of any representation of these ideas in a particular form. 
+A Work is realised through one or more Expressions;
+* _Expression._ A FRBR Expression is the realisation of the intellectual or artistic content of a Work. 
+Thus, the original text of _Alice's Adventures in Wonderland_ and its Italian translation _Le Avventure di Alice nel Paese delle Meraviglie_ refer to different Expressions of the same Work. 
+An Expression is embodied in one or more Manifestations;
+* _Manifestation._ A FRBR Manifestation of a work defines its particular physical or electronic embodiment, for example, the particular format in which _Alice's Adventures in Wonderland_ is stored: as a printed object or in HTML, represent two quite different Manifestations. 
+In publishing, different manifestations of a journal article will all bear the same Digital Object Identifier (DOI), which identifies the Expression of the work, not its various Manifestations. 
+However, a paperback and a hardback version of a book will bear different International Standard Book Numbers (ISBNs), since these identifiers are assigned at the Manifestation level. 
+A Manifestation is exemplified by one or more Items;
+* _Item._ A FRBR Item is a particular physical or electronic copy of _Alice's Adventures in Wonderland_ that a person can own, for example the printed version of the book you have in your bookcase, or the Mobipocket format copy you have downloaded to read on your e-book device. 
+All Items that are identical to one another – for example books from the same printing, are exemplars of the same Manifestation.
+
+Starting from [Ian Davis's RDF vocabulary](http://vocab.org/frbr/core) that expresses the basic concepts and relations described in the IFLA report on FRBR, we have created an expression in OWL 2 DL of FRBR in order to be used in other SPAR Ontologies that require this kind of descriptions, e.g., [FaBiO](https://www.sparontologies.net/ontologies/fabio) and [BiRO](https://www.sparontologies.net/ontologies/biro).
+
+## Examples of use
+
+In the following subsections, we introduce some examples to showcase how to use FRBR DL. 
+
+The prefixes that are used in all the examples provided below are defined as follows:
+
+    @prefix application: <http://purl.org/NET/mediatypes/application/> .
+    @prefix dcterms: <http://purl.org/dc/terms/> .
+    @prefix frbr: <http://purl.org/vocab/frbr/core#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Using FRBR for describing a bibliographic entity
+
+FRBR DL allows one to describe information related to a bibliographic entity such as the following one:
+
+    Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, Richard Benjamins (2007). OPJK and DILIGENT: ontology modeling in a distributed environment. 
+    Artificial Intelligence and Law, 15 (2): 171-186. June 2007. Springer. DOI: 10.1007/s10506-007-9036-2. Print ISSN 0924-8463. Online ISSN 1572-8382. Published 
+    online (PDF) May 31, 2007.
+
+From the previous reference we can extract the following information:
+1. the document is an academic research article – deducible from the journal in which it is published;
+2. Pompeu Casanovas, Núria Casellas, Christoph Tempich, Denny Vrandečić, and Richard Benjamins are the authors of the article;
+3. the article was published in 2007;
+4. the article is entitled "OPJK and DILIGENT: ontology modeling in a distributed environment";
+5. it was published in the 2nd issue of the 15th volume of Artificial Intelligence and Law;
+6. the DOI of the article is "10.1007/s10506-007-9036-2";
+7. the Print ISSN of the journal is "0924-8463";
+8. the Online ISSN of the journal is "1572-8382";
+9. the PDF version of the article was published online on May 31, 2007;
+10. the journal issue within which the printed version of the article was published bears the publication date June 2007;
+11. the page range of the article within the printed version is "171-186";
+12. the publisher of the journal is Springer.
+
+Although it is possible to use FRBR (in combination with DC Terms) to give a structured and unambiguous description of all the bibliographic entities, the example makes it clear the severe limitations of FRBR. 
+These are caused by the lack of terms in the FRBR Core ontology which allow publications to be described in normal everyday language. 
+This issue is addressed by using FaBiO entities.
+
+    :opjk-and-diligent a frbr:Work ;
+        frbr:creator
+            :casanovas ,
+            :casellas,
+            :tempich,
+            :vrandecic,
+            :benjamins ;
+        dcterms:title
+            'OPJK and DILIGENT: ontology modeling in a distributed environment' ;
+        frbr:realization :version-of-record .
+
+    :version-of-record a frbr:Expression ;
+        dcterms:issued '2007'^^xsd:gYear ;
+        dcterms:identifier 'doi:10.1007/s10506-007-9036-2' ;
+        frbr:embodiment :printed , :pdf ;
+        frbr:partOf :issue-2-volume-15-ail .
+
+    :issue-2-volume-15-ail a frbr:Expression ;
+        dcterms:identifier '2' ;
+        dcterms:description 'Issue' ;
+        frbr:embodiment :printed-issue ;
+        frbr:partOf :volume-15-ail .
+
+    :volume-15-ail a frbr:Expression ;
+        dcterms:identifier '15' ;
+        dcterms:description 'Volume' ;
+        frbr:partOf :ail .
+
+    :ail a frbr:Expression ;
+        dcterms:title 'Artificial Intelligence and Law' .
+
+    :printed-issue a frbr:Manifestation ;
+        frbr:producer :springer ;
+        dcterms:issued '06-2007'^^xsd:gYearMonth ;
+        frbr:part :printed .
+
+    :printed a frbr:Manifestation ;
+        frbr:producer :springer ;
+        dcterms:issued '06-2007'^^xsd:gYearMonth ;
+        dcterms:extent [ a dcterms:SizeOrDuration ;
+            dcterms:description '171-186'  ] .
+
+    :pdf a frbr:Manifestation ;
+        frbr:producer :springer ;
+        dcterms:format application:pdf ;
+        dcterms:issued '31-05-2007'^^xsd:date .
+
+    :casanovas a frbr:Person ;
+        dcterms:description 'Pompeu Casanovas' .
+
+    :casellas a frbr:Person ;
+        dcterms:description 'Nuria Casellas' .
+
+    :tempich a frbr:Person ;
+        dcterms:description 'Christoph Tempich' .
+
+    :vrandecic a frbr:Person ;
+        dcterms:description 'Denny Vrandečić' .
+
+    :benjamins a frbr:Person ;
+        dcterms:description 'Richard Benjamins' .
+
+    :springer a frbr:CorporateBody ;
+        dcterms:description 'Springer' .
+
+## Competency Questions
+
+FRBR DL can be used for answering several questions related to documents and their different description levels.
+In the following subsections, some of them are introduced together with their respective SPARQL queries. 
+
+The prefixes that are used in all the SPARQL queries provided below are defined as follows:
+
+    PREFIX frbr: <http://purl.org/vocab/frbr/core#>
+    PREFIX dcterms: <http://purl.org/dc/terms/>
+
+### CQ1
+
+Which expressions realize a given work, along with the creators of that work?
+
+    SELECT ?work ?title ?creator ?expression
+    WHERE {
+        ?work a frbr:Work ;
+            frbr:realization ?expression .
+        OPTIONAL { ?work dcterms:title ?title . }
+        OPTIONAL { ?work frbr:creator ?creator . }
+    }
+
+### CQ2
+
+What are the manifestations embodying an expression, along with their format and producer?
+
+    SELECT ?expression ?manifestation ?producer ?format
+    WHERE {
+        ?expression a frbr:Expression ;
+            frbr:embodiment ?manifestation .
+        ?manifestation a frbr:Manifestation .
+        OPTIONAL { ?manifestation frbr:producer ?producer . }
+        OPTIONAL { ?manifestation dcterms:format ?format . }
+    }
+
+### CQ3
+
+What is the hierarchical containment chain of an expression (e.g., article to issue, volume, and journal)?
+
+    SELECT ?childExpression ?parentExpression ?identifier ?title
+    WHERE {
+        ?childExpression a frbr:Expression ;
+            frbr:partOf ?parentExpression .
+        OPTIONAL { ?parentExpression dcterms:identifier ?identifier . }
+        OPTIONAL { ?parentExpression dcterms:title ?title . }
+    }
+
+### CQ4
+
+What are the Work, Expression and Manifestation of a publication and its producer?
+
+    SELECT ?work ?expression ?manifestation ?producer
+    WHERE {
+        ?work a frbr:Work ;
+            frbr:realization ?expression .
+        ?expression a frbr:Expression ;
+            frbr:embodiment ?manifestation .
+        ?manifestation a frbr:Manifestation .
+        OPTIONAL { ?manifestation frbr:producer ?producer . }
+    }
+
+"""@en ;
+    dc:title "The Essential FRBR in OWL2 DL Ontology (FRBR)"@en ;
+    dcterms:bibliographicCitation "Paolo Ciccarese, Silvio Peroni. The Essential FRBR in OWL2 DL Ontology. Revision: 1.1.1. http://purl.org/spar/frbr." ;
+    dcterms:created "2011-06-29" ;
+    dcterms:issued "2011-06-29" ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-05" ;
+    dcterms:publisher <https://ror.org/00wb4mk85> ;
+    dcterms:source <https://github.com/SPAROntologies/frbr/blob/master/docs/cq.md> ;
+    bibo:doi "https://doi.org/10.25504/FAIRsharing.b34b43" ;
+    bibo:status <http://purl.org/ontology/bibo/status/published> ;
+    vann:changes <https://github.com/SPAROntologies/frbr/blob/master/CHANGELOG.md> ;
+    vann:preferredNamespacePrefix "frbr"@en ;
+    vann:preferredNamespaceUri "http://purl.org/spar/frbr"@en ;
+    rdfs:seeAlso <http://www.sparontologies.net/ontologies/frbr> ;
+    owl:backwardCompatibleWith :2026-08-14 ;
+    owl:priorVersion :2026-08-14 ;
+    owl:versionIRI :2026-10-05 ;
+    owl:versionInfo "1.1.1"^^xsd:string ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
+    schema:codeRepository <https://github.com/SPAROntologies/frbr> ;
+    schema:image <https://github.com/SPAROntologies/frbr/blob/master/docs/current/frbr.png> ;
+    schema:includedInDataCatalog <https://fairsharing.org/> ;
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "FRBR"@en,
+        "Functional Requirements for Bibliographic Records"@en,
+        "bibliometrics"@en,
+        "scholarly publishing"@en,
+        "scientometrics"@en,
+        "semantic publishing"@en .
+
+frbr:alternate a owl:ObjectProperty ;
+    rdfs:label "has alternate"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:alternate :my-other-manifestation .
+
+    ;my-other-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment """The relation in which a manifestation has another one as alternate.
+"""@en ;
+    rdfs:domain frbr:Manifestation ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Manifestation ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:alternateOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The alternate relationship involves manifestations that effectively serve as alternates for each other. 
+The alternate relationship obtains, for example, when a publication, sound recording, video, etc. is issued in more than one format or when it is released simultaneously by different publishers in different countries.
+    """@en .
+
+frbr:creator a owl:ObjectProperty ;
+    rdfs:label "has creator"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:creator :my-person .
+    """ ;
+    rdfs:comment "The relation between a work and its creator."@en ;
+    rdfs:domain frbr:Work ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntity ;
+    owl:inverseOf frbr:creatorOf ;
+    vs:term_status reg:statusStable .
+
+frbr:owner a owl:ObjectProperty ;
+    rdfs:label "has owner"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:owner :my-person .
+    """ ;
+    rdfs:comment "The relation between an item and its owner."@en ;
+    rdfs:domain frbr:Item ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntity ;
+    owl:inverseOf frbr:ownerOf ;
+    vs:term_status reg:statusStable .
+
+frbr:producer a owl:ObjectProperty ;
+    rdfs:label "has producer"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:producer :my-person .
+    """ ;
+    rdfs:comment "The relation between a manifestation and its producer."@en ;
+    rdfs:domain frbr:Manifestation ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntity ;
+    owl:inverseOf frbr:producerOf ;
+    vs:term_status reg:statusStable .
+
+frbr:realizer a owl:ObjectProperty ;
+    rdfs:label "has realizer"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:realizer :my-person .
+    """ ;
+    rdfs:comment "The relation between an expression and its realizer."@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntity ;
+    owl:inverseOf frbr:realizerOf ;
+    vs:term_status reg:statusStable .
+
+frbr:reconfiguration a owl:ObjectProperty ;
+    rdfs:label "has reconfiguration"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:reconfiguration :my-other-item .
+
+    :my-other-item a frbr:Item .
+    """ ;
+    rdfs:comment """A relation in which an item is reconfigured in another one.
+"""@en ;
+    rdfs:domain frbr:Item ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Item ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:reconfigurationOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The reconfiguration relationship is one in which one or more items are changed in such a way that a new item or items result. 
+Most commonly, an item of one manifestation is bound with an item of a different manifestation to make a new item.
+    """@en .
+
+frbr:reproduction a owl:ObjectProperty ;
+    rdfs:label "has reproduction"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:reproduction :my-other-item .
+
+    :my-other-item a frbr:Item .
+    """ ;
+    rdfs:comment """A relation in which a manifestation or item is reproduced in another one.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Item frbr:Manifestation ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Item frbr:Manifestation ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:reproductionOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+A reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship.
+    """@en .
+
+frbr:subject a owl:ObjectProperty ;
+    rdfs:label "has subject"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:subject
+            :my-organization ,
+            :my-subject ,
+            :my-other-work .
+    """ ;
+    rdfs:comment "The relation between a work and a particular subject it is talking about."@en ;
+    rdfs:domain frbr:Work ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:CorporateBody frbr:Endeavour frbr:Subject ) ] ;
+    owl:inverseOf frbr:subjectOf ;
+    vs:term_status reg:statusStable .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+openwemi:Expression a owl:Class ;
+    rdfs:label "expression"@en ;
+    rdfs:comment "A perceivable form of the creation."@en ;
+    rdfs:isDefinedBy openwemi: ;
+    rdfs:subClassOf openwemi:Endeavor .
+
+frbr:Concept a owl:Class ;
+    rdfs:label "concept"@en ;
+    vann:example """
+    :my-concept a frbr:Concept ;
+        frbr:subjectOf :my-work .
+    """ ;
+    rdfs:comment """An abstract notion or idea.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:Subject ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc. 
+A concept may be broad in nature or narrowly defined and precise. 
+    """@en .
+
+frbr:CorporateBody a owl:Class ;
+    rdfs:label "corporate body"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:producer :my-corporate-body .
+
+    :my-corporate-body a frbr:CorporateBody .
+    """ ;
+    rdfs:comment """An organization or group of individuals and/or organizations acting as a unit.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:ResponsibleEntity ;
+    owl:disjointWith frbr:Person ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as corporate body encompasses organizations and groups of individuals and/or organizations that are identified by a particular name, including occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc.
+    """@en .
+
+frbr:Event a owl:Class ;
+    rdfs:label "event"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:subject :my-event .
+
+    :my-event a frbr:Event .
+    """ ;
+    rdfs:comment """An action or occurrence.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:Subject ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as event encompasses a comprehensive range of actions and occurrences that may be the subject of a work: historical events, epochs, periods of time, etc.
+    """@en .
+
+frbr:Object a owl:Class ;
+    rdfs:label "object"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:subject :my-object .
+
+    :my-object a frbr:Object .
+    """ ;
+    rdfs:comment """A material thing.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:Subject ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist.
+    """@en .
+
+frbr:Person a owl:Class ;
+    rdfs:label "person"@en ;
+    vann:example """
+    :my-person a frbr:Person ;
+        frbr:creatorOf :my-work .
+    """ ;
+    rdfs:comment "An individual."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:ResponsibleEntity ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+ The entity defined as person encompasses individuals that are deceased as well as those that are living.
+    """@en .
+
+frbr:Place a owl:Class ;
+    rdfs:label "place"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:subject :my-place .
+
+    :my-place a frbr:Place .
+    """ ;
+    rdfs:comment """A location.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subClassOf frbr:Subject ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as place encompasses a comprehensive range of locations: terrestrial and extra-terrestrial; historical and contemporary; geographic features and geo-political jurisdictions.
+    """@en .
+
+frbr:abridgement a owl:ObjectProperty ;
+    rdfs:label "has abridgement"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:abridgement :my-other-expression .
+
+    :my-other-expression a frbr:Expression .
+    """ ;
+    rdfs:comment """A relation in which an expression is abridged in another one.
+"""@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:abridgementOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+In the abridged expression some content of the previous expression is removed, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood).
+    """@en .
+
+frbr:abridgementOf a owl:ObjectProperty ;
+    rdfs:label "is abridgement of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:abridgementOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the entire expression of an abridged one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:adaption a owl:ObjectProperty ;
+    rdfs:label "has adaption"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:adaption :my-other-expression .
+
+    :my-other-expression a frbr:Expression .    
+    """ ;
+    rdfs:comment """A relation in which a work or expression is adapted in another one.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:adaptionOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
+If there exists a relation of this kind among two different expressions, they always refer to different works.
+    """@en .
+
+frbr:adaptionOf a owl:ObjectProperty ;
+    rdfs:label "is adaption of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:adaptionOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the work/expression of an adapted one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:alternateOf a owl:ObjectProperty ;
+    rdfs:label "is alternate of"@en ;
+    vann:example """
+    :my-other-manifestation a frbr:Manifestation ;
+        frbr:alternateOf :my-manifestation .
+
+    :my-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment "A relation that identifies the manifestation of an alternative one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:arrangement a owl:ObjectProperty ;
+    rdfs:label "has arrangement"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:arrangement :my-other-expression .
+
+    :my-other-expression a frbr:Expression .     
+    """ ;
+    rdfs:comment """A relation in which an expression is arranged in another one.
+"""@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:arrangementOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+In the arranged expression some content of the previous expression is changed in some way, but the result does not alter the content to the extent that it becomes a new work. 
+The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood).
+    """@en .
+
+frbr:arrangementOf a owl:ObjectProperty ;
+    rdfs:label "is arrangement of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:arrangementOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the original expression of an arranged one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:complement a owl:ObjectProperty ;
+    rdfs:label "has complement"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:complement :my-other-expression .
+
+    :my-other-expression a frbr:Expression .  
+    """ ;
+    rdfs:comment """A relation in which a work or expression has another one as complement.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:complementOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This property describes works that are intended to be combined with or inserted into the related work. 
+In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    """@en .
+
+frbr:complementOf a owl:ObjectProperty ;
+    rdfs:label "is complement of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:complementOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the work or expression that is a complement of another one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:creatorOf a owl:ObjectProperty ;
+    rdfs:label "is creator of"@en ;
+    vann:example """
+    :my-person
+        frbr:creatorOf :my-work .
+    
+    :my-work a frbr:Work .
+    """ ;
+    rdfs:comment "The relation between the creator of a particular work and that work."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+
+frbr:embodiment a owl:ObjectProperty ;
+    rdfs:label "has embodiment"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:embodiment :my-manifestation .
+
+    :my-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment "A relation in which an expression is embodied in a manifestation."@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Manifestation ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:embodimentOf ;
+    vs:term_status reg:statusStable .
+
+frbr:exemplar a owl:ObjectProperty ;
+    rdfs:label "has exemplar"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:exemplar :my-item .
+
+    :my-item a frbr:Item .
+    """ ;
+    rdfs:comment "A relation in which a manifestation is exemplified in an item."@en ;
+    rdfs:domain frbr:Manifestation ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Item ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:exemplarOf ;
+    vs:term_status reg:statusStable .
+
+frbr:imitation a owl:ObjectProperty ;
+    rdfs:label "has imitation"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:imitation :my-other-expression .
+
+    :my-other-expression a frbr:Expression .  
+    """ ;
+    rdfs:comment """A relation in which a work or expression is imitated in another one.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:imitationOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    """@en .
+
+frbr:imitationOf a owl:ObjectProperty ;
+    rdfs:label "is imitation of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:imitationOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the work or expression of an imitated one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:ownerOf a owl:ObjectProperty ;
+    rdfs:label "is owner of"@en ;
+    vann:example """
+    :my-person
+        frbr:ownerOf :my-item .
+
+    :my-item a frbr:Item .
+    """ ;
+    rdfs:comment "The relation between the owner of a particular item and that item."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+
+frbr:producerOf a owl:ObjectProperty ;
+    rdfs:label "is producer of"@en ;
+    vann:example """
+    :my-person
+        frbr:producerOf :my-manifestation .
+        
+    :my-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment "The relation between the producer of a particular manifestation and that manifestation."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+
+frbr:realization a owl:ObjectProperty ;
+    rdfs:label "has realization"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:realization :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation in which a work is realized through an expression."@en ;
+    rdfs:domain frbr:Work ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:realizationOf ;
+    vs:term_status reg:statusStable .
+
+frbr:realizerOf a owl:ObjectProperty ;
+    rdfs:label "is realizer of"@en ;
+    vann:example """
+    :my-person
+        frbr:realizerOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "The relation between the realizer of a particular expression and that expression."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+
+frbr:reconfigurationOf a owl:ObjectProperty ;
+    rdfs:label "is reconfiguration of"@en ;
+    vann:example """
+    :my-other-item a frbr:Item ;
+        frbr:reconfigurationOf :my-item .
+
+    :my-item a frbr:Item .
+    """ ;
+    rdfs:comment "A relation that identifies the item of a reconfigured one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:reproductionOf a owl:ObjectProperty ;
+    rdfs:label "is reproduction of"@en ;
+    vann:example """
+    :my-other-item a frbr:Item ;
+        frbr:reproductionOf :my-item .
+
+    :my-item a frbr:Item .
+    """ ;
+    rdfs:comment "A relation that identifies the manifestation or item of a reproduced one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:revision a owl:ObjectProperty ;
+    rdfs:label "has revision"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:imitation :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which an expression is revised in another one.
+"""@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:revisionOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+A revision has the intent to alter or update the content of the prior expression, but without changing the content so much that it becomes a new work.
+    """@en .
+
+frbr:revisionOf a owl:ObjectProperty ;
+    rdfs:label "is revision of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:revisionOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the previous expression of a revised one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:subjectOf a owl:ObjectProperty ;
+    rdfs:label "is subject of"@en ;
+    vann:example """
+    :my-concept
+        frbr:subjectOf :my-work .
+
+    :my-work a frbr:Work .
+    """ ;
+    rdfs:comment "The relation between a subject a work talks about and that work."@en ;
+    rdfs:isDefinedBy frbr: ;
+    vs:term_status reg:statusStable .
+
+frbr:successor a owl:ObjectProperty ;
+    rdfs:label "has successor"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:successor :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which a work or expression has another one as successor.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:successorOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The successor type of relationship involves a kind of linear progression of content from one work/expression to the other. 
+In some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. 
+In others, such as with loosely connected parts of a trilogy, the successor will be autonomous. 
+Serial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    """@en .
+
+frbr:successorOf a owl:ObjectProperty ;
+    rdfs:label "is successor of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:successorOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the previous work/expression of a succeeded one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:summarization a owl:ObjectProperty ;
+    rdfs:label "has summarization"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:summarization :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which a work or expression is summarized in another one.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:summarizationOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This property describes the summarization of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. 
+If there exists a relation of this kind among two different expressions, they always refer to different works.
+    """@en .
+
+frbr:summarizationOf a owl:ObjectProperty ;
+    rdfs:label "is summarization of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:summarizationOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the original work/expression of a summarized one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:supplement a owl:ObjectProperty ;
+    rdfs:label "has supplement"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:supplement :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which a work or expression has another one as supplement.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:supplementOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. 
+Some of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression.
+    """@en .
+
+frbr:supplementOf a owl:ObjectProperty ;
+    rdfs:label "is supplement of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:supplementOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the work/expression of a particular supplement of it."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:transformation a owl:ObjectProperty ;
+    rdfs:label "has transformation"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:transformation :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which a work or expression is transformed in another one.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:transformationOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This property describes the transformation of an original work or expression into another work or expression that is sufficiently different in degree to warrant the product of the transformation being considered as a new work or expression, rather than simply a different expression of the original work. 
+If there exists a frbr:transformation relation between two different expressions, then they always relate to different works.
+    """@en .
+
+frbr:transformationOf a owl:ObjectProperty ;
+    rdfs:label "is transformation of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:transformationOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the original work or expression of a transformed one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:translation a owl:ObjectProperty ;
+    rdfs:label "has translation"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:translation :my-other-expression .
+
+    :my-other-expression a frbr:Expression . 
+    """ ;
+    rdfs:comment """A relation in which an expression is translated in another one.
+"""@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:translationOf ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+It allows to refer to a literal translation, in which the intent is to render the intellectual content of the previous expression as accurately as possible.
+    """@en .
+
+frbr:translationOf a owl:ObjectProperty ;
+    rdfs:label "is translation of"@en ;
+    vann:example """
+    :my-other-expression a frbr:Expression ;
+        frbr:translationOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies the original expression of a translated one."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+openwemi:Item a owl:Class ;
+    rdfs:label "item"@en ;
+    rdfs:comment "An exemplar of a creation."@en ;
+    rdfs:isDefinedBy openwemi: ;
+    rdfs:subClassOf openwemi:Endeavor .
+
+openwemi:Manifestation a owl:Class ;
+    rdfs:label "manifestation"@en ;
+    rdfs:comment "The physical embodiment of a creation."@en ;
+    rdfs:isDefinedBy openwemi: ;
+    rdfs:subClassOf openwemi:Endeavor .
+
+openwemi:Work a owl:Class ;
+    rdfs:label "work"@en ;
+    rdfs:comment "An abstract notion of an artistic or intellectual creation."@en ;
+    rdfs:isDefinedBy openwemi: ;
+    rdfs:subClassOf openwemi:Endeavor .
+
+frbr:embodimentOf a owl:ObjectProperty ;
+    rdfs:label "is embodiment of"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:embodimentOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "A relation that identifies a manifestation that embodies an expression."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:exemplarOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "is exemplar of"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:exemplarOf :my-manifestation .
+
+    :my-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment "A relation that identifies an item that exemplifies a manifestation."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:ResponsibleEntity a owl:Class ;
+    rdfs:label "responsible entity"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:responsibleEntity :my-responsible-entity .
+
+    :my-responsible-entity a frbr:ResponsibleEntity .
+    """ ;
+    rdfs:comment "An agent responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour."@en ;
+    rdfs:isDefinedBy frbr: ;
+    vs:term_status reg:statusStable .
+
+frbr:part a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has part"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:part :my-other-work .
+
+    :my-other-work a frbr:Work .
+    """ ;
+    rdfs:comment "A relation that identifies a part of an endeavour."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:partOf ;
+    vs:term_status reg:statusStable ;
+    skos:note "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .
+
+frbr:responsibleEntity a owl:ObjectProperty ;
+    rdfs:label "has responsible entity"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:responsibleEntity :my-responsible-entity .
+
+    :my-responsible-entity a frbr:ResponsibleEntity .
+    """ ;
+    rdfs:comment "A relation between any endeavour and a particular entity that is responsible of it."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:ResponsibleEntity ;
+    owl:inverseOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+
+frbr:Subject a owl:Class ;
+    rdfs:label "subject"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:subject :my-subject .
+    
+    :my-subject a frbr:Subject .
+    """ ;
+    rdfs:comment "An additional set of entities that serve as the subjects of works."@en ;
+    rdfs:isDefinedBy frbr: ;
+    vs:term_status reg:statusStable .
+
+frbr:partOf a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "is part of"@en ;
+    vann:example """
+    :my-other-work a frbr:Work ;
+        frbr:partOf :my-work .
+
+    :my-work a frbr:Work .
+    """ ;
+    rdfs:comment "A relation that identifies an endeavour incorporating another endeavour."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable ;
+    skos:note "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en .
+
+frbr:responsibleEntityOf a owl:ObjectProperty ;
+    rdfs:label "is responsible entity of"@en ;
+    vann:example """
+    :my-responsible-entity a frbr:ResponsibleEntity ;
+        frbr:responsibleEntityOf :my-work .
+
+    :my-work a frbr:Work .
+    """ ;
+    rdfs:comment "A relation that identifies an entity that is responsible for a particular endeavour."@en ;
+    rdfs:isDefinedBy frbr: ;
+    vs:term_status reg:statusStable .
+
+openwemi:Endeavor a owl:Class ;
+    rdfs:label "endeavor"@en ;
+    rdfs:comment "A creation."@en ;
+    rdfs:isDefinedBy openwemi: .
+
+frbr:Item a owl:Class ;
+    rdfs:label "item"@en ;
+    vann:example """
+    :my-item a frbr:Item ;
+        frbr:exemplarOf :my-manifestation ;
+        frbr:part :my-other-item .
+
+    :my-manifestation a frbr:Manifestation .
+
+    :my-other-item a frbr:Item .
+    """ ;
+    rdfs:comment """A single exemplar of a manifestation.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:disjointWith frbr:Manifestation,
+        frbr:Work ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Item ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Item ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:exemplarOf ;
+                        owl:someValuesFrom frbr:Manifestation ] ) ],
+        openwemi:Item ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as item is a concrete entity. 
+It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). 
+There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).
+    """@en .
+
+frbr:Endeavour a owl:Class ;
+    rdfs:label "endeavour"@en ;
+    vann:example """
+    :my-endeavour a frbr:Endeavour .
+    """ ;
+    rdfs:comment "The set of different aspects of user interests in a product of intellectual or artistic artifact."@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Item frbr:Manifestation frbr:Work ) ],
+        openwemi:Endeavor ;
+    vs:term_status reg:statusStable .
+
+frbr:Manifestation a owl:Class ;
+    rdfs:label "manifestation"@en ;
+    vann:example """
+    :my-manifestation a frbr:Manifestation ;
+        frbr:embodimentOf :my-expression ;
+        frbr:exemplar :my-item ;
+        frbr:part :my-other-manifestation .
+
+    :my-expression a frbr:Expression .
+
+    :my-item a frbr:Item .
+
+    :my-other-manifestation a frbr:Manifestation .
+    """ ;
+    rdfs:comment """The physical embodiment of an expression of a work.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:disjointWith frbr:Work ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Manifestation ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Manifestation ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:embodimentOf ;
+                        owl:someValuesFrom frbr:Expression ] [ a owl:Restriction ;
+                        owl:onProperty frbr:exemplar ;
+                        owl:someValuesFrom frbr:Item ] ) ],
+        openwemi:Manifestation ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The entity defined as manifestation encompasses a wide range of materials and formats. 
+As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. 
+    """@en .
+
+<urn:swrl#e1> a swrl:Variable .
+
+<urn:swrl#e2> a swrl:Variable .
+
+<urn:swrl#w1> a swrl:Variable .
+
+<urn:swrl#w2> a swrl:Variable .
+
+frbr:Work a owl:Class ;
+    rdfs:label "work"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:realization :my-expression ;
+        frbr:part :my-other-work .
+
+    :my-expression a frbr:Expression .
+
+    :my-other-work a frbr:Work .
+    """ ;
+    rdfs:comment """A distinct intellectual or artistic creation.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:realization ;
+                        owl:someValuesFrom frbr:Expression ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Work ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Work ;
+                        owl:onProperty frbr:partOf ] ) ],
+        openwemi:Work ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+A work is an abstract entity; there is no single material object one can point to as the work. 
+We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. 
+When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.
+    """@en .
+
+frbr:realizationOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "is realization of"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:realizationOf :my-work .
+    
+    :my-work a frbr:Work .
+    """ ;
+    rdfs:comment "A relation that identifies an expression that realizes a work."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+
+frbr:Expression a owl:Class ;
+    rdfs:label "expression"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:realizationOf :my-work ;
+        frbr:embodiment :my-manifestation ;
+        frbr:part :my-other-expression .
+    
+    :my-work a frbr:Work .
+
+    :my-manifestation a frbr:Manifestation .
+
+    :my-other-expression a frbr:Expression .
+    """ ;
+    rdfs:comment """The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+"""@en ;
+    rdfs:isDefinedBy frbr: ;
+    owl:disjointWith frbr:Item,
+        frbr:Manifestation,
+        frbr:Work ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:part ] [ a owl:Restriction ;
+                        owl:allValuesFrom frbr:Expression ;
+                        owl:onProperty frbr:partOf ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( frbr:Endeavour [ a owl:Restriction ;
+                        owl:onProperty frbr:embodiment ;
+                        owl:someValuesFrom frbr:Manifestation ] [ a owl:Restriction ;
+                        owl:onProperty frbr:realizationOf ;
+                        owl:someValuesFrom frbr:Work ] ) ] ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+An expression is the specific intellectual or artistic form that a work takes each time it is "realized." 
+Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.
+    """@en .
+
+frbr:relatedEndeavour a owl:ObjectProperty ;
+    rdfs:label "has related endeavour"@en ;
+    vann:example """
+    :my endeavour a frbr:Endeavour ;
+        frbr:relatedEndeavour :my-other-endeavour .
+
+    :my-other-endeavour a frbr:Endeavour .
+    """ ;
+    rdfs:comment "A generic relation between two endeavours."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Endeavour ;
+    vs:term_status reg:statusStable .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate frbr:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate frbr:summarization ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate frbr:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate frbr:translation ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( frbr:Concept frbr:Event frbr:Object frbr:Place ) .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate frbr:complement ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate frbr:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate frbr:adaption ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate frbr:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate frbr:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate frbr:supplement ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate frbr:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate frbr:transformation ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate frbr:arrangement ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate frbr:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate frbr:imitation ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate frbr:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate frbr:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate frbr:successor ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:DifferentIndividualsAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#w1> ;
+                    swrl:propertyPredicate frbr:realizationOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e2> ;
+                            swrl:argument2 <urn:swrl#w2> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e1> ;
+                                    swrl:argument2 <urn:swrl#e2> ;
+                                    swrl:propertyPredicate frbr:revision ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl#e1> ;
+                    swrl:argument2 <urn:swrl#e2> ;
+                    swrl:propertyPredicate frbr:abridgement ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl#e1> ;
+                            swrl:argument2 <urn:swrl#w1> ;
+                            swrl:propertyPredicate frbr:realizationOf ] ;
+                    rdf:rest [ a swrl:AtomList ;
+                            rdf:first [ a swrl:IndividualPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#e2> ;
+                                    swrl:argument2 <urn:swrl#w2> ;
+                                    swrl:propertyPredicate frbr:realizationOf ] ;
+                            rdf:rest () ] ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl#w1> ;
+                    swrl:argument2 <urn:swrl#w2> ] ;
+            rdf:rest () ] .
+

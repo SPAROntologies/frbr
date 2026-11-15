@@ -1,0 +1,28 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:abridgement a owl:ObjectProperty ;
+    rdfs:label "has abridgement"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:abridgement :my-other-expression .
+
+    :my-other-expression a frbr:Expression .
+    """ ;
+    rdfs:comment """A relation in which an expression is abridged in another one.
+"""@en ;
+    rdfs:domain frbr:Expression ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:Expression ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:abridgementOf ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+In the abridged expression some content of the previous expression is removed, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood).
+    """@en .
+

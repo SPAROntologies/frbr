@@ -1,0 +1,22 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:responsibleEntity a owl:ObjectProperty ;
+    rdfs:label "has responsible entity"@en ;
+    vann:example """
+    :my-work a frbr:Work ;
+        frbr:responsibleEntity :my-responsible-entity .
+
+    :my-responsible-entity a frbr:ResponsibleEntity .
+    """ ;
+    rdfs:comment "A relation between any endeavour and a particular entity that is responsible of it."@en ;
+    rdfs:domain frbr:Endeavour ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range frbr:ResponsibleEntity ;
+    owl:inverseOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+

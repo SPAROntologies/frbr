@@ -1,0 +1,33 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:complement a owl:ObjectProperty ;
+    rdfs:label "has complement"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:complement :my-other-expression .
+
+    :my-other-expression a frbr:Expression .  
+    """ ;
+    rdfs:comment """A relation in which a work or expression has another one as complement.
+"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( frbr:Expression frbr:Work ) ] ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    owl:inverseOf frbr:complementOf ;
+    vs:term_status reg:statusStable ;
+    skos1:note """
+This property describes works that are intended to be combined with or inserted into the related work. 
+In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. 
+If there exists a relation of this kind among two different expressions, then they always refer to different works.
+    """@en .
+

@@ -1,0 +1,21 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:realizationOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "is realization of"@en ;
+    vann:example """
+    :my-expression a frbr:Expression ;
+        frbr:realizationOf :my-work .
+    
+    :my-work a frbr:Work .
+    """ ;
+    rdfs:comment "A relation that identifies an expression that realizes a work."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:relatedEndeavour ;
+    vs:term_status reg:statusStable .
+

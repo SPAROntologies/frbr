@@ -21,7 +21,7 @@ frbr:Expression a owl:Class ;
 
     :my-other-expression a frbr:Expression .
     """ ;
-    rdfs:comment """The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+    rdfs:comment """The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 """@en ;
     rdfs:isDefinedBy frbr: ;
     owl:disjointWith frbr:Item,

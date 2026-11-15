@@ -1,0 +1,20 @@
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+frbr:realizerOf a owl:ObjectProperty ;
+    rdfs:label "is realizer of"@en ;
+    vann:example """
+    :my-person
+        frbr:realizerOf :my-expression .
+
+    :my-expression a frbr:Expression .
+    """ ;
+    rdfs:comment "The relation between the realizer of a particular expression and that expression."@en ;
+    rdfs:isDefinedBy frbr: ;
+    rdfs:subPropertyOf frbr:responsibleEntityOf ;
+    vs:term_status reg:statusStable .
+
